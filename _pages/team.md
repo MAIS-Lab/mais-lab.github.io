@@ -13,7 +13,7 @@ permalink: /team/
 {% for member in site.data.team_postdoc %}
 <div class="row">
 <div class="col-sm-12 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="150px" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="160px" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
@@ -54,7 +54,7 @@ permalink: /team/
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="150px" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="160px" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
