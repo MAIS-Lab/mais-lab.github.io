@@ -29,7 +29,7 @@ permalink: /team/
 </h4>
 {% if member.experiences and member.experiences != empty %}
 <b>Experiences</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 5px;">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
 {% for edu in member.experiences %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -37,7 +37,7 @@ permalink: /team/
 {% endif %}
 {% if member.education and member.education != empty %}
 <b>Education</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -76,7 +76,7 @@ permalink: /team/
 </h4>
 {% if member.education and member.education != empty %}
 <b>Education</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 5px;">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -84,7 +84,7 @@ permalink: /team/
 {% endif %}
 {% if member.interest and member.interest != empty %}
 <b>Research Interests</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
 {% for interest in member.interest %}
 <li> {{ interest }} </li>
 {% endfor %}
