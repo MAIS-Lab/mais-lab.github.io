@@ -1,15 +1,3 @@
-- name: Seonghoon Park
-  photo: seonghoon.jpg
-  info: Postdoc Associate
-  email: seonghoon@vt.edu
-  homepage: https://seonghoon.page
-  education:
-    - Ph.D. in Computer Science, Yonsei University, 2025
-    - B.Sc. in Computer Science and Engineering, Yonsei University, 2018
-  interest:
-    - On-device AI
-    - Mobile immersive computing
-
 - name: Gunjoong Kim
   photo: gunjoong.png
   info: Potential Ph.D Student
@@ -19,6 +7,14 @@
   interest:
     - Mobile immersive computing
 
+- name: Vvulcano Kim
+  photo: gunjoong.png
+  info: Potential Ph.D Student
+  email: gunjoong.kim@yonsei.ac.kr
+  education:
+    - B.Sc. Univ. of Seoul, 2024
+  interest:
+    - Mobile immersive computing
 
 - name: "This could be you!"
   photo: rock.jpg
