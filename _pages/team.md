@@ -13,7 +13,7 @@ permalink: /team/
 {% for member in site.data.team_postdoc %}
 <div class="row">
 <div class="col-sm-12 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="15%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="140px" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
@@ -25,7 +25,7 @@ permalink: /team/
 </h4>
 {% if member.experience and member.experience != empty %}
 <b>Education & Experiences</b>
-<ul class="list-unstyled" style="overflow: hidden">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
 {% for edu in member.experience %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -46,7 +46,7 @@ permalink: /team/
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="140px" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
@@ -58,7 +58,7 @@ permalink: /team/
 </h4>
 {% if member.education and member.education != empty %}
 <b>Education</b>
-<ul class="list-unstyled" style="overflow: hidden">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -66,7 +66,7 @@ permalink: /team/
 {% endif %}
 {% if member.interest and member.interest != empty %}
 <b>Research Interests</b>
-<ul class="list-unstyled" style="overflow: hidden">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
 {% for interest in member.interest %}
 <li> {{ interest }} </li>
 {% endfor %}
@@ -96,7 +96,7 @@ permalink: /team/
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="15%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="140px" style="float: left" />
 <h4>{{ member.name }}</h4>
 <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
 <ul style="overflow: hidden">
