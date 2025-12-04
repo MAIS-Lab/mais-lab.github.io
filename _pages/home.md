@@ -8,7 +8,9 @@ permalink: /
 
 # Welcome to the MAIS Lab!
 
-## This site is under construction now!
+### Note: This site is not official. This is just for the test purpose!
+
+This site is under construction now!
 
 <!-- 
 We are currently building up our instruments right in the center of Munich, in the *Sommerfeldkeller*, where Sommerfeld and Röntgen worked. We will exchange ideas with world class groups working in quantum physics, cold-atom many-body physics, and 2d quantum materials. We are also a proud member of the [SuperC consortium](https://superc2033.com/our-team/).
