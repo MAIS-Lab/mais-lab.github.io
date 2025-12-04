@@ -13,18 +13,14 @@ permalink: /team/
 {% for member in site.data.team_members %}
 <div class="row">
 <div class="col-sm-12 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="15%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="20%" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
-<a href="{{ member.homepage }}" target="_blank" title="Visit {{ member.name }}'s Homepage">
-<i class="fa fa-globe" aria-hidden="true" style="font-size: 0.8em;"></i> 
-</a>
+<a href="{{ member.homepage }}" target="_blank" title="Visit {{ member.name }}'s Homepage">🏠</a>
 {% endif %}
 {% if member.email %}
-<a href="mailto:{{ member.email }}" title="Email {{ member.name }}">
-<i class="fa fa-envelope" aria-hidden="true" style="font-size: 0.8em;"></i>
-</a>
+<a href="mailto:{{ member.email }}" title="Email {{ member.name }}">✉️</a>
 {% endif %}
 </h4>
 <i>{{ member.info }} </i><br>
