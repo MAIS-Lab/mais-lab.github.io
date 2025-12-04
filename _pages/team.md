@@ -24,8 +24,8 @@ permalink: /team/
 {% endif %}
 </h4>
 {% if member.experience and member.experience != empty %}
-Education & Experience
-<ul style="overflow: hidden">
+<b>Education & Experiences</b>
+<ul class="list-unstyled" style="overflow: hidden">
 {% for edu in member.experience %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -45,7 +45,7 @@ Education & Experience
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="20%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
@@ -56,16 +56,16 @@ Education & Experience
 {% endif %}
 </h4>
 {% if member.education and member.education != empty %}
-Education
-<ul style="overflow: hidden">
+<b>Education</b>
+<ul class="list-unstyled" style="overflow: hidden">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
 </ul>
 {% endif %}
 {% if member.interest and member.interest != empty %}
-Research Interests
-<ul style="overflow: hidden">
+<b>Research Interests</b>
+<ul class="list-unstyled" style="overflow: hidden">
 {% for interest in member.interest %}
 <li> {{ interest }} </li>
 {% endfor %}
