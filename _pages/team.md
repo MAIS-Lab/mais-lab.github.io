@@ -13,12 +13,12 @@ permalink: /team/
 {% for member in site.data.team_postdoc %}
 <div class="row">
 <div class="col-sm-12 clearfix">
-<div style="display: flex; align-items: center;">
-<div style="flex-shrink: 0; width: 15%; margin-right: 20px;">
+<div style="display: flex; align-items: flex-start;">
+<div style="flex-shrink: 0; width: 15%; min-width: 140px; margin-right: 20px;">
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="100%" style="border-radius: 5px;" />
 </div>
 <div>
-<h4 style="margin-top: 0;">
+<h4>
 {{ member.name }}
 {% if member.homepage %}
 <a href="{{ member.homepage }}" target="_blank" title="Visit {{ member.name }}'s Homepage">🏠</a>
@@ -29,7 +29,7 @@ permalink: /team/
 </h4>
 {% if member.experiences and member.experiences != empty %}
 <b>Experiences</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for edu in member.experiences %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -37,7 +37,7 @@ permalink: /team/
 {% endif %}
 {% if member.education and member.education != empty %}
 <b>Education</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -61,11 +61,11 @@ permalink: /team/
 {% endif %}
 <div class="col-sm-6 clearfix">
 <div style="display: flex; align-items: flex-start;">
-<div style="flex-shrink: 0; width: 30%; margin-right: 15px; align-self: center;">
+<div style="flex-shrink: 0; width: 30%; margin-right: 15px;">
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="100%" style="border-radius: 5px;" />
 </div>
 <div>
-<h4 style="margin-top: 0;">
+<h4>
 {{ member.name }}
 {% if member.homepage %}
 <a href="{{ member.homepage }}" target="_blank" title="Visit {{ member.name }}'s Homepage">🏠</a>
@@ -76,7 +76,7 @@ permalink: /team/
 </h4>
 {% if member.education and member.education != empty %}
 <b>Education</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -84,7 +84,7 @@ permalink: /team/
 {% endif %}
 {% if member.interest and member.interest != empty %}
 <b>Research Interests</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for interest in member.interest %}
 <li> {{ interest }} </li>
 {% endfor %}
@@ -114,7 +114,7 @@ permalink: /team/
 {% endif %}
 <div class="col-sm-6 clearfix">
 <div style="display: flex; align-items: flex-start;">
-<div style="flex-shrink: 0; width: 30%; margin-right: 15px; align-self: center;">
+<div style="flex-shrink: 0; width: 30%; margin-right: 15px;">
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="100%" style="border-radius: 5px;" />
 </div>
 <div>
