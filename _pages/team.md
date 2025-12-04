@@ -60,8 +60,8 @@ permalink: /team/
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<div style="display: flex; align-items: center;">
-<div style="flex-shrink: 0; width: 30%; margin-right: 15px;">
+<div style="display: flex; align-items: flex-start;">
+<div style="flex-shrink: 0; width: 30%; margin-right: 15px; align-self: center;">
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="100%" style="border-radius: 5px;" />
 </div>
 <div>
@@ -113,8 +113,8 @@ permalink: /team/
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<div style="display: flex; align-items: center;">
-<div style="flex-shrink: 0; width: 30%; margin-right: 15px;">
+<div style="display: flex; align-items: flex-start;">
+<div style="flex-shrink: 0; width: 30%; margin-right: 15px; align-self: center;">
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="100%" style="border-radius: 5px;" />
 </div>
 <div>
