@@ -1,4 +1,4 @@
-- title: EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos
+- title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
   image: GAS.png
   description: Test
   authors: Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, Hojung Cha
@@ -7,7 +7,7 @@
     display: ACM MobiCom 2025
   highlight: 1
 
-- title: Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting
+- title: "Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting"
   image: GAS.png
   description: Test
   authors: Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, Hojung Cha
