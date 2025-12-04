@@ -6,6 +6,8 @@ sitemap: false
 permalink: /
 ---
 
+# Welcome to the MAIS Lab!
+
 ## This site is under construction now!
 
 <!-- 
