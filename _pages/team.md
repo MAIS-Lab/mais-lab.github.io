@@ -35,7 +35,8 @@ permalink: /team/
 </div>
 {% assign number_printed = number_printed | plus: 1 %}
 {% endfor %}
-
+<br>
+<br>
 
 ### Ph.D. Students
 {% assign number_printed = 0 %}
@@ -81,10 +82,10 @@ permalink: /team/
 {% if even_odd == 1 %}
 </div>
 {% endif %}
+<br>
+<br>
 
-
-## Alumni
-
+### Alumni
 {% assign number_printed = 0 %}
 {% for member in site.data.alumni_members %}
 
@@ -115,8 +116,10 @@ permalink: /team/
 {% if even_odd == 1 %}
 </div>
 {% endif %}
+<br>
+<br>
 
-## Former Visitors
+### Former Visitors
 <div class="row">
 
 <div class="col-sm-4 clearfix">
