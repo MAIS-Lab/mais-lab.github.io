@@ -23,10 +23,10 @@ permalink: /team/
 <a href="mailto:{{ member.email }}" title="Email {{ member.name }}">✉️</a>
 {% endif %}
 </h4>
-{% if member.experience and member.experience != empty %}
+{% if member.experiences and member.experiences != empty %}
 <b>Experiences</b>
 <ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
-{% for edu in member.experience %}
+{% for edu in member.experiences %}
 <li> {{ edu }} </li>
 {% endfor %}
 </ul>
