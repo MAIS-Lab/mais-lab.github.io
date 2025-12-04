@@ -17,42 +17,42 @@ permalink: /team/
 {% for member in site.data.team_members %}
 
 <div class="row">
-  <div class="col-sm-12 clearfix"> <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="15%" style="float: left" />
-    <h4>
-        {{ member.name }}
-        
-        {% if member.homepage %}
-            <a href="{{ member.homepage }}" target="_blank" title="Visit {{ member.name }}'s Homepage">
-                <i class="fa fa-globe" aria-hidden="true" style="font-size: 0.8em;"></i> 
-            </a>
-        {% endif %}
+  <div class="col-sm-12 clearfix"> <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="15%" style="float: left" />
+    <h4>
+        {{ member.name }}
+        
+        {% if member.homepage %}
+            <a href="{{ member.homepage }}" target="_blank" title="Visit {{ member.name }}'s Homepage">
+                <i class="fa fa-globe" aria-hidden="true" style="font-size: 0.8em;"></i> 
+            </a>
+        {% endif %}
 
-        {% if member.email %}
-            <a href="mailto:{{ member.email }}" title="Email {{ member.name }}">
-                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 0.8em;"></i>
-            </a>
-        {% endif %}
-    </h4>
-    <i>{{ member.info }} </i><br>
-    
-    {% if member.education and member.education != empty %}
-    Education
-    <ul style="overflow: hidden">
-      {% for edu in member.education %}
-        <li> {{ edu | markdownify }} </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
+        {% if member.email %}
+            <a href="mailto:{{ member.email }}" title="Email {{ member.name }}">
+                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 0.8em;"></i>
+            </a>
+        {% endif %}
+    </h4>
+    <i>{{ member.info }} </i><br>
+    
+    {% if member.education and member.education != empty %}
+    Education
+    <ul style="overflow: hidden">
+      {% for edu in member.education %}
+        <li> {{ edu }} </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
-    {% if member.interest and member.interest != empty %}  
-    Research Interests
-    <ul style="overflow: hidden">
-      {% for interest in member.interest %}
-        <li> {{ interest | markdownify }} </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    </div>
+    {% if member.interest and member.interest != empty %}  
+    Research Interests
+    <ul style="overflow: hidden">
+      {% for interest in member.interest %}
+        <li> {{ interest }} </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    </div>
 
 </div>
 
