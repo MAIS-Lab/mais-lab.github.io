@@ -8,7 +8,7 @@ permalink: /team/
 
 ### Note: This page is not official!
 
-## Postdoc Associate
+### Postdoc Associate
 {% assign number_printed = 0 %}
 {% for member in site.data.team_postdoc %}
 <div class="row">
@@ -23,19 +23,11 @@ permalink: /team/
 <a href="mailto:{{ member.email }}" title="Email {{ member.name }}">✉️</a>
 {% endif %}
 </h4>
-{% if member.education and member.education != empty %}
-Education
+{% if member.experience and member.experience != empty %}
+Education & Experience
 <ul style="overflow: hidden">
-{% for edu in member.education %}
+{% for edu in member.experience %}
 <li> {{ edu }} </li>
-{% endfor %}
-</ul>
-{% endif %}
-{% if member.interest and member.interest != empty %}
-Research Interests
-<ul style="overflow: hidden">
-{% for interest in member.interest %}
-<li> {{ interest }} </li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -45,7 +37,7 @@ Research Interests
 {% endfor %}
 
 
-## Ph.D. Students
+### Ph.D. Students
 {% assign number_printed = 0 %}
 {% for member in site.data.team_phd %}
 {% assign even_odd = number_printed | modulo: 2 %}
@@ -53,7 +45,7 @@ Research Interests
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="15%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="20%" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
