@@ -13,7 +13,7 @@ permalink: /team/
 {% for member in site.data.team_postdoc %}
 <div class="row">
 <div class="col-sm-12 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="140px" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="150px" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
@@ -24,9 +24,17 @@ permalink: /team/
 {% endif %}
 </h4>
 {% if member.experience and member.experience != empty %}
-<b>Education & Experiences</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
+<b>Experiences</b>
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for edu in member.experience %}
+<li> {{ edu }} </li>
+{% endfor %}
+</ul>
+{% endif %}
+{% if member.education and member.education != empty %}
+<b>Education</b>
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
+{% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
 </ul>
@@ -46,7 +54,7 @@ permalink: /team/
 <div class="row">
 {% endif %}
 <div class="col-sm-6 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="140px" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="150px" style="float: left" />
 <h4>
 {{ member.name }}
 {% if member.homepage %}
@@ -58,7 +66,7 @@ permalink: /team/
 </h4>
 {% if member.education and member.education != empty %}
 <b>Education</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for edu in member.education %}
 <li> {{ edu }} </li>
 {% endfor %}
@@ -66,7 +74,7 @@ permalink: /team/
 {% endif %}
 {% if member.interest and member.interest != empty %}
 <b>Research Interests</b>
-<ul style="padding-left: 0; list-style-position: inside; margin-top: 0px; margin-bottom: 0px;">
+<ul style="padding-left: 0; list-style-position: inside; margin-top: -10px;">
 {% for interest in member.interest %}
 <li> {{ interest }} </li>
 {% endfor %}
