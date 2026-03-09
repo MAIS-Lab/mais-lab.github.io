@@ -1,0 +1,24 @@
+# Publications data file
+# To add a paper, copy a block under the appropriate year (or add a new year section).
+# Fields:
+#   title   : Paper title
+#   authors : Author list (use ** around PI name to bold, e.g. "**Jiwon Kim**")
+#   venue   : Full venue name and year
+#   abbr    : Short venue name shown as badge (e.g. MobiCom, EMSOFT)
+#   pdf     : Path or URL to PDF (leave empty "" if not available)
+
+- year: 2025
+  papers:
+    - title: "Paper Title Example"
+      authors: "Author A, Author B, Jiwon Kim"
+      venue: "In Conference Name (2025)"
+      abbr: "MobiCom"
+      pdf: ""
+
+- year: 2024
+  papers:
+    - title: "Another Paper Title"
+      authors: "Author A, Jiwon Kim"
+      venue: "In Conference Name (2024)"
+      abbr: "EMSOFT"
+      pdf: ""
