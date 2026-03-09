@@ -20,7 +20,7 @@ permalink: /members/
         src="{{ site.baseurl }}/assets/img/members/jwkim.jpg"
         alt="Jiwon Kim"
         class="rounded mr-4 flex-shrink-0"
-        style="width: 120px; height: 120px; object-fit: cover;"
+        style="width: 120px; object-fit: cover;"
       />
       <div>
         <h5 class="mb-1">Jiwon Kim, Ph.D.</h5>
