@@ -1,11 +1,14 @@
 - title: Home
   link: /
 
-- title: About
-  link: /about/
+- title: Research
+  link: "/research/"
 
-- title: Services
-  link: "/services/"
+- title: Members
+  link: "/members/"
+
+- title: Publications
+  link: "/publications/"
 
 - title: Contact
   link: "/contact/"
