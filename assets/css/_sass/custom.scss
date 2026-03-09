@@ -1,4 +1,9 @@
 /* Add your custom styles here */
+
+/* Prevent layout shift caused by scrollbar appearing/disappearing between pages */
+html {
+  overflow-y: scroll;
+}
 // .btn-primary{
 //     background-color: #1d4367;
 //     border-color: #1d4367;
