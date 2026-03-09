@@ -4,7 +4,7 @@ description: Mobile Embedded AI Systems Lab at Ewha Womans University
 # disabled because we are using a custom domain
 #baseurl: /business-frontpage 
 
-color-scheme: "mediumseagreen" # the scheme can be any HEX code like "#00aa55"
+color-scheme: "#006633" # Ewha Womans University green
 
 sass:
   sass_dir: /assets/css/_sass
