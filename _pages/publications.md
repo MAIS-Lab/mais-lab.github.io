@@ -4,7 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 
-<!-- ========== Selected Publications ========== -->
+{% comment %}
+========== Selected Publications (disabled) ==========
 <h2>Selected Publications</h2>
 <hr />
 
@@ -13,7 +14,7 @@ permalink: /publications/
   {% for paper in site.data.publications.selected %}
     <li class="mb-4">
       <div class="d-flex align-items-start">
-        <span class="badge badge-primary mr-3 mt-1 flex-shrink-0" style="font-size: 0.8rem; min-width: 70px; text-align: center; padding: 5px 8px;">
+        <span class="badge badge-primary mr-3 mt-1 flex-shrink-0" style="font-size: 0.8rem; width: 95px; text-align: center; padding: 5px 8px;">
           {{ paper.abbr }}
         </span>
         <div>
@@ -29,6 +30,7 @@ permalink: /publications/
   {% endfor %}
   </ol>
 </div>
+{% endcomment %}
 
 <!-- ========== Full Publications ========== -->
 <h2 class="mt-5">Full Publications</h2>
@@ -41,7 +43,7 @@ permalink: /publications/
   {% for paper in group.papers %}
     <li class="mb-4">
       <div class="d-flex align-items-start">
-        <span class="badge badge-primary mr-3 mt-1 flex-shrink-0" style="font-size: 0.8rem; min-width: 70px; text-align: center; padding: 5px 8px;">
+        <span class="badge badge-primary mr-3 mt-1 flex-shrink-0" style="font-size: 0.8rem; width: 95px; text-align: center; padding: 5px 8px;">
           {{ paper.abbr }}
         </span>
         <div>

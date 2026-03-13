@@ -24,25 +24,73 @@ selected:
     pdf: ""
 
 full:
-  - year: 2020
+  - year: 2026
     papers:
-      - title: "Optrone: Maximizing Performance and Energy Resources of Drone Batteries"
-        authors: "Jiwon Kim, Yonghun Choi, Seunghyeok Jeon, Jaeyun Kang, Hojung Cha"
-        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2020)"
-        abbr: "EMSOFT"
-        pdf: "https://ieeexplore.ieee.org/document/9211406"
+      - title: "Phoenix: Thermal-Aware On-Device Inference of Multi-Instance DNNs for Mobile Video Applications"
+        authors: "Seunghyeok Jeon, Jiwon Kim, Jeho Lee, and Hojung Cha"
+        venue: "ACM Transactions on Embedded Computing Systems (TECS)"
+        abbr: "TECS"
+        pdf: "https://dl.acm.org/doi/full/10.1145/3793860"
 
-      - title: "Hydrone: Reconfigurable Energy Storage for UAV Applications"
-        authors: "Jiwon Kim, Sungwoo Baek, Yonghun Choi, Junick Ahn, and Hojung Cha"
-        venue: "International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS 2020)"
-        abbr: "CODES+ISSS"
-        pdf: "https://ieeexplore.ieee.org/abstract/document/9211456"
+  - year: 2025
+    papers:
+      - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
+        authors: "Chanyoung Jung*, Jeho Lee*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
+        venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2025)"
+        abbr: "MobiSys"
+        pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
 
-      - title: "Optimizing Discharge Efficiency of Reconfigurable Battery With Deep Reinforcement Learning"
-        authors: "Seunghyeok Jeon, Jiwon Kim, Junick Ahn, and Hojung Cha"
-        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2020)"
+      - title: "SecureRide: Detecting Safety-threatening Behavior of E-Scooters Using Battery Information"
+        authors: "Jiwon Kim*, Geon Kim*, Jeho Lee, Thiemo Voigt, and Hojung Cha"
+        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2025)"
         abbr: "EMSOFT"
-        pdf: "https://ieeexplore.ieee.org/abstract/document/9211558"
+        pdf: "https://dl.acm.org/doi/10.1145/3758095"
+
+      - title: "Ember: Task Wakeup Sequence-Based Energy Optimization for Mobile Web Browsing"
+        authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
+        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2025)"
+        abbr: "EMSOFT"
+        pdf: "https://dl.acm.org/doi/10.1145/3757918"
+
+      - title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
+        authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
+        venue: "The 31st Annual International Conference on Mobile Computing and Networking (MobiCom 2025)"
+        abbr: "MobiCom"
+        pdf: "https://dl.acm.org/doi/10.1145/3680207.3765252"
+
+  - year: 2024
+    papers:
+      - title: "Optimizing Profitability of E-Scooter Sharing System via Battery-aware Recommendation"
+        authors: "Jiwon Kim, Taewoong Jung, Yonghun Choi, Daeyong Kim, and Hojung Cha"
+        venue: "The 22nd Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2024)"
+        abbr: "MobiSys"
+        pdf: "https://dl.acm.org/doi/abs/10.1145/3643832.3661859"
+
+      - title: "HarvAR: Mobile Augmented Reality-assisted Photovoltaic Energy Harvesting Sensor Management"
+        authors: "Daeyong Kim, Junick Ahn, Jiwon Kim, Rhan Ha, and Hojung Cha"
+        venue: "IEEE Internet of Things Journal"
+        abbr: "IoTJ"
+        pdf: "https://ieeexplore.ieee.org/abstract/document/10531686"
+
+      - title: "Panopticus: Omnidirectional 3D Object Detection on Resource-constrained Edge Devices"
+        authors: "Jeho Lee, Chanyoung Jung, Jiwon Kim, and Hojung Cha"
+        venue: "The 30th Annual International Conference on Mobile Computing and Networking (MobiCom 2024)"
+        abbr: "MobiCom"
+        pdf: "https://dl.acm.org/doi/abs/10.1145/3636534.3690688"
+
+  - year: 2023
+    papers:
+      - title: "DNN-based Temperature Prediction of Large-Scale Battery Pack"
+        authors: "Jiwon Kim and Rhan Ha"
+        venue: "Electronics Letters"
+        abbr: "ELL"
+        pdf: "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ell2.12917"
+
+      - title: "Detecting Structural Anomalies of Quadcopter UAVs based on LSTM Autoencoder"
+        authors: "Seunghyeok Jeon, Jaeyun Kang, Jiwon Kim, and Hojung Cha"
+        venue: "Pervasive and Mobile Computing (PMC)"
+        abbr: "PMC"
+        pdf: "https://www.sciencedirect.com/science/article/pii/S1574119222001493"
 
   - year: 2022
     papers:
@@ -64,71 +112,22 @@ full:
         abbr: "CODES+ISSS"
         pdf: "https://ieeexplore.ieee.org/abstract/document/9925695"
 
-  - year: 2023
+  - year: 2020
     papers:
-      - title: "DNN-based Temperature Prediction of Large-Scale Battery Pack"
-        authors: "Jiwon Kim and Rhan Ha"
-        venue: "Electronics Letters"
-        abbr: "ELL"
-        pdf: "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ell2.12917"
-
-      - title: "Detecting Structural Anomalies of Quadcopter UAVs based on LSTM Autoencoder"
-        authors: "Seunghyeok Jeon, Jaeyun Kang, Jiwon Kim, and Hojung Cha"
-        venue: "Pervasive and Mobile Computing (PMC)"
-        abbr: "PMC"
-        pdf: "https://www.sciencedirect.com/science/article/pii/S1574119222001493"
-
-  - year: 2024
-    papers:
-      - title: "Optimizing Profitability of E-Scooter Sharing System via Battery-aware Recommendation"
-        authors: "Jiwon Kim, Taewoong Jung, Yonghun Choi, Daeyong Kim, andHojung Cha"
-        venue: "The 22nd Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2024)"
-        abbr: "MobiSys"
-        pdf: "https://dl.acm.org/doi/abs/10.1145/3643832.3661859"
-        
-      - title: "HarvAR: Mobile Augmented Reality-assisted Photovoltaic Energy Harvesting Sensor Management"
-        authors: "Daeyong Kim, Junick Ahn, Jiwon Kim, Rhan Ha, and Hojung Cha"
-        venue: "IEEE Internet of Things Journal"
-        abbr: "IoTJ"
-        pdf: "https://ieeexplore.ieee.org/abstract/document/10531686"
-
-      - title: "Panopticus: Omnidirectional 3D Object Detection on Resource-constrained Edge Devices"
-        authors: "Jeho Lee, Chanyoung Jung, Jiwon Kim, and Hojung Cha"
-        venue: "The 30th Annual International Conference on Mobile Computing and Networking (MobiCom 2024)"
-        abbr: "MobiCom"
-        pdf: "https://dl.acm.org/doi/abs/10.1145/3636534.3690688"
-
-  - year: 2025
-    papers:
-      - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
-        authors: "Chanyoung Jung*, Jeho Lee*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
-        venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2025)"
-        abbr: "MobiSys"
-        pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
-        
-      - title: "SecureRide: Detecting Safety-threatening Behavior of E-Scooters Using Battery Information"
-        authors: "Jiwon Kim*, Geon Kim*, Jeho Lee, Thiemo Voigt, and Hojung Cha"
-        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2025)"
+      - title: "Optrone: Maximizing Performance and Energy Resources of Drone Batteries"
+        authors: "Jiwon Kim, Yonghun Choi, Seunghyeok Jeon, Jaeyun Kang, Hojung Cha"
+        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2020)"
         abbr: "EMSOFT"
-        pdf: "https://dl.acm.org/doi/10.1145/3758095"
-        
-      - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
-        authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
-        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2025)"
+        pdf: "https://ieeexplore.ieee.org/document/9211406"
+
+      - title: "Hydrone: Reconfigurable Energy Storage for UAV Applications"
+        authors: "Jiwon Kim, Sungwoo Baek, Yonghun Choi, Junick Ahn, and Hojung Cha"
+        venue: "International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS 2020)"
+        abbr: "CODES+ISSS"
+        pdf: "https://ieeexplore.ieee.org/abstract/document/9211456"
+
+      - title: "Optimizing Discharge Efficiency of Reconfigurable Battery With Deep Reinforcement Learning"
+        authors: "Seunghyeok Jeon, Jiwon Kim, Junick Ahn, and Hojung Cha"
+        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2020)"
         abbr: "EMSOFT"
-        pdf: "https://dl.acm.org/doi/10.1145/3757918"
-        
-      - title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
-        authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
-        venue: "The 31st Annual International Conference on Mobile Computing and Networking (MobiCom 2025)"
-        abbr: "MobiCom"
-        pdf: "https://dl.acm.org/doi/10.1145/3680207.3765252"
-        
-  - year: 2026
-    papers:
-        
-      - title: "Phoenix: Thermal-Aware On-Device Inference of Multi-Instance DNNs for Mobile Video Applications"
-        authors: "Seunghyeok Jeon, Jiwon Kim, Jeho Lee, and Hojung Cha"
-        venue: "ACM Transactions on Embedded Computing Systems (TECS)"
-        abbr: "TECS"
-        pdf: "https://dl.acm.org/doi/full/10.1145/3793860"
+        pdf: "https://ieeexplore.ieee.org/abstract/document/9211558"
