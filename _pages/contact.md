@@ -16,7 +16,7 @@ permalink: /contact/
 
   <!-- Contact Info -->
   <div class="col-md-5 mb-4">
-    <h4>MES Lab</h4>
+    <h4>Mobile Embedded AI Systems Lab at Ewha Womans University</h4>
     <hr />
     <address class="mb-4">
       <i class="fas fa-map-marker-alt fa-fw text-muted mr-1"></i>
