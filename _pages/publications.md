@@ -53,6 +53,13 @@ permalink: /publications/
           {% if paper.pdf != "" %}
           <a href="{{ paper.pdf }}" target="_blank" class="badge badge-danger mr-1" style="font-size: 0.75rem;">PDF</a>
           {% endif %}
+          {% for tag in paper.tags %}
+            {% if tag == "best paper award" %}
+            <span class="badge mr-1" style="font-size: 0.75rem; background-color: #c8a000; color: #fff;">&#127942; Best Paper Award</span>
+            {% elsif tag == "research highlight" %}
+            <span class="badge mr-1" style="font-size: 0.75rem; background-color: #1a7abf; color: #fff;">&#128269; Research Highlight</span>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </li>
