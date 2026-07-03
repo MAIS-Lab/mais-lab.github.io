@@ -8,7 +8,7 @@ permalink: /contact/
   <!-- Map -->
   <div class="col-xl-7 mb-4 contact-map">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.643783269974!2d126.94503657571231!3d37.56345552430503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c99ac25c17967%3A0x644bcf3e6ecfb7c4!2z7KeE7ISg66-46rSA!5e0!3m2!1sko!2skr!4v1773417770157!5m2!1sko!2skr" 
+      src="https://www.google.com/maps?q=37.5609634,126.9463858&z=17&output=embed" 
       style="border:0;" allowfullscreen="" loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
