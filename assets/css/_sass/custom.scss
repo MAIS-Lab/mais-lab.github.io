@@ -10,6 +10,14 @@ html {
   overflow-y: scroll;
 }
 
+/* Use a sharper modern display font for page and section titles while
+   leaving the normal body copy on Bootstrap's system font stack. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
 /* Contact page: keep the map at its original 600x450 size when space
    allows, stack it above the text on narrower screens, and only shrink it
    on very small viewports. */
