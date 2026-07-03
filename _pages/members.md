@@ -56,7 +56,7 @@ permalink: /members/
           <a href="mailto:happyanniean@gmail.com">happyanniean@gmail.com</a>
         </p>
         <p class="mb-0">
-          <i class="fas fa-pencil-alt mr-1 text-secondary"></i>
+          <i class="fas fa-book mr-1 text-secondary"></i>
           On-device AI
         </p>
       </div>
@@ -82,7 +82,7 @@ permalink: /members/
           <a href="mailto:cac66@ewhain.net">cac66@ewhain.net</a>
         </p>
         <p class="mb-0">
-          <i class="fas fa-pencil-alt mr-1 text-secondary"></i>
+          <i class="fas fa-book mr-1 text-secondary"></i>
           On-device AI
         </p>
       </div>
