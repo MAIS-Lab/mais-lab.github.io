@@ -33,7 +33,7 @@ permalink: /publications/
 {% endcomment %}
 
 <!-- ========== Full Publications ========== -->
-<h2 class="mt-5">Full Publications</h2>
+<h2>Full Publications</h2>
 <hr />
 
 <div class="publications">
