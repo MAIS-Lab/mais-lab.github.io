@@ -20,6 +20,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
 }
 
+/* Keep the main hero title and mission statement on Bootstrap's original
+   system font stack. */
+.home-hero h1,
+.home-hero .lead {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.home-hero h1 {
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
 /* Contact page: keep the map at its original 600x450 size when space
    allows, stack it above the text on narrower screens, and only shrink it
    on very small viewports. */
