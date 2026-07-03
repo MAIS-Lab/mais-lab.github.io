@@ -29,6 +29,10 @@ permalink: /members/
           <i class="fas fa-envelope mr-1 text-secondary"></i>
           <a href="mailto:jiwon_kim@ewha.ac.kr">jiwon_kim@ewha.ac.kr</a>
         </p>
+        <p class="mb-1">
+          <i class="fas fa-door-open mr-1 text-secondary"></i>
+          Jinseonmi-gwan 218
+        </p>
         <p class="mb-0">
           <i class="fas fa-globe mr-1 text-secondary"></i>
           <a href="https://jwkim.page" target="_blank">https://jwkim.page</a>
