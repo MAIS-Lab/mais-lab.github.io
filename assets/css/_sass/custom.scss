@@ -9,6 +9,22 @@
 html {
   overflow-y: scroll;
 }
+
+/* Contact page: keep the embedded map large while preventing overlap.
+   The page stacks the map above the text below the lg breakpoint; on wider
+   screens the iframe fills only its own column. */
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+}
+
+@media (max-width: 575.98px) {
+  .contact-map iframe {
+    height: 320px;
+  }
+}
 // .btn-primary{
 //     background-color: #1d4367;
 //     border-color: #1d4367;

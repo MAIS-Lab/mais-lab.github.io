@@ -6,16 +6,16 @@ permalink: /contact/
 
 <div class="row py-4">
   <!-- Map -->
-  <div class="col-md-7 mb-4">
+  <div class="col-lg-7 mb-4 contact-map">
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.643783269974!2d126.94503657571231!3d37.56345552430503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c99ac25c17967%3A0x644bcf3e6ecfb7c4!2z7KeE7ISg66-46rSA!5e0!3m2!1sko!2skr!4v1773417770157!5m2!1sko!2skr" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+      style="border:0;" allowfullscreen="" loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 
   <!-- Contact Info -->
-  <div class="col-md-5 mb-4">
+  <div class="col-lg-5 mb-4">
     <h4>Mobile Embedded AI Systems Lab at Ewha Womans University</h4>
     <hr />
     <address class="mb-4">
