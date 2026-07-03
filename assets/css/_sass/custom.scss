@@ -44,6 +44,27 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: normal;
 }
 
+.news-item {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  column-gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  color: #6c757d;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    row-gap: 0.15rem;
+  }
+}
+
 /* Contact page: keep the map at its original 600x450 size when space
    allows, stack it above the text on narrower screens, and only shrink it
    on very small viewports. */
