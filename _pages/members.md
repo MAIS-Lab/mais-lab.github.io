@@ -51,9 +51,13 @@ permalink: /members/
       <div>
         <h5 class="mb-1">Hyowon An</h5>
         <p class="text-muted mb-2">M.S. Student</p>
-        <p class="mb-0">
+        <p class="mb-1">
           <i class="fas fa-envelope mr-1 text-secondary"></i>
           <a href="mailto:happyanniean@gmail.com">happyanniean@gmail.com</a>
+        </p>
+        <p class="mb-0">
+          <i class="fas fa-pencil-alt mr-1 text-secondary"></i>
+          On-device AI
         </p>
       </div>
     </div>
@@ -73,9 +77,13 @@ permalink: /members/
       <div>
         <h5 class="mb-1">Dahyun Wee</h5>
         <p class="text-muted mb-2">Undergraduate Student</p>
-        <p class="mb-0">
+        <p class="mb-1">
           <i class="fas fa-envelope mr-1 text-secondary"></i>
           <a href="mailto:cac66@ewhain.net">cac66@ewhain.net</a>
+        </p>
+        <p class="mb-0">
+          <i class="fas fa-pencil-alt mr-1 text-secondary"></i>
+          On-device AI
         </p>
       </div>
     </div>
