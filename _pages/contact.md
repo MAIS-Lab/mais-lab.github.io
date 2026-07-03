@@ -20,8 +20,8 @@ permalink: /contact/
     <hr />
     <address class="mb-4">
       <i class="fas fa-map-marker-alt fa-fw text-muted mr-1"></i>
-      Jinseonmi Hall, Room 218<br>
-      <span style="margin-left: 1.5rem;">52 Ewhayeodae-gil, Seodaemun-gu</span><br>
+      ECC B218-1, Ewha Womans University,<br>
+      <span style="margin-left: 1.5rem;">52 Ewhayeodae-gil, Seodaemun-gu,</span><br>
       <span style="margin-left: 1.5rem;">Seoul 03760, Republic of Korea</span>
     </address>
     <address>
