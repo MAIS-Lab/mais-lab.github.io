@@ -13,16 +13,16 @@ permalink: /members/
 ================================================================ -->
 
 <!-- Member: Jiwon Kim -->
-<div class="card mb-4 border-0 shadow">
+<div class="card mb-4 border-0 shadow member-card">
   <div class="card-body">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center member-card-content">
       <img
         src="{{ site.baseurl }}/assets/img/members/jwkim.jpg"
         alt="Jiwon Kim"
-        class="rounded mr-4 flex-shrink-0"
+        class="rounded mr-4 flex-shrink-0 member-photo"
         style="width: 120px; object-fit: cover;"
       />
-      <div>
+      <div class="member-info">
         <h5 class="mb-1">Jiwon Kim, Ph.D.</h5>
         <p class="text-muted mb-2">Assistant Professor</p>
         <p class="mb-1">
@@ -43,16 +43,16 @@ permalink: /members/
 </div>
 
 <!-- Member: Hyowon An -->
-<div class="card mb-4 border-0 shadow">
+<div class="card mb-4 border-0 shadow member-card">
   <div class="card-body">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center member-card-content">
       <img
         src="{{ site.baseurl }}/assets/img/members/g1_hwan.JPG"
         alt="Hyowon An"
-        class="rounded mr-4 flex-shrink-0"
+        class="rounded mr-4 flex-shrink-0 member-photo"
         style="width: 120px; height: 150px; object-fit: cover;"
       />
-      <div>
+      <div class="member-info">
         <h5 class="mb-1">Hyowon An</h5>
         <p class="text-muted mb-2">M.S. Student</p>
         <p class="mb-1">
@@ -69,16 +69,16 @@ permalink: /members/
 </div>
 
 <!-- Member: Dahyun Wee -->
-<div class="card mb-4 border-0 shadow">
+<div class="card mb-4 border-0 shadow member-card">
   <div class="card-body">
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center member-card-content">
       <img
         src="{{ site.baseurl }}/assets/img/members/u1_dhwee.png"
         alt="Dahyun Wee"
-        class="rounded mr-4 flex-shrink-0"
+        class="rounded mr-4 flex-shrink-0 member-photo"
         style="width: 120px; height: 150px; object-fit: cover;"
       />
-      <div>
+      <div class="member-info">
         <h5 class="mb-1">Dahyun Wee</h5>
         <p class="text-muted mb-2">Undergraduate Student</p>
         <p class="mb-1">

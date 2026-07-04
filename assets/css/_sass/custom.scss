@@ -74,6 +74,59 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   height: 450px;
 }
+
+/* Members page: prevent long names/emails/URLs and fixed-size portraits from
+   overflowing on narrow phones while preserving the horizontal card layout on
+   wider screens. */
+.member-card {
+  overflow: hidden;
+}
+
+.member-card-content {
+  min-width: 0;
+}
+
+.member-photo {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.member-info {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.member-info h5,
+.member-info p,
+.member-info a {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+@media (max-width: 575.98px) {
+  .member-card .card-body {
+    padding: 1.1rem;
+  }
+
+  .member-card-content {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .member-photo {
+    width: min(140px, 52vw) !important;
+    height: min(175px, 65vw) !important;
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+
+  .member-info {
+    width: 100%;
+    text-align: left;
+  }
+}
 // .btn-primary{
 //     background-color: #1d4367;
 //     border-color: #1d4367;
