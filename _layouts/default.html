@@ -6,17 +6,13 @@
 {% include head.html %}
 
 <body>
-  {% include navigation.html %} {% include header.html %}
-  <!-- Page Content -->
-  <main class="container mb-5 site-content">
+  {% include navigation.html %}
+  {% include header.html %}
+  <main class="page-body"><div class="wrap">
     {{ content }}
-  </main>
-  <!-- /.container -->
+  </div></main>
   {% include footer.html %}
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{ site.baseurl }}/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/lab-site.js"></script>
 </body>
 
 </html>

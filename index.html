@@ -1,74 +1,139 @@
 ---
-layout: default
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body class="spa-site">
+  {% include navigation.html %}
 
-<div class="row">
-  <div class="col-md-8 mb-5">
-    <h2>Welcome to MES Lab</h2>
-    <hr />
-    <p>We build AI systems that run efficiently on mobile and embedded devices — from hardware to applications.</p>
-    <div class="row mt-3">
-      <div class="col-md-6 mb-3">
-        <p class="text-muted text-uppercase small font-weight-bold mb-2">Software/Hardware Optimization</p>
-        <ul class="list-unstyled">
-          <li class="mb-1">&#x2022; On-device AI</li>
-          <li class="mb-1">&#x2022; Intelligent Energy Storage Systems</li>
-          <li class="mb-1">&#x2022; Battery-less IoT systems</li>
-        </ul>
+  <main id="page-content">
+    <section class="spa-page active" data-page="home" id="home-page">
+      <div class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-title">Mobile Embedded<br>AI Systems Laboratory</h1>
+            <p class="hero-abbr">MES Lab @ Ewha</p>
+            <p class="hero-desc">We build AI systems that run efficiently on mobile and embedded devices—from energy-aware hardware to human-centered applications.</p>
+            <div class="hero-kws">
+              <span class="hero-kw">On-device AI</span>
+              <span class="hero-kw">Mobile Systems</span>
+              <span class="hero-kw">Energy Intelligence</span>
+            </div>
+          </div>
+          <div class="hero-slideshow" aria-label="Lab gallery">
+            <div class="hero-slide active">
+              <div class="hero-slide-img hero-symbol">
+                <img src="{{ site.baseurl }}/assets/img/logo/ewha-symbol-inverted.png" alt="Ewha Womans University symbol">
+              </div>
+              <div class="hero-cap">Ewha Womans University · Seoul, Korea</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 mb-3">
-        <p class="text-muted text-uppercase small font-weight-bold mb-2">Human-Centered Applications</p>
-        <ul class="list-unstyled">
-          <li class="mb-1">&#x2022; Mobile augmented reality</li>
-          <li class="mb-1">&#x2022; Mobile video & web optimization</li>
-          <li class="mb-1">&#x2022; Smart mobility systems</li>
-        </ul>
-      </div>
-    </div>
-    <!-- <a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/research/">Our Research &raquo;</a> -->
 
-    <div class="mt-4 p-3 border-left border-warning" style="background-color: #fffbf0; border-left-width: 4px !important;">
-      <p class="font-weight-bold mb-1" style="color: #c8a000;">&#128276; We are recruiting!</p>
-      <p class="mb-0">We are looking for motivated <strong>Ph.D. and M.S. students</strong> and <strong>undergraduate interns</strong> to join our lab. If you are interested, please <a href="{{ site.baseurl }}/contact/">contact us</a>.</p>
-    </div>
-  </div>
-  {% include sidebar.html %}
-</div>
-<!-- /.row -->
+      <section class="home-sec join-sec">
+        <div class="wrap">
+          <div class="join-strip">
+            <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are looking for self-motivated undergraduate interns and graduate students (M.S./Ph.D.) who want to push the boundaries of embedded AI.</div>
+            <a href="mailto:mes.ewha@gmail.com" class="btn btn-g">Contact</a>
+          </div>
+        </div>
+      </section>
 
-<div class="row">
-  <div class="col-12 mb-3">
-    <h2>News</h2>
-    <hr />
-  </div>
-</div>
+      <section class="home-sec updates-sec">
+        <div class="wrap">
+          <div class="sec-eye">Latest Updates</div>
+          <h2 class="sec-h2">Recent <em>News</em></h2>
+          <div class="news-list">
+            <div class="news-row"><time class="news-date">2026.05</time><div class="news-cat"><span class="pill pg">NEWS</span></div><div class="news-text">Jiwon will serve on the TPC for ACM SenSys 2027.</div></div>
+            <div class="news-row"><time class="news-date">2026.01</time><div class="news-cat"><span class="pill pm">PAPER</span></div><div class="news-text">“VFM in Your Hands” was featured as a Research Highlight in ACM GetMobile.</div></div>
+            <div class="news-row"><time class="news-date">2026.01</time><div class="news-cat"><span class="pill pm">PAPER</span></div><div class="news-text">“Phoenix” has been accepted to ACM TECS.</div></div>
+            <div class="news-row"><time class="news-date">2026.01</time><div class="news-cat"><span class="pill py">TALK</span></div><div class="news-text">Jiwon gave an invited talk at TU Berlin.</div></div>
+            <div class="news-row"><time class="news-date">2025.12</time><div class="news-cat"><span class="pill pg">NEWS</span></div><div class="news-text">Jiwon will serve on the TPC for ACM EMSOFT 2026.</div></div>
+          </div>
+          <div class="view-all-row"><a href="#news" class="btn btn-og">View All News</a></div>
+        </div>
+      </section>
 
-<div class="row">
-  <div class="col-12">
-    <div class="news-item">
-      <span class="news-date">May 2026</span>
-      <p class="mb-0">Jiwon will be serving on the TPC for ACM SenSys 2027.</p>
-    </div>
-    <div class="news-item">
-      <span class="news-date">Jan 2026</span>
-      <p class="mb-0">Our work "VFM in Your Hands: Optimizing Real-Time Scene Understanding for Mobile Augmented Reality" has been featured as a Research Highlight in ACM GetMobile.</p>
-    </div>
-    <div class="news-item">
-      <span class="news-date">Jan 2026</span>
-      <p class="mb-0">The paper "Phoenix: Thermal-Aware On-Device Inference of Multi-Instance DNNs for Mobile Video Applications" has been accepted to ACM TECS!</p>
-    </div>
-    <div class="news-item">
-      <span class="news-date">Jan 2026</span>
-      <p class="mb-0">Jiwon delivered a talk titled "Hierarchical Federated Learning for 6G Edge Computing" at TU Berlin (TKN Group led by Prof. Falko Dressler).</p>
-    </div>
-    <div class="news-item">
-      <span class="news-date">Dec 2025</span>
-      <p class="mb-0">Jiwon will be serving on the TPC for ACM EMSOFT 2026.</p>
-    </div>
-    <div class="news-item">
-      <span class="news-date">Nov 2025</span>
-      <p class="mb-0">Jiwon will be serving on the TPC for ACM MobiSys 2026.</p>
-    </div>
-  </div>
-</div>
-<!-- /.row -->
+      <section class="home-sec highlight-sec">
+        <div class="wrap">
+          <div class="sec-eye">About the Lab</div>
+          <h2 class="sec-h2">Research <em>Highlight</em></h2>
+          <div class="highlight-grid">
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-green"><span>01</span><strong>On-device<br>AI</strong></a>
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-mint"><span>02</span><strong>Intelligent Energy<br>Storage Systems</strong></a>
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-blue"><span>03</span><strong>Battery-less<br>IoT Systems</strong></a>
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-lime"><span>04</span><strong>Human-centered<br>Applications</strong></a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="spa-page" data-page="members" id="members-page" hidden>
+      <div class="page-hd"><div class="wrap"><h1>Members</h1><p class="page-sub">People at MES Lab</p></div></div>
+      <div class="mem-body"><div class="wrap">
+        <div class="pi-block">
+          <div class="photo-slot pi-photo-slot"><img src="{{ site.baseurl }}/assets/img/members/seonghoon.png" alt="Seonghoon Park"></div>
+          <div>
+            <h2 class="pi-name">Seonghoon Park, Ph.D.</h2>
+            <div class="pi-role">Assistant Professor</div>
+            <div class="pi-dept">Ewha Womans University</div>
+            <div class="pi-meta"><span><strong>Office</strong> ECC B218-1</span><span><strong>Tel</strong> +82-2-3277-5041</span><span><strong>Email</strong> seonghoon.park@yonsei.ac.kr</span></div>
+            <p class="pi-bio">Research in efficient mobile and embedded AI systems, spanning hardware-aware optimization, on-device intelligence, and human-centered applications.</p>
+            <div class="pi-links"><a href="mailto:seonghoon.park@yonsei.ac.kr" class="pi-link">Email</a><a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a></div>
+          </div>
+        </div>
+        <div class="grp">
+          <h2 class="grp-title">Current Members <span class="grp-n">01</span></h2>
+          <div class="mem-grid">
+            <article class="mem-card">
+              <div class="photo-slot mem-photo-slot"><img src="{{ site.baseurl }}/assets/img/members/gunjoong.png" alt="Gunjoong Kim"></div>
+              <div class="mem-info"><h3 class="mem-name">Gunjoong Kim</h3><div class="mem-role">Ph.D. Student</div><div class="mem-focus">Mobile immersive computing</div><a class="mem-email" href="mailto:gunjoongkim@yonsei.ac.kr">gunjoongkim@yonsei.ac.kr</a></div>
+            </article>
+            <article class="mem-card member-placeholder"><div class="photo-slot mem-photo-slot"><span>Add photo</span></div><div class="mem-info"><h3 class="mem-name">New Member</h3><div class="mem-role">Student</div><div class="mem-focus">Research interests</div></div></article>
+          </div>
+        </div>
+      </div></div>
+    </section>
+
+    <section class="spa-page" data-page="publications" id="publications-page" hidden>
+      <div class="page-hd"><div class="wrap"><h1>Publications</h1><p class="page-sub">Research output from MES Lab</p></div></div>
+      <div class="pub-body"><div class="wrap">
+        <div class="filters" data-filter-group="publications"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="conference">Conference</button><button class="fbtn" data-filter="journal">Journal</button></div>
+        {% for group in site.data.publications.full %}
+        <section class="pub-year-grp">
+          <h2 class="pub-year-lbl">{{ group.year }}</h2>
+          <div class="pub-list">
+          {% for paper in group.papers %}
+            <article class="pub-item" data-category="{% if paper.venue contains 'Journal' or paper.abbr == 'TECS' %}journal{% else %}conference{% endif %}">
+              <div class="pub-thumb-slot"><span>{{ paper.abbr }}</span></div>
+              <div><h3 class="pub-title">{{ paper.title }}</h3><div class="pub-authors">{{ paper.authors }}</div><div class="pub-venue"><span class="pub-venue-text">{{ paper.venue }}</span></div><div class="pub-links">{% if paper.pdf != '' %}<a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="pub-lnk">Paper</a>{% endif %}</div></div>
+            </article>
+          {% endfor %}
+          </div>
+        </section>
+        {% endfor %}
+      </div></div>
+    </section>
+
+    <section class="spa-page" data-page="news" id="news-page" hidden>
+      <div class="page-hd"><div class="wrap"><h1>News</h1><p class="page-sub">Updates from MES Lab</p></div></div>
+      <div class="news-page-body"><div class="wrap">
+        <div class="filters" data-filter-group="news"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="paper">Publications</button><button class="fbtn" data-filter="talk">Talks</button><button class="fbtn" data-filter="service">Service</button></div>
+        <div class="news-full-list">
+          <article class="news-full-item" data-category="service"><time class="nf-date">2026.05</time><div class="nf-cat"><span class="pill pg">SERVICE</span></div><div class="nf-content">Jiwon will serve on the TPC for ACM SenSys 2027.</div></article>
+          <article class="news-full-item" data-category="paper"><time class="nf-date">2026.01</time><div class="nf-cat"><span class="pill pm">PAPER</span></div><div class="nf-content">“VFM in Your Hands” was featured as a Research Highlight in ACM GetMobile.</div></article>
+          <article class="news-full-item" data-category="paper"><time class="nf-date">2026.01</time><div class="nf-cat"><span class="pill pm">PAPER</span></div><div class="nf-content">“Phoenix” has been accepted to ACM TECS.</div></article>
+          <article class="news-full-item" data-category="talk"><time class="nf-date">2026.01</time><div class="nf-cat"><span class="pill py">TALK</span></div><div class="nf-content">Jiwon presented “Hierarchical Federated Learning for 6G Edge Computing” at TU Berlin.</div></article>
+          <article class="news-full-item" data-category="service"><time class="nf-date">2025.12</time><div class="nf-cat"><span class="pill pg">SERVICE</span></div><div class="nf-content">Jiwon will serve on the TPC for ACM EMSOFT 2026.</div></article>
+          <article class="news-full-item" data-category="service"><time class="nf-date">2025.11</time><div class="nf-cat"><span class="pill pg">SERVICE</span></div><div class="nf-content">Jiwon will serve on the TPC for ACM MobiSys 2026.</div></article>
+        </div>
+      </div></div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+  <script src="{{ site.baseurl }}/assets/js/lab-site.js"></script>
+</body>
+</html>
