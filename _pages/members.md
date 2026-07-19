@@ -4,7 +4,7 @@ title: Members
 permalink: /members/
 ---
 
-<h2>Current Members</h2>
+<h2>Professor</h2>
 <hr />
 
 <!-- ===================== Member Card Template =====================
@@ -42,6 +42,9 @@ permalink: /members/
   </div>
 </div>
 
+
+<h2>Current Members</h2>
+<hr />
 <!-- Member: Hyowon An -->
 <div class="card mb-4 border-0 shadow member-card">
   <div class="card-body">
