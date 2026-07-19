@@ -1,0 +1,11 @@
+# Professor information stays in index.html.
+# Add student and researcher groups below.
+groups:
+  - title: Current Members
+    number: "01"
+    members:
+      - name: Gunjoong Kim
+        role: Ph.D. Student
+        focus: Mobile immersive computing
+        email: gunjoongkim@yonsei.ac.kr
+        photo: assets/img/members/gunjoong.png

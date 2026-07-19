@@ -17,8 +17,8 @@ layout: null
             <p class="hero-desc">We build intelligent mobile systems that make AI efficient, adaptive, and practical—from on-device inference to human-centered applications.</p>
             <div class="hero-kws">
               <span class="hero-kw">On-device AI</span>
-              <span class="hero-kw">Mobile Systems</span>
-              <span class="hero-kw">Energy Intelligence</span>
+              <span class="hero-kw">Mobile Immersive Computing</span>
+              <span class="hero-kw">Energy-aware Mobile Systems</span>
             </div>
           </div>
           <div class="hero-slideshow" aria-label="Lab gallery">
@@ -46,11 +46,13 @@ layout: null
           <div class="sec-eye">Latest Updates</div>
           <h2 class="sec-h2">Recent News</h2>
           <div class="news-list">
-            <div class="news-row"><time class="news-date">2026.05</time><div class="news-cat"><span class="pill pg">NEWS</span></div><div class="news-text">Jiwon will serve on the TPC for ACM SenSys 2027.</div></div>
-            <div class="news-row"><time class="news-date">2026.01</time><div class="news-cat"><span class="pill pm">PAPER</span></div><div class="news-text">“VFM in Your Hands” was featured as a Research Highlight in ACM GetMobile.</div></div>
-            <div class="news-row"><time class="news-date">2026.01</time><div class="news-cat"><span class="pill pm">PAPER</span></div><div class="news-text">“Phoenix” has been accepted to ACM TECS.</div></div>
-            <div class="news-row"><time class="news-date">2026.01</time><div class="news-cat"><span class="pill py">TALK</span></div><div class="news-text">Jiwon gave an invited talk at TU Berlin.</div></div>
-            <div class="news-row"><time class="news-date">2025.12</time><div class="news-cat"><span class="pill pg">NEWS</span></div><div class="news-text">Jiwon will serve on the TPC for ACM EMSOFT 2026.</div></div>
+            {% for item in site.data.news limit: 5 %}
+            <div class="news-row">
+              <time class="news-date">{{ item.date }}</time>
+              <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'talk' %}py{% else %}pg{% endcase %}">{{ item.label }}</span></div>
+              <div class="news-text">{{ item.title }}</div>
+            </div>
+            {% endfor %}
           </div>
           <div class="view-all-row"><a href="#news" class="btn btn-og">View All News</a></div>
         </div>
@@ -79,21 +81,29 @@ layout: null
             <h2 class="pi-name">Seonghoon Park, Ph.D.</h2>
             <div class="pi-role">Assistant Professor</div>
             <div class="pi-dept">Yonsei University</div>
-            <div class="pi-meta"><span><strong>Campus</strong> Sinchon, Seoul</span><span><strong>Email</strong> seonghoon.park@yonsei.ac.kr</span></div>
+            <div class="pi-meta"><span><strong>Campus</strong> Seoul</span><span><strong>Email</strong> seonghoon.park@yonsei.ac.kr</span></div>
             <p class="pi-bio">Research in efficient mobile and embedded AI systems, spanning hardware-aware optimization, on-device intelligence, and human-centered applications.</p>
             <div class="pi-links"><a href="mailto:seonghoon.park@yonsei.ac.kr" class="pi-link">Email</a><a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a></div>
           </div>
         </div>
+        {% for group in site.data.members.groups %}
         <div class="grp">
-          <h2 class="grp-title">Current Members <span class="grp-n">01</span></h2>
+          <h2 class="grp-title">{{ group.title }}{% if group.number %}<span class="grp-n">{{ group.number }}</span>{% endif %}</h2>
           <div class="mem-grid">
-            <article class="mem-card">
-              <div class="photo-slot mem-photo-slot"><img src="{{ site.baseurl }}/assets/img/members/gunjoong.png" alt="Gunjoong Kim"></div>
-              <div class="mem-info"><h3 class="mem-name">Gunjoong Kim</h3><div class="mem-role">Ph.D. Student</div><div class="mem-focus">Mobile immersive computing</div><a class="mem-email" href="mailto:gunjoongkim@yonsei.ac.kr">gunjoongkim@yonsei.ac.kr</a></div>
+            {% for member in group.members %}
+            <article class="mem-card{% unless member.photo %} member-placeholder{% endunless %}">
+              <div class="photo-slot mem-photo-slot">{% if member.photo %}<img src="{{ site.baseurl }}/{{ member.photo }}" alt="{{ member.name }}">{% else %}<span>Add photo</span>{% endif %}</div>
+              <div class="mem-info">
+                <h3 class="mem-name">{% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
+                <div class="mem-role">{{ member.role }}</div>
+                {% if member.focus %}<div class="mem-focus">{{ member.focus }}</div>{% endif %}
+                {% if member.email %}<a class="mem-email" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
+              </div>
             </article>
-            <article class="mem-card member-placeholder"><div class="photo-slot mem-photo-slot"><span>Add photo</span></div><div class="mem-info"><h3 class="mem-name">New Member</h3><div class="mem-role">Student</div><div class="mem-focus">Research interests</div></div></article>
+            {% endfor %}
           </div>
         </div>
+        {% endfor %}
       </div></div>
     </section>
 
@@ -122,12 +132,13 @@ layout: null
       <div class="news-page-body"><div class="wrap">
         <div class="filters" data-filter-group="news"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="paper">Publications</button><button class="fbtn" data-filter="talk">Talks</button><button class="fbtn" data-filter="service">Service</button></div>
         <div class="news-full-list">
-          <article class="news-full-item" data-category="service"><time class="nf-date">2026.05</time><div class="nf-cat"><span class="pill pg">SERVICE</span></div><div class="nf-content">Jiwon will serve on the TPC for ACM SenSys 2027.</div></article>
-          <article class="news-full-item" data-category="paper"><time class="nf-date">2026.01</time><div class="nf-cat"><span class="pill pm">PAPER</span></div><div class="nf-content">“VFM in Your Hands” was featured as a Research Highlight in ACM GetMobile.</div></article>
-          <article class="news-full-item" data-category="paper"><time class="nf-date">2026.01</time><div class="nf-cat"><span class="pill pm">PAPER</span></div><div class="nf-content">“Phoenix” has been accepted to ACM TECS.</div></article>
-          <article class="news-full-item" data-category="talk"><time class="nf-date">2026.01</time><div class="nf-cat"><span class="pill py">TALK</span></div><div class="nf-content">Jiwon presented “Hierarchical Federated Learning for 6G Edge Computing” at TU Berlin.</div></article>
-          <article class="news-full-item" data-category="service"><time class="nf-date">2025.12</time><div class="nf-cat"><span class="pill pg">SERVICE</span></div><div class="nf-content">Jiwon will serve on the TPC for ACM EMSOFT 2026.</div></article>
-          <article class="news-full-item" data-category="service"><time class="nf-date">2025.11</time><div class="nf-cat"><span class="pill pg">SERVICE</span></div><div class="nf-content">Jiwon will serve on the TPC for ACM MobiSys 2026.</div></article>
+          {% for item in site.data.news %}
+          <article class="news-full-item" data-category="{{ item.category }}">
+            <time class="nf-date">{{ item.date }}</time>
+            <div class="nf-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'talk' %}py{% else %}pg{% endcase %}">{{ item.label }}</span></div>
+            <div class="nf-content">{{ item.title }}</div>
+          </article>
+          {% endfor %}
         </div>
       </div></div>
     </section>

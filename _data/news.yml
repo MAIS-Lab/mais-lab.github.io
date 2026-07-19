@@ -1,0 +1,30 @@
+# Add new entries at the top. Supported categories: paper, talk, service.
+- date: "2026.05"
+  category: service
+  label: Service
+  title: Jiwon will serve on the TPC for ACM SenSys 2027.
+
+- date: "2026.01"
+  category: paper
+  label: Paper
+  title: '"VFM in Your Hands" was featured as a Research Highlight in ACM GetMobile.'
+
+- date: "2026.01"
+  category: paper
+  label: Paper
+  title: '"Phoenix" has been accepted to ACM TECS.'
+
+- date: "2026.01"
+  category: talk
+  label: Talk
+  title: 'Jiwon presented "Hierarchical Federated Learning for 6G Edge Computing" at TU Berlin.'
+
+- date: "2025.12"
+  category: service
+  label: Service
+  title: Jiwon will serve on the TPC for ACM EMSOFT 2026.
+
+- date: "2025.11"
+  category: service
+  label: Service
+  title: Jiwon will serve on the TPC for ACM MobiSys 2026.
