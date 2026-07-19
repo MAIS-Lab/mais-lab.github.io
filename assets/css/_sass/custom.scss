@@ -160,8 +160,8 @@ a { color: inherit; }
 .pub-year-lbl { margin: 0 0 1rem; padding-bottom: .5rem; color: var(--grey); border-bottom: 2px solid var(--line); font: 400 1.5rem/1.2 "PT Serif", serif; }
 .pub-item { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: start; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
 .pub-item:first-child { border-top: 1px solid var(--line); }
-.pub-thumb-slot { width: 200px; aspect-ratio: 16/9; display: grid; place-items: center; overflow: hidden; background: #102447; border: 1px solid var(--line); border-radius: 5px; }
-.pub-thumb-slot img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.pub-thumb-slot { position: relative; width: 200px; aspect-ratio: 16/9; overflow: hidden; background: #102447; border: 1px solid var(--line); border-radius: 5px; }
+.pub-thumb-slot img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; }
 .pub-thumb-slot .pub-default-logo { padding: .65rem; object-fit: contain; }
 .pub-copy { min-width: 0; }
 .pub-title { margin: 0 0 .3rem; color: var(--ink); font: 600 .93rem/1.45 "Google Sans Flex", sans-serif; }
