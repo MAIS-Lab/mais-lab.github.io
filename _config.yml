@@ -1,10 +1,10 @@
-title: MES Lab @ Ewha
-description: Mobile Embedded AI Systems Lab at Ewha Womans University
+title: MAIS Lab @ Yonsei
+description: Mobile AI and Systems Lab at Yonsei University
 
 # disabled because we are using a custom domain
 #baseurl: /business-frontpage 
 
-color-scheme: "#00643e" # Ewha Womans University green (matched from logo)
+color-scheme: "#003876" # Yonsei royal blue
 
 sass:
   sass_dir: /assets/css/_sass
