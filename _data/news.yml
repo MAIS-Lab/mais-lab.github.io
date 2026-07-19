@@ -1,30 +1,86 @@
-# Add new entries at the top. Supported categories: paper, talk, service.
-- date: "2026.05"
+# Add new entries at the top.
+# Supported categories: paper, award, service, position.
+- date: "2026.09"
+  category: position
+  label: Position
+  title: Seonghoon will join Yonsei University as an Assistant Professor in the Department of Computer Science and Engineering!
+
+- date: "2026.07"
+  category: paper
+  label: Paper
+  title: '"DynaStitch" has been accepted to IEEE/ACM EMSOFT 2026.'
+
+- date: "2026.04"
   category: service
   label: Service
-  title: Jiwon will serve on the TPC for ACM SenSys 2027.
+  title: Seonghoon will serve on the TPC for ACM ImmerCom Workshop 2026, which will be held in conjunction with ACM MobiCom 2026.
+
+- date: "2026.04"
+  category: service
+  label: Service
+  title: Seonghoon will serve on the TPC for IEEE INFOCOM 2027.
+
+- date: "2026.02"
+  category: paper
+  label: Paper
+  title: '"viNPU" has been accepted to ACM EuroSys 2026.'
 
 - date: "2026.01"
   category: paper
-  label: Paper
-  title: '"VFM in Your Hands" was featured as a Research Highlight in ACM GetMobile.'
+  label: Highlight
+  title: '"3DGS on Your Phone" has been featured as a Research Highlight in ACM GetMobile.'
 
 - date: "2026.01"
   category: paper
+  label: Highlight
+  title: '"VFM in Your Hands" has been featured as a Research Highlight in ACM GetMobile.'
+
+- date: "2025.10"
+  category: service
+  label: Service
+  title: Seonghoon will serve on the TPC for ACM MobiSys 2026.
+
+- date: "2025.10"
+  category: position
+  label: Position
+  title: Seonghoon has joined Virginia Tech as a Postdoctoral Associate.
+
+- date: "2025.08"
+  category: paper
   label: Paper
-  title: '"Phoenix" has been accepted to ACM TECS.'
+  title: '"Vega" and "EOS" have been accepted to ACM MobiCom 2025.'
 
-- date: "2026.01"
-  category: talk
-  label: Talk
-  title: 'Jiwon presented "Hierarchical Federated Learning for 6G Edge Computing" at TU Berlin.'
+- date: "2025.08"
+  category: paper
+  label: Journal
+  title: '"DASH" has been accepted to the ACM TECS journal.'
 
-- date: "2025.12"
-  category: service
-  label: Service
-  title: Jiwon will serve on the TPC for ACM EMSOFT 2026.
+- date: "2025.07"
+  category: paper
+  label: Paper
+  title: '"Ember" has been accepted to ACM EMSOFT 2025.'
 
-- date: "2025.11"
-  category: service
-  label: Service
-  title: Jiwon will serve on the TPC for ACM MobiSys 2026.
+- date: "2025.06"
+  category: award
+  label: Award
+  title: '"ARIA" received the Best Paper Award 🏆 from ACM MobiSys 2025!'
+
+- date: "2025.04"
+  category: paper
+  label: Paper
+  title: '"ARIA" has been accepted to ACM MobiSys 2025.'
+
+- date: "2023.12"
+  category: paper
+  label: Paper
+  title: '"Crow API" has been accepted to IEEE INFOCOM 2024.'
+
+- date: "2023.05"
+  category: paper
+  label: Paper
+  title: '"OmniLive" has been accepted to ACM MobiSys 2023.'
+
+- date: "2022.12"
+  category: paper
+  label: Paper
+  title: '"Vulture" has been accepted to IEEE INFOCOM 2023.'

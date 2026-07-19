@@ -7,6 +7,8 @@
 # --- full ---
 # All publications listed by year. Add new year blocks as needed.
 # Fields: year, papers (title, authors, venue, abbr, pdf)
+# Optional: thumbnail, video, demo, teaser, tags
+# thumbnail paths are relative to the site root, e.g. assets/img/publications/paper.jpg
 #
 # Leave pdf as "" if not available.
 
@@ -28,13 +30,13 @@ full:
     papers:
       - title: "DynaStitch: Dynamic ViT Inference via Neural Stitching for Resource-Constrained Edge Devices"
         authors: "Jiwon Kim, Luca Mottola, Jeho Lee, Seonghoon Park, Hojung Cha, and Thiemo Voigt"
-        venue: "IEEE/ACM International Conference on Embedded Software (EMSOFT 2026)"
+        venue: "The 26th IEEE/ACM International Conference on Embedded Software"
         abbr: "EMSOFT"
         tags: ["to appear"]
 
       - title: "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs"
         authors: "Jeho Lee, Gunjoong Kim, Chanyoung Jung, Jaehee Kim, Seonghoon Park, and Hojung Cha"
-        venue: "The 21st European Conference on Computer Systems (EuroSys 2026)"
+        venue: "The 21st European Conference on Computer Systems"
         abbr: "EuroSys"
         pdf: "https://dl.acm.org/doi/10.1145/3767295.3803619"
 
@@ -56,14 +58,14 @@ full:
     papers:
       - title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
         authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
-        venue: "The 31st Annual International Conference on Mobile Computing and Networking (MobiCom 2025)"
+        venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765252"
         video: "https://youtu.be/U9J5Cax3eL0"
 
       - title: "Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting"
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
-        venue: "The 31st Annual International Conference on Mobile Computing and Networking (MobiCom 2025)"
+        venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765267"
         video: "https://youtu.be/rLd3ajRILws"
@@ -76,13 +78,13 @@ full:
 
       - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
-        venue: "ACM SIGBED International Conference on Embedded Software (EMSOFT 2025); ACM Transactions on Embedded Computing Systems, Vol. 24, No. 5s"
+        venue: "The 25th International Conference on Embedded Software; ACM Transactions on Embedded Computing Systems, Vol. 24, No. 5s"
         abbr: "EMSOFT"
         pdf: "https://dl.acm.org/doi/10.1145/3757918"
 
       - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
         authors: "Chanyoung Jung*, Jeho Lee*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
-        venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2025)"
+        venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
         pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
         video: "https://youtu.be/kxos6AXShIU"
@@ -92,7 +94,7 @@ full:
     papers:
       - title: "Vulture: Cross-Device Web Experience with Fine-Grained Graphical User Interface Distribution"
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
-        venue: "IEEE International Conference on Computer Communications (INFOCOM 2024)"
+        venue: "IEEE INFOCOM 2024 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         pdf: "https://ieeexplore.ieee.org/document/10621433"
         demo: "https://youtu.be/PY3IzOVTtBU"
@@ -101,14 +103,14 @@ full:
     papers:
       - title: "OmniLive: Super-Resolution Enhanced 360° Video Live Streaming for Mobile Devices"
         authors: "Seonghoon Park*, Yeonwoo Cho*, Hyungchol Jun, Jeho Lee, and Hojung Cha"
-        venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2023)"
+        venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
         pdf: "https://dl.acm.org/doi/10.1145/3581791.3596851"
         teaser: "https://youtu.be/GfY0s3xcvb4"
 
       - title: "Crow API: Cross-device I/O Sharing in Web Applications"
         authors: "Seonghoon Park, Jeho Lee, and Hojung Cha"
-        venue: "IEEE International Conference on Computer Communications (INFOCOM 2023)"
+        venue: "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         pdf: "https://ieeexplore.ieee.org/document/10228950/"
 
@@ -124,13 +126,13 @@ full:
     papers:
       - title: "WebMythBusters: An In-depth Study of Mobile Web Experience"
         authors: "Seonghoon Park, Yonghun Choi, and Hojung Cha"
-        venue: "IEEE International Conference on Computer Communications (INFOCOM 2021)"
+        venue: "IEEE INFOCOM 2021 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         pdf: "https://ieeexplore.ieee.org/document/9488671"
 
       - title: "GAZEL: Runtime Gaze Tracking for Smartphones"
         authors: "Joonbeom Park, Seonghoon Park, and Hojung Cha"
-        venue: "IEEE International Conference on Pervasive Computing and Communications (PerCom 2021)"
+        venue: "2021 IEEE International Conference on Pervasive Computing and Communications"
         abbr: "PerCom"
         pdf: "https://ieeexplore.ieee.org/document/9439113"
 
@@ -138,14 +140,14 @@ full:
     papers:
       - title: "Optimizing Energy Efficiency of Browsers in Energy-Aware Scheduling-Enabled Mobile Devices"
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
-        venue: "The 25th Annual International Conference on Mobile Computing and Networking (MobiCom 2019)"
+        venue: "The 25th Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
         pdf: "https://dl.acm.org/doi/10.1145/3300061.3345449"
         video: "https://youtu.be/Kln7XbRSBX8"
 
       - title: "Graphics-Aware Power Governing for Mobile Devices"
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
-        venue: "The 17th Annual International Conference on Mobile Systems, Applications and Services (MobiSys 2019)"
+        venue: "The 17th Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
         pdf: "https://dl.acm.org/doi/10.1145/3307334.3326075"
         video: "https://youtu.be/zUNttnaj5eY"

@@ -19,6 +19,7 @@ layout: null
               <span class="hero-kw">On-device AI</span>
               <span class="hero-kw">Mobile Immersive Computing</span>
               <span class="hero-kw">Energy-aware Mobile Systems</span>
+              <span class="hero-kw">Cross-device Computing</span>
             </div>
           </div>
           <div class="hero-slideshow" aria-label="Lab gallery">
@@ -26,7 +27,7 @@ layout: null
               <div class="hero-slide-img hero-symbol">
                 <img src="{{ site.baseurl }}/mais-logo.png" alt="MAIS Lab logo">
               </div>
-              <div class="hero-cap">Yonsei University · Seoul, Korea</div>
+              <div class="hero-cap">Yonsei University, Seoul, South Korea</div>
             </div>
           </div>
         </div>
@@ -35,7 +36,7 @@ layout: null
       <section class="home-sec join-sec">
         <div class="wrap">
           <div class="join-strip">
-            <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are looking for self-motivated undergraduate interns and graduate students (M.S./Ph.D.) who want to push the boundaries of embedded AI.</div>
+            <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are looking for highly motivated undergraduate interns and graduate students (M.S./Ph.D.) who want to push the boundaries of embedded AI.</div>
             <a href="mailto:seonghoon.park@yonsei.ac.kr" class="btn btn-g">Contact</a>
           </div>
         </div>
@@ -49,7 +50,7 @@ layout: null
             {% for item in site.data.news limit: 5 %}
             <div class="news-row">
               <time class="news-date">{{ item.date }}</time>
-              <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'talk' %}py{% else %}pg{% endcase %}">{{ item.label }}</span></div>
+              <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'award' %}pa{% when 'position' %}pb{% else %}pg{% endcase %}">{{ item.label }}</span></div>
               <div class="news-text">{{ item.title }}</div>
             </div>
             {% endfor %}
@@ -64,9 +65,9 @@ layout: null
           <h2 class="sec-h2">Research Highlights</h2>
           <div class="highlight-grid">
             <a href="{{ site.baseurl }}/research/" class="highlight-card tone-royal"><span>01</span><strong>On-device<br>AI</strong></a>
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-mint"><span>02</span><strong>Intelligent Energy<br>Storage Systems</strong></a>
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-blue"><span>03</span><strong>Battery-less<br>IoT Systems</strong></a>
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-lime"><span>04</span><strong>Human-centered<br>Applications</strong></a>
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-mint"><span>02</span><strong>Mobile<br>Immersive Computing</strong></a>
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-blue"><span>03</span><strong>Energy-aware<br>Mobile Systems</strong></a>
+            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-lime"><span>04</span><strong>Cross-device<br>Computing</strong></a>
           </div>
         </div>
       </section>
@@ -80,9 +81,8 @@ layout: null
           <div>
             <h2 class="pi-name">Seonghoon Park, Ph.D.</h2>
             <div class="pi-role">Assistant Professor</div>
-            <div class="pi-dept">Yonsei University</div>
-            <div class="pi-meta"><span><strong>Campus</strong> Seoul</span><span><strong>Email</strong> seonghoon.park@yonsei.ac.kr</span></div>
-            <p class="pi-bio">Research in efficient mobile and embedded AI systems, spanning hardware-aware optimization, on-device intelligence, and human-centered applications.</p>
+            <div class="pi-dept">Dept. of Computer Science and Engineering, Yonsei University</div>
+            <div class="pi-meta"><span><strong>Office:</strong> TODO</span><span><strong>Tel:</strong> TODO</span><span><strong>Email:</strong> seonghoon.park AT yonsei.ac.kr</span></div>
             <div class="pi-links"><a href="mailto:seonghoon.park@yonsei.ac.kr" class="pi-link">Email</a><a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a></div>
           </div>
         </div>
@@ -116,9 +116,28 @@ layout: null
           <h2 class="pub-year-lbl">{{ group.year }}</h2>
           <div class="pub-list">
           {% for paper in group.papers %}
-            <article class="pub-item" data-category="{% if paper.venue contains 'Journal' or paper.abbr == 'TECS' %}journal{% else %}conference{% endif %}">
-              <div class="pub-thumb-slot"><span>{{ paper.abbr }}</span></div>
-              <div><h3 class="pub-title">{{ paper.title }}</h3><div class="pub-authors">{{ paper.authors }}</div><div class="pub-venue"><span class="pub-venue-text">{{ paper.venue }}</span></div><div class="pub-links">{% if paper.pdf != '' %}<a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="pub-lnk">Paper</a>{% endif %}</div></div>
+            <article class="pub-item" data-category="{% if paper.venue contains 'Journal' or paper.abbr == 'TECS' or paper.abbr == 'TMC' or paper.abbr == 'GetMobile' %}journal{% else %}conference{% endif %}">
+              <div class="pub-thumb-slot">
+                {% if paper.thumbnail %}
+                <img src="{{ site.baseurl }}/{{ paper.thumbnail }}" alt="Thumbnail for {{ paper.title }}" loading="lazy">
+                {% else %}
+                <img src="{{ site.baseurl }}/mais-logo.png" alt="" class="pub-default-logo" loading="lazy">
+                {% endif %}
+              </div>
+              <div class="pub-copy">
+                <h3 class="pub-title">{{ paper.title }}</h3>
+                <div class="pub-authors">{{ paper.authors }}</div>
+                <div class="pub-venue">
+                  <div class="pub-venue-row"><span class="pub-abbr">{{ paper.abbr }}</span><span class="pub-venue-text">{{ paper.venue }}</span></div>
+                </div>
+                <div class="pub-links">
+                  {% if paper.pdf and paper.pdf != '' %}<a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="pub-lnk">Paper</a>{% endif %}
+                  {% if paper.video %}<a href="{{ paper.video }}" target="_blank" rel="noopener" class="pub-lnk">Video</a>{% endif %}
+                  {% if paper.demo %}<a href="{{ paper.demo }}" target="_blank" rel="noopener" class="pub-lnk">Demo</a>{% endif %}
+                  {% if paper.teaser %}<a href="{{ paper.teaser }}" target="_blank" rel="noopener" class="pub-lnk">Teaser</a>{% endif %}
+                  {% for tag in paper.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}
+                </div>
+              </div>
             </article>
           {% endfor %}
           </div>
@@ -130,12 +149,12 @@ layout: null
     <section class="spa-page" data-page="news" id="news-page" hidden>
       <div class="page-hd"><div class="wrap"><h1>News</h1><p class="page-sub">Updates from MAIS Lab</p></div></div>
       <div class="news-page-body"><div class="wrap">
-        <div class="filters" data-filter-group="news"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="paper">Publications</button><button class="fbtn" data-filter="talk">Talks</button><button class="fbtn" data-filter="service">Service</button></div>
+        <div class="filters" data-filter-group="news"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="paper">Publications</button><button class="fbtn" data-filter="award">Awards</button><button class="fbtn" data-filter="service">Service</button><button class="fbtn" data-filter="position">Positions</button></div>
         <div class="news-full-list">
           {% for item in site.data.news %}
           <article class="news-full-item" data-category="{{ item.category }}">
             <time class="nf-date">{{ item.date }}</time>
-            <div class="nf-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'talk' %}py{% else %}pg{% endcase %}">{{ item.label }}</span></div>
+            <div class="nf-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'award' %}pa{% when 'position' %}pb{% else %}pg{% endcase %}">{{ item.label }}</span></div>
             <div class="nf-content">{{ item.title }}</div>
           </article>
           {% endfor %}
