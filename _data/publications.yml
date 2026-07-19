@@ -35,11 +35,10 @@ full:
         venues:
           - type: conference
             abbr: "EMSOFT"
-            name: "The 26th IEEE/ACM International Conference on Embedded Software"
+            name: "The 26th IEEE/ACM International Conference on Embedded Software (to appear)"
           - type: journal
             abbr: "TECS"
             name: "ACM Transactions on Embedded Computing Systems (to appear)"
-        tags: ["to appear"]
 
       - title: "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs"
         authors: "Jeho Lee, Gunjoong Kim, Chanyoung Jung, Jaehee Kim, Seonghoon Park, and Hojung Cha"
@@ -54,7 +53,7 @@ full:
         abbr: "GetMobile"
         type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3810919.3810924"
-        tags: ["invited research highlight"]
+        tags: ["Invited Research Highlight"]
 
       - title: "VFM in Your Hands: Optimizing Real-Time Scene Understanding for Mobile Augmented Reality"
         authors: "Jeho Lee*, Chanyoung Jung*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
@@ -62,7 +61,7 @@ full:
         abbr: "GetMobile"
         type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3793236.3793246"
-        tags: ["invited research highlight"]
+        tags: ["Invited Research Highlight"]
 
   - year: 2025
     papers:
@@ -108,7 +107,7 @@ full:
         type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
         video: "https://youtu.be/kxos6AXShIU"
-        tags: ["best paper award"]
+        tags: ["Best Paper Award 🏆"]
 
   - year: 2024
     papers:
