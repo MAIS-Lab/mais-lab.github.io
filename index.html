@@ -116,7 +116,7 @@ layout: null
           <h2 class="pub-year-lbl">{{ group.year }}</h2>
           <div class="pub-list">
           {% for paper in group.papers %}
-            <article class="pub-item" data-category="{% if paper.venue contains 'Journal' or paper.abbr == 'TECS' or paper.abbr == 'TMC' or paper.abbr == 'GetMobile' %}journal{% else %}conference{% endif %}">
+            <article class="pub-item" data-category="{% if paper.types %}{{ paper.types | join: ' ' }}{% elsif paper.type %}{{ paper.type }}{% else %}conference{% endif %}">
               <div class="pub-thumb-slot">
                 {% if paper.thumbnail %}
                 <img src="{{ site.baseurl }}/{{ paper.thumbnail }}" alt="Thumbnail for {{ paper.title }}" loading="lazy">
@@ -128,14 +128,20 @@ layout: null
                 <h3 class="pub-title">{{ paper.title }}</h3>
                 <div class="pub-authors">{{ paper.authors }}</div>
                 <div class="pub-venue">
-                  <div class="pub-venue-row"><span class="pub-abbr">{{ paper.abbr }}</span><span class="pub-venue-text">{{ paper.venue }}</span></div>
+                  {% if paper.venues %}
+                  {% for venue in paper.venues %}
+                  <div class="pub-venue-row"><span class="pub-abbr pub-abbr-{{ venue.type }}">{{ venue.abbr }}</span><span class="pub-venue-text">{{ venue.name }}</span></div>
+                  {% endfor %}
+                  {% else %}
+                  <div class="pub-venue-row"><span class="pub-abbr pub-abbr-{{ paper.type }}">{{ paper.abbr }}</span><span class="pub-venue-text">{{ paper.venue }}</span></div>
+                  {% endif %}
                 </div>
+                {% if paper.tags %}<div class="pub-tags">{% for tag in paper.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
                 <div class="pub-links">
                   {% if paper.pdf and paper.pdf != '' %}<a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="pub-lnk">Paper</a>{% endif %}
                   {% if paper.video %}<a href="{{ paper.video }}" target="_blank" rel="noopener" class="pub-lnk">Video</a>{% endif %}
                   {% if paper.demo %}<a href="{{ paper.demo }}" target="_blank" rel="noopener" class="pub-lnk">Demo</a>{% endif %}
                   {% if paper.teaser %}<a href="{{ paper.teaser }}" target="_blank" rel="noopener" class="pub-lnk">Teaser</a>{% endif %}
-                  {% for tag in paper.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}
                 </div>
               </div>
             </article>

@@ -42,7 +42,8 @@
       var filter = button.getAttribute('data-filter');
       var scope = group.parentElement;
       scope.querySelectorAll('[data-category]').forEach(function (item) {
-        item.hidden = filter !== 'all' && item.getAttribute('data-category') !== filter;
+        var categories = (item.getAttribute('data-category') || '').split(/\s+/);
+        item.hidden = filter !== 'all' && categories.indexOf(filter) === -1;
       });
       scope.querySelectorAll('.pub-year-grp').forEach(function (year) {
         year.hidden = !year.querySelector('[data-category]:not([hidden])');

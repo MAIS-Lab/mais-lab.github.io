@@ -6,8 +6,9 @@
 #
 # --- full ---
 # All publications listed by year. Add new year blocks as needed.
-# Fields: year, papers (title, authors, venue, abbr, pdf)
-# Optional: thumbnail, video, demo, teaser, tags
+# A regular paper uses: type, venue, abbr.
+# A dual publication uses: types and venues (see the EMSOFT examples).
+# Optional: thumbnail, pdf, video, demo, teaser, tags
 # thumbnail paths are relative to the site root, e.g. assets/img/publications/paper.jpg
 #
 # Leave pdf as "" if not available.
@@ -30,20 +31,28 @@ full:
     papers:
       - title: "DynaStitch: Dynamic ViT Inference via Neural Stitching for Resource-Constrained Edge Devices"
         authors: "Jiwon Kim, Luca Mottola, Jeho Lee, Seonghoon Park, Hojung Cha, and Thiemo Voigt"
-        venue: "The 26th IEEE/ACM International Conference on Embedded Software"
-        abbr: "EMSOFT"
+        types: [conference, journal]
+        venues:
+          - type: conference
+            abbr: "EMSOFT"
+            name: "The 26th IEEE/ACM International Conference on Embedded Software"
+          - type: journal
+            abbr: "TECS"
+            name: "ACM Transactions on Embedded Computing Systems (to appear)"
         tags: ["to appear"]
 
       - title: "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs"
         authors: "Jeho Lee, Gunjoong Kim, Chanyoung Jung, Jaehee Kim, Seonghoon Park, and Hojung Cha"
         venue: "The 21st European Conference on Computer Systems"
         abbr: "EuroSys"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3767295.3803619"
 
       - title: "3DGS on Your Phone: Towards Fully Immersive Mobile Volumetric Video Streaming"
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "GetMobile: Mobile Computing and Communications, Vol. 30, No. 1"
         abbr: "GetMobile"
+        type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3810919.3810924"
         tags: ["invited research highlight"]
 
@@ -51,6 +60,7 @@ full:
         authors: "Jeho Lee*, Chanyoung Jung*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
         venue: "GetMobile: Mobile Computing and Communications, Vol. 29, No. 4"
         abbr: "GetMobile"
+        type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3793236.3793246"
         tags: ["invited research highlight"]
 
@@ -60,6 +70,7 @@ full:
         authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765252"
         video: "https://youtu.be/U9J5Cax3eL0"
 
@@ -67,6 +78,7 @@ full:
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765267"
         video: "https://youtu.be/rLd3ajRILws"
 
@@ -74,18 +86,26 @@ full:
         authors: "Seonghoon Park, Junick Ahn, Daeyong Kim, and Hojung Cha"
         venue: "ACM Transactions on Embedded Computing Systems, Vol. 24, No. 6"
         abbr: "TECS"
+        type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3761806"
 
       - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
-        venue: "The 25th International Conference on Embedded Software; ACM Transactions on Embedded Computing Systems, Vol. 24, No. 5s"
-        abbr: "EMSOFT"
+        types: [conference, journal]
+        venues:
+          - type: conference
+            abbr: "EMSOFT"
+            name: "The 25th International Conference on Embedded Software"
+          - type: journal
+            abbr: "TECS"
+            name: "ACM Transactions on Embedded Computing Systems, Vol. 24, No. 5s"
         pdf: "https://dl.acm.org/doi/10.1145/3757918"
 
       - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
         authors: "Chanyoung Jung*, Jeho Lee*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
         venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
         video: "https://youtu.be/kxos6AXShIU"
         tags: ["best paper award"]
@@ -96,6 +116,7 @@ full:
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
         venue: "IEEE INFOCOM 2024 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
+        type: conference
         pdf: "https://ieeexplore.ieee.org/document/10621433"
         demo: "https://youtu.be/PY3IzOVTtBU"
 
@@ -105,6 +126,7 @@ full:
         authors: "Seonghoon Park*, Yeonwoo Cho*, Hyungchol Jun, Jeho Lee, and Hojung Cha"
         venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3581791.3596851"
         teaser: "https://youtu.be/GfY0s3xcvb4"
 
@@ -112,6 +134,7 @@ full:
         authors: "Seonghoon Park, Jeho Lee, and Hojung Cha"
         venue: "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
+        type: conference
         pdf: "https://ieeexplore.ieee.org/document/10228950/"
 
   - year: 2022
@@ -120,6 +143,7 @@ full:
         authors: "Yonghun Choi, Seonghoon Park, Seunghyeok Jeon, Rhan Ha, and Hojung Cha"
         venue: "IEEE Transactions on Mobile Computing, Vol. 21, No. 10"
         abbr: "TMC"
+        type: journal
         pdf: "https://ieeexplore.ieee.org/document/9352566"
 
   - year: 2021
@@ -128,12 +152,14 @@ full:
         authors: "Seonghoon Park, Yonghun Choi, and Hojung Cha"
         venue: "IEEE INFOCOM 2021 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
+        type: conference
         pdf: "https://ieeexplore.ieee.org/document/9488671"
 
       - title: "GAZEL: Runtime Gaze Tracking for Smartphones"
         authors: "Joonbeom Park, Seonghoon Park, and Hojung Cha"
         venue: "2021 IEEE International Conference on Pervasive Computing and Communications"
         abbr: "PerCom"
+        type: conference
         pdf: "https://ieeexplore.ieee.org/document/9439113"
 
   - year: 2019
@@ -142,6 +168,7 @@ full:
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
         venue: "The 25th Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3300061.3345449"
         video: "https://youtu.be/Kln7XbRSBX8"
 
@@ -149,6 +176,7 @@ full:
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
         venue: "The 17th Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
+        type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3307334.3326075"
         video: "https://youtu.be/zUNttnaj5eY"
 
