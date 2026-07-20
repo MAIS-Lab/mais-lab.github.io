@@ -2,15 +2,16 @@
 # image accepts a path relative to the site root or a full https:// URL.
 # fit accepts "cover" for photos or "contain" for logos/graphics.
 hero_slides:
+  - image: assets/img/yonsei.jpg
+    alt: Yonsei University campus
+    caption: Yonsei University, Seoul, South Korea
+    fit: cover
+    
   - image: assets/img/mais-logo.png
     alt: MAIS Lab logo
     caption: Mobile AI and Systems Lab at Yonsei University
     fit: contain
 
-  - image: assets/img/yonsei.jpg
-    alt: Yonsei University campus
-    caption: Yonsei University, Seoul, South Korea
-    fit: cover
 
 # Research highlight carousel. image and link may use local paths or full URLs.
 research_highlights:
