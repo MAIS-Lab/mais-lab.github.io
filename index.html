@@ -49,7 +49,7 @@ layout: null
           {% for item in site.data.news limit: 5 %}
           <div class="news-row">
             <time class="news-date">{{ item.date }}</time>
-            <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'award' %}pa{% when 'position' %}pb{% else %}pg{% endcase %}">{{ item.label }}</span></div>
+            <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pc1{% when 'award' %}pc2{% when 'news' %}pc3{% else %}pc3{% endcase %}">{{ item.label }}</span></div>
             <div class="news-text">{{ item.title }}</div>
           </div>
           {% endfor %}
