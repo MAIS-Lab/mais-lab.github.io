@@ -46,7 +46,7 @@ full:
         abbr: "EuroSys"
         type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3767295.3803619"
-        thumbnail: "assets/img/publication/2026-eurosys-vinpu.png"
+        thumbnail: "assets/img/publications/2026-eurosys-vinpu.png"
 
       - title: "3DGS on Your Phone: Towards Fully Immersive Mobile Volumetric Video Streaming"
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
@@ -54,7 +54,7 @@ full:
         abbr: "GetMobile"
         type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3810919.3810924"
-        thumbnail: "assets/img/publication/2025-mobicom-vega.png"
+        thumbnail: "assets/img/publications/2025-mobicom-vega.png"
         tags: ["Invited Research Highlight"]
 
       - title: "VFM in Your Hands: Optimizing Real-Time Scene Understanding for Mobile Augmented Reality"
@@ -63,7 +63,7 @@ full:
         abbr: "GetMobile"
         type: journal
         pdf: "https://dl.acm.org/doi/10.1145/3793236.3793246"
-        thumbnail: "assets/img/publication/2025-mobisys-aria.png"
+        thumbnail: "assets/img/publications/2025-mobisys-aria.png"
         tags: ["Invited Research Highlight"]
 
   - year: 2025
@@ -82,7 +82,7 @@ full:
         abbr: "MobiCom"
         type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765267"
-        thumbnail: "assets/img/publication/2025-mobicom-vega.png"
+        thumbnail: "assets/img/publications/2025-mobicom-vega.png"
         video: "https://youtu.be/rLd3ajRILws"
 
       - title: "Duration-Aware Sound Event Detection on Ultra-Low-Power Sensor Devices"
@@ -102,7 +102,7 @@ full:
           - type: journal
             abbr: "TECS"
             name: "ACM Transactions on Embedded Computing Systems, Vol. 24, No. 5s"
-        thumbnail: "assets/img/publication/2025-emsoft-ember.png"
+        thumbnail: "assets/img/publications/2025-emsoft-ember.png"
         pdf: "https://dl.acm.org/doi/10.1145/3757918"
 
       - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
@@ -111,7 +111,7 @@ full:
         abbr: "MobiSys"
         type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
-        thumbnail: "assets/img/publication/2025-mobisys-aria.png"
+        thumbnail: "assets/img/publications/2025-mobisys-aria.png"
         video: "https://youtu.be/kxos6AXShIU"
         tags: ["Best Paper Award 🏆"]
 
