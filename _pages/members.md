@@ -11,7 +11,7 @@ permalink: /members/
     <div>
       <h2 class="pi-name">Seonghoon Park, Ph.D.</h2>
       <div class="pi-role">Assistant Professor</div>
-      <div class="pi-dept">Dept. of Computer Science and Engineering, Yonsei University</div>
+      <div class="pi-dept">Department of Computer Science and Engineering, Yonsei University</div>
       <div class="pi-meta"><span><strong>Office:</strong> TODO</span><span><strong>Tel:</strong> TODO</span><span><strong>Email:</strong> seonghoon.park AT yonsei.ac.kr</span></div>
       <div class="pi-links"><a href="mailto:seonghoon.park@yonsei.ac.kr" class="pi-link">Email</a><a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a></div>
     </div>

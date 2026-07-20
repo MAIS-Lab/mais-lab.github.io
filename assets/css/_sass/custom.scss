@@ -107,7 +107,7 @@ a { color: inherit; }
 .tone-lime:hover { color: #fff; }
 
 /* Page headers */
-.page-hd { margin-top: 56px; padding: 3rem 0 2.5rem; color: #fff; background: var(--color1); }
+.page-hd { margin-top: 56px; padding: 3rem 0 2.5rem; color: #fff; background: var(--navy); }
 .page-hd .page-eye { color: var(--lime); }
 .page-hd h1 { margin: 0; color: #fff; font: 400 2.2rem/1.15 "PT Serif", serif; }
 .page-sub { margin: .25rem 0 0; color: rgba(255,255,255,.6); font-size: .86rem; }
@@ -131,7 +131,7 @@ a.research-cite:hover { text-decoration: underline; }
 .pi-photo-slot { width: 190px; aspect-ratio: 4/5; }
 .pi-name { margin: .5rem 0 .2rem; color: var(--ink); font: 400 1.55rem/1.2 "PT Serif", serif; }
 .pi-role { margin-bottom: .2rem; color: var(--color1); font-size: .78rem; font-weight: 600; }
-.pi-dept { margin-bottom: .75rem; color: var(--ink-3); font-size: .84rem; }
+.pi-dept { margin-bottom: .75rem; color: var(--ink-3); font-size: .78rem; }
 .pi-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-bottom: .75rem; }
 .pi-meta span { color: var(--ink-3); font-size: .8rem; }
 .pi-meta strong { color: var(--ink-2); }
