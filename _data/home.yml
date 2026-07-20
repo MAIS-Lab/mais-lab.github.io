@@ -14,21 +14,27 @@ hero_slides:
 
 # Research highlight carousel. image and link may use local paths or full URLs.
 research_highlights:
-  - title: On-device AI
-    image: assets/img/mais-logo.png
-    alt: On-device AI research
+  - title: viNPU (EuroSys '26)
+    image: assets/img/publications/2026-eurosys-vinpu.png
+    alt: viNPU (EuroSys '26)
     link: /research/
     fit: contain
 
-  - title: Mobile Immersive Computing
-    image: assets/img/mais-logo.png
-    alt: Mobile immersive computing research
+  - title: Vega (MobiCom '25)
+    image: assets/img/publications/2025-mobicom-vega.png
+    alt: Vega (MobiCom '25)
+    link: /research/
+    fit: contain
+  
+  - title: EOS (MobiCom '25)
+    image: assets/img/publications/2025-mobicom-eos.png
+    alt: EOS (MobiCom '25)
     link: /research/
     fit: contain
 
-  - title: Energy-aware Mobile Systems
-    image: assets/img/mais-logo.png
-    alt: Energy-aware mobile systems research
+  - title: ARIA (MobiSys '25)
+    image: assets/img/publications/2025-mobisys-aria.png
+    alt: ARIA (MobiSys '25)
     link: /research/
     fit: contain
 
