@@ -39,14 +39,20 @@ research_highlights:
     link: /research/
     fit: contain
 
+  - title: Vulture (INFOCOM '24)
+    image: assets/img/publications/2024-infocom-vulture.png
+    alt: Vulture (INFOCOM '24)
+    link: /research/
+    fit: contain
+
   - title: OmniLive (MobiSys '23)
     image: assets/img/publications/2023-mobisys-omnilive.png
     alt: OmniLive (MobiSys '23)
     link: /research/
     fit: contain
 
-  - title: Cross-device Computing
-    image: assets/img/mais-logo.png
-    alt: Cross-device computing research
+  - title: Crow API (INFOCOM '23)
+    image: assets/img/publications/2023-infocom-crowapi.png
+    alt: Crow API (INFOCOM '23)
     link: /research/
     fit: contain

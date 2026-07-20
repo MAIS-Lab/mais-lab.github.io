@@ -125,6 +125,7 @@ full:
         abbr: "INFOCOM"
         type: conference
         pdf: "https://ieeexplore.ieee.org/document/10621433"
+        thumbnail: "assets/img/publications/2024-infocom-vulture.png"
         demo: "https://youtu.be/PY3IzOVTtBU"
 
   - year: 2023
@@ -143,6 +144,7 @@ full:
         venue: "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         type: conference
+        thumbnail: "assets/img/publications/2023-infocom-crowapi.png"
         pdf: "https://ieeexplore.ieee.org/document/10228950/"
 
   - year: 2022
