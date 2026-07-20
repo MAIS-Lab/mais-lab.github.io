@@ -83,7 +83,7 @@ layout: null
                 <a href="{% if highlight_link contains '://' %}{{ highlight_link }}{% else %}{{ site.baseurl }}{{ highlight_link }}{% endif %}" class="highlight-card highlight-{{ highlight.fit | default: 'cover' }}"{% if highlight_link contains '://' %} target="_blank" rel="noopener"{% endif %}>
                   <img src="{% if highlight_image contains '://' %}{{ highlight_image }}{% else %}{{ site.baseurl }}/{{ highlight_image }}{% endif %}" alt="{{ highlight.alt | default: highlight.title }}" loading="lazy">
                   <span class="highlight-shade"></span>
-                  <span class="highlight-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                  <!-- <span class="highlight-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span> -->
                   <strong>{{ highlight.title }}</strong>
                 </a>
               </article>
