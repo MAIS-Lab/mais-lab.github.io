@@ -7,6 +7,7 @@ permalink: /publications/
 
 <div class="pub-body">
   <div class="filters" data-filter-group="publications"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="conference">Conference</button><button class="fbtn" data-filter="journal">Journal</button></div>
+  * indicates co-first authors
   {% for group in site.data.publications.full %}
   <section class="pub-year-grp">
     <h2 class="pub-year-lbl">{{ group.year }}</h2>
