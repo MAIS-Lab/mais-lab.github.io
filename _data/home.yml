@@ -39,6 +39,12 @@ research_highlights:
     link: /research/
     fit: contain
 
+  - title: OmniLive (MobiSys '23)
+    image: assets/img/publications/2023-mobisys-omnilive.png
+    alt: OmniLive (MobiSys '23)
+    link: /research/
+    fit: contain
+
   - title: Cross-device Computing
     image: assets/img/mais-logo.png
     alt: Cross-device computing research
