@@ -109,7 +109,7 @@ a { color: inherit; }
 .highlight-card img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .35s ease; }
 .highlight-card:hover img { transform: scale(1.025); }
 .highlight-contain img { padding: 1.8rem 3rem; object-fit: contain; }
-.highlight-shade { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 75%, rgba(18 18 60 / 80%)); }
+.highlight-shade { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 75%, rgba(18, 18, 60, 0.8)); }
 .highlight-number, .highlight-card strong { position: absolute; z-index: 2; }
 .highlight-number { top: .8rem; left: .9rem; font-size: .65rem; opacity: .78; color: rgba(0,0,0,0.5)}
 .highlight-card strong { right: .9rem; bottom: .2rem; left: .9rem; font: 700 0.8rem "Google Sans Flex", sans-serif; }
