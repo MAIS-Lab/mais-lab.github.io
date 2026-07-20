@@ -13,15 +13,15 @@ layout: null
         <div class="hero-copy">
           <h1 class="hero-title">Mobile AI and<br>Systems Lab</h1>
           <p class="hero-abbr">MAIS Lab @ Yonsei</p>
-          <p class="hero-desc">Our research in mobile systems and mobile computing focuses on pushing the boundaries of what mobile devices can deliver, enabling advanced mobile experiences such as AI and XR.</p>
+          <p class="hero-desc">We focus on pushing the boundaries of what mobile and edge devices can deliver in everyday use, enabling advanced mobile experiences such as AI and XR.</p>
           <div class="hero-kws">
             <span class="hero-kw">On-device AI</span>
-            <span class="hero-kw">Mobile Immersive Computing</span>
-            <span class="hero-kw">Energy-aware Mobile Systems</span>
-            <span class="hero-kw">Cross-device Computing</span>
+            <span class="hero-kw">Mobile immersive computing</span>
+            <span class="hero-kw">Energy-aware mobile systems</span>
+            <span class="hero-kw">Cross-device computing</span>
           </div>
         </div>
-        <div class="hero-slideshow" data-hero-slideshow data-interval="5000" aria-label="Lab gallery">
+        <div class="hero-slideshow" data-hero-slideshow data-interval="3000" aria-label="Lab gallery">
           {% for slide in site.data.home.hero_slides %}
           {% assign slide_image = slide.image %}
           <div class="hero-slide{% if forloop.first %} active{% endif %}" data-slide aria-hidden="{% unless forloop.first %}true{% else %}false{% endunless %}">
@@ -43,7 +43,7 @@ layout: null
     <section class="home-sec join-sec">
       <div class="wrap">
         <div class="join-strip">
-          <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are looking for highly motivated Ph.D. and M.S. students!</div>
+          <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are seeking highly motivated Ph.D. and M.S. students to join our group. If you are interested in joining, please feel free to contact us.</div>
           <a href="mailto:seonghoon.park@yonsei.ac.kr" class="btn btn-g">Contact</a>
         </div>
       </div>
