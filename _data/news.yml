@@ -1,8 +1,8 @@
 # Add new entries at the top.
-# Supported categories: paper, award, service, position.
+# Supported categories: paper, award, service, news.
 - date: "2026.09"
-  category: position
-  label: Position
+  category: news
+  label: News
   title: Seonghoon will join Yonsei University as an Assistant Professor in the Department of Computer Science and Engineering!
 
 - date: "2026.07"
@@ -40,11 +40,6 @@
   label: Service
   title: Seonghoon will serve on the TPC for ACM MobiSys 2026.
 
-- date: "2025.10"
-  category: position
-  label: Position
-  title: Seonghoon has joined Virginia Tech as a Postdoctoral Associate.
-
 - date: "2025.08"
   category: paper
   label: Paper
@@ -52,7 +47,7 @@
 
 - date: "2025.08"
   category: paper
-  label: Journal
+  label: Paper
   title: '"DASH" has been accepted to the ACM TECS journal.'
 
 - date: "2025.07"
