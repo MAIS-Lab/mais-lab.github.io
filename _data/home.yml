@@ -1,0 +1,39 @@
+# Main-page hero slideshow. Items appear in this order.
+# image accepts a path relative to the site root or a full https:// URL.
+# fit accepts "cover" for photos or "contain" for logos/graphics.
+hero_slides:
+  - image: assets/img/mais-logo.png
+    alt: MAIS Lab logo
+    caption: Mobile AI and Systems Lab at Yonsei University
+    fit: contain
+
+  - image: assets/img/yonsei.jpg
+    alt: Yonsei University campus
+    caption: Yonsei University, Seoul, South Korea
+    fit: cover
+
+# Research highlight carousel. image and link may use local paths or full URLs.
+research_highlights:
+  - title: On-device AI
+    image: assets/img/mais-logo.png
+    alt: On-device AI research
+    link: /research/
+    fit: contain
+
+  - title: Mobile Immersive Computing
+    image: assets/img/mais-logo.png
+    alt: Mobile immersive computing research
+    link: /research/
+    fit: contain
+
+  - title: Energy-aware Mobile Systems
+    image: assets/img/mais-logo.png
+    alt: Energy-aware mobile systems research
+    link: /research/
+    fit: contain
+
+  - title: Cross-device Computing
+    image: assets/img/mais-logo.png
+    alt: Cross-device computing research
+    link: /research/
+    fit: contain

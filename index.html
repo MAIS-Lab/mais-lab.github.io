@@ -21,12 +21,20 @@ layout: null
             <span class="hero-kw">Cross-device Computing</span>
           </div>
         </div>
-        <div class="hero-slideshow" aria-label="Lab gallery">
-          <div class="hero-slide active">
-            <div class="hero-slide-img hero-symbol">
-              <img src="{{ site.baseurl }}/mais-logo.png" alt="MAIS Lab logo">
+        <div class="hero-slideshow" data-hero-slideshow data-interval="5000" aria-label="Lab gallery">
+          {% for slide in site.data.home.hero_slides %}
+          {% assign slide_image = slide.image %}
+          <div class="hero-slide{% if forloop.first %} active{% endif %}" data-slide aria-hidden="{% unless forloop.first %}true{% else %}false{% endunless %}">
+            <div class="hero-slide-img hero-slide-{{ slide.fit | default: 'cover' }}">
+              <img src="{% if slide_image contains '://' %}{{ slide_image }}{% else %}{{ site.baseurl }}/{{ slide_image }}{% endif %}" alt="{{ slide.alt | default: '' }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
             </div>
-            <div class="hero-cap">Yonsei University, Seoul, South Korea</div>
+            {% if slide.caption %}<div class="hero-cap">{{ slide.caption }}</div>{% endif %}
+          </div>
+          {% endfor %}
+          <div class="slide-progress hero-progress" data-slide-progress aria-label="Choose gallery slide">
+            {% for slide in site.data.home.hero_slides %}
+            <button type="button" class="slide-progress-segment{% if forloop.first %} active{% endif %}" data-slide-to="{{ forloop.index0 }}" aria-label="Show gallery slide {{ forloop.index }}"><span></span></button>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -62,11 +70,30 @@ layout: null
       <div class="wrap">
         <div class="sec-eye">About the Lab</div>
         <h2 class="sec-h2">Research Highlights</h2>
-        <div class="highlight-grid">
-          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-royal"><span>01</span><strong>On-device AI</strong></a>
-          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-mint"><span>02</span><strong>Mobile<br>Immersive Computing</strong></a>
-          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-blue"><span>03</span><strong>Energy-aware<br>Mobile Systems</strong></a>
-          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-lime"><span>04</span><strong>Cross-device<br>Computing</strong></a>
+        <div class="highlight-carousel{% if site.data.home.research_highlights.size > 4 %} has-arrows{% endif %}" data-highlight-carousel>
+          {% if site.data.home.research_highlights.size > 4 %}
+          <button type="button" class="carousel-arrow carousel-prev" data-carousel-prev aria-label="Previous research highlights">&#8249;</button>
+          {% endif %}
+          <div class="highlight-viewport" data-carousel-viewport>
+            <div class="highlight-track" data-carousel-track>
+              {% for highlight in site.data.home.research_highlights %}
+              {% assign highlight_link = highlight.link | default: '/research/' %}
+              {% assign highlight_image = highlight.image %}
+              <article class="highlight-carousel-item" data-carousel-item>
+                <a href="{% if highlight_link contains '://' %}{{ highlight_link }}{% else %}{{ site.baseurl }}{{ highlight_link }}{% endif %}" class="highlight-card highlight-{{ highlight.fit | default: 'cover' }}"{% if highlight_link contains '://' %} target="_blank" rel="noopener"{% endif %}>
+                  <img src="{% if highlight_image contains '://' %}{{ highlight_image }}{% else %}{{ site.baseurl }}/{{ highlight_image }}{% endif %}" alt="{{ highlight.alt | default: highlight.title }}" loading="lazy">
+                  <span class="highlight-shade"></span>
+                  <span class="highlight-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                  <strong>{{ highlight.title }}</strong>
+                </a>
+              </article>
+              {% endfor %}
+            </div>
+          </div>
+          {% if site.data.home.research_highlights.size > 4 %}
+          <button type="button" class="carousel-arrow carousel-next" data-carousel-next aria-label="Next research highlights">&#8250;</button>
+          {% endif %}
+          <div class="slide-progress carousel-progress" data-carousel-progress aria-label="Choose research highlight page"></div>
         </div>
       </div>
     </section>

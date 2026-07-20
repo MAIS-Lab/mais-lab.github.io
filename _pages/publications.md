@@ -18,7 +18,7 @@ permalink: /publications/
           {% if paper.thumbnail %}
           <img src="{{ site.baseurl }}/{{ paper.thumbnail }}" alt="Thumbnail for {{ paper.title }}" loading="lazy">
           {% else %}
-          <img src="{{ site.baseurl }}/mais-logo.png" alt="" class="pub-default-logo" loading="lazy">
+          <img src="{{ site.baseurl }}/assets/img/mais-logo.png" alt="" class="pub-default-logo" loading="lazy">
           {% endif %}
         </div>
         <div class="pub-copy">
