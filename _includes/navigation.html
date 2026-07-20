@@ -1,14 +1,14 @@
 <nav id="topnav">
   <div class="nav-inner">
-    <a class="nav-brand" href="{{ site.baseurl }}/#" aria-label="MAIS Lab home">
+    <a class="nav-brand" href="{{ site.baseurl }}/" aria-label="MAIS Lab home">
       <span class="nav-name"><strong>MAIS Lab @ Yonsei</strong></span>
     </a>
     <ul class="nav-links" id="nav-links">
-      <li><a href="{{ site.baseurl }}/#" class="nav-btn" data-page="home">Home</a></li>
+      <li><a href="{{ site.baseurl }}/" class="nav-btn{% if page.url == '/' %} active{% endif %}">Home</a></li>
       <li><a href="{{ site.baseurl }}/research/" class="nav-btn{% if page.url == '/research/' %} active{% endif %}">Research</a></li>
-      <li><a href="{{ site.baseurl }}/#members" class="nav-btn" data-page="members">Members</a></li>
-      <li><a href="{{ site.baseurl }}/#publications" class="nav-btn" data-page="publications">Publications</a></li>
-      <li><a href="{{ site.baseurl }}/#news" class="nav-btn" data-page="news">News</a></li>
+      <li><a href="{{ site.baseurl }}/members/" class="nav-btn{% if page.url == '/members/' %} active{% endif %}">Members</a></li>
+      <li><a href="{{ site.baseurl }}/publications/" class="nav-btn{% if page.url == '/publications/' %} active{% endif %}">Publications</a></li>
+      <li><a href="{{ site.baseurl }}/news/" class="nav-btn{% if page.url == '/news/' %} active{% endif %}">News</a></li>
     </ul>
     <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
       <span></span><span></span><span></span>

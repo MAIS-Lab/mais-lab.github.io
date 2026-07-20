@@ -1,0 +1,52 @@
+# Each area has one representative thumbnail and a list of projects.
+# Leave thumbnail empty to use mais-logo.png.
+areas:
+  - title: On-device AI
+    thumbnail: ""
+    works:
+      - title: Dynamic ViT inference on edge devices
+        venue: EMSOFT '26
+      - title: Optimizing ViT inference for mobile NPUs
+        venue: EuroSys '26
+        url: https://dl.acm.org/doi/10.1145/3767295.3803619
+      - title: Real-time VFM inference with heterogeneous processors
+        venue: MobiSys '25
+        url: https://dl.acm.org/doi/10.1145/3711875.3729161
+
+  - title: Mobile immersive computing
+    thumbnail: ""
+    works:
+      - title: 3DGS-based volumetric video streaming
+        venue: MobiCom '25
+        url: https://dl.acm.org/doi/10.1145/3680207.3765267
+      - title: Super-resolution-enhanced 360-degree video live streaming
+        venue: MobiSys '23
+        url: https://dl.acm.org/doi/10.1145/3581791.3596851
+
+  - title: Energy-aware mobile systems
+    thumbnail: ""
+    works:
+      - title: Energy-aware super-resolution for live 360-degree videos
+        venue: MobiCom '25
+        url: https://dl.acm.org/doi/10.1145/3680207.3765252
+      - title: Energy-aware sound event detection on sensor devices
+        venue: TECS '25
+        url: https://dl.acm.org/doi/10.1145/3761806
+      - title: Task wakeup sequence-based energy optimization
+        venue: EMSOFT '25
+        url: https://dl.acm.org/doi/10.1145/3757918
+      - title: Energy-efficient mobile browser scheduling
+        venue: MobiCom '19
+        url: https://dl.acm.org/doi/10.1145/3300061.3345449
+
+  - title: Cross-device computing
+    thumbnail: ""
+    works:
+      - title: Cross-device graphical interface distribution
+        venue: INFOCOM '24
+        url: https://ieeexplore.ieee.org/document/10621433
+      - title: Cross-device I/O sharing in web applications
+        venue: INFOCOM '23
+        url: https://ieeexplore.ieee.org/document/10228950/
+      - title: Mobile-edge collaborative computing for real-time AI and XR
+        venue: Ongoing

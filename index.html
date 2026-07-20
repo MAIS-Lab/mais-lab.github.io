@@ -4,168 +4,71 @@ layout: null
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
-<body class="spa-site">
+<body>
   {% include navigation.html %}
 
   <main id="page-content">
-    <section class="spa-page active" data-page="home" id="home-page">
-      <div class="hero">
-        <div class="wrap hero-grid">
-          <div class="hero-copy">
-            <h1 class="hero-title">Mobile AI and<br>Systems Lab</h1>
-            <p class="hero-abbr">MAIS Lab @ Yonsei</p>
-            <p class="hero-desc">Our research in mobile systems and mobile computing focuses on pushing the boundaries of what mobile devices can deliver, enabling advanced mobile experiences such as AI and XR.</p>
-            <div class="hero-kws">
-              <span class="hero-kw">On-device AI</span>
-              <span class="hero-kw">Mobile Immersive Computing</span>
-              <span class="hero-kw">Energy-aware Mobile Systems</span>
-              <span class="hero-kw">Cross-device Computing</span>
-            </div>
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">Mobile AI and<br>Systems Lab</h1>
+          <p class="hero-abbr">MAIS Lab @ Yonsei</p>
+          <p class="hero-desc">Our research in mobile systems and mobile computing focuses on pushing the boundaries of what mobile devices can deliver, enabling advanced mobile experiences such as AI and XR.</p>
+          <div class="hero-kws">
+            <span class="hero-kw">On-device AI</span>
+            <span class="hero-kw">Mobile Immersive Computing</span>
+            <span class="hero-kw">Energy-aware Mobile Systems</span>
+            <span class="hero-kw">Cross-device Computing</span>
           </div>
-          <div class="hero-slideshow" aria-label="Lab gallery">
-            <div class="hero-slide active">
-              <div class="hero-slide-img hero-symbol">
-                <img src="{{ site.baseurl }}/mais-logo.png" alt="MAIS Lab logo">
-              </div>
-              <div class="hero-cap">Yonsei University, Seoul, South Korea</div>
+        </div>
+        <div class="hero-slideshow" aria-label="Lab gallery">
+          <div class="hero-slide active">
+            <div class="hero-slide-img hero-symbol">
+              <img src="{{ site.baseurl }}/mais-logo.png" alt="MAIS Lab logo">
             </div>
+            <div class="hero-cap">Yonsei University, Seoul, South Korea</div>
           </div>
         </div>
       </div>
+    </div>
 
-      <section class="home-sec join-sec">
-        <div class="wrap">
-          <div class="join-strip">
-            <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are looking for highly motivated Ph.D. and M.S. students!</div>
-            <a href="mailto:seonghoon.park@yonsei.ac.kr" class="btn btn-g">Contact</a>
-          </div>
+    <section class="home-sec join-sec">
+      <div class="wrap">
+        <div class="join-strip">
+          <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are looking for highly motivated Ph.D. and M.S. students!</div>
+          <a href="mailto:seonghoon.park@yonsei.ac.kr" class="btn btn-g">Contact</a>
         </div>
-      </section>
-
-      <section class="home-sec updates-sec">
-        <div class="wrap">
-          <div class="sec-eye">Latest Updates</div>
-          <h2 class="sec-h2">Recent News</h2>
-          <div class="news-list">
-            {% for item in site.data.news limit: 5 %}
-            <div class="news-row">
-              <time class="news-date">{{ item.date }}</time>
-              <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'award' %}pa{% when 'position' %}pb{% else %}pg{% endcase %}">{{ item.label }}</span></div>
-              <div class="news-text">{{ item.title }}</div>
-            </div>
-            {% endfor %}
-          </div>
-          <div class="view-all-row"><a href="#news" class="btn btn-og">View All News</a></div>
-        </div>
-      </section>
-
-      <section class="home-sec highlight-sec">
-        <div class="wrap">
-          <div class="sec-eye">About the Lab</div>
-          <h2 class="sec-h2">Research Highlights</h2>
-          <div class="highlight-grid">
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-royal"><span>01</span><strong>On-device AI</strong></a>
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-mint"><span>02</span><strong>Mobile<br>Immersive Computing</strong></a>
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-blue"><span>03</span><strong>Energy-aware<br>Mobile Systems</strong></a>
-            <a href="{{ site.baseurl }}/research/" class="highlight-card tone-lime"><span>04</span><strong>Cross-device<br>Computing</strong></a>
-          </div>
-        </div>
-      </section>
+      </div>
     </section>
 
-    <section class="spa-page" data-page="members" id="members-page" hidden>
-      <div class="page-hd"><div class="wrap"><h1>Members</h1><p class="page-sub">People at MAIS Lab</p></div></div>
-      <div class="mem-body"><div class="wrap">
-        <div class="pi-block">
-          <div class="photo-slot pi-photo-slot"><img src="{{ site.baseurl }}/assets/img/members/seonghoon.png" alt="Seonghoon Park"></div>
-          <div>
-            <h2 class="pi-name">Seonghoon Park, Ph.D.</h2>
-            <div class="pi-role">Assistant Professor</div>
-            <div class="pi-dept">Dept. of Computer Science and Engineering, Yonsei University</div>
-            <div class="pi-meta"><span><strong>Office:</strong> TODO</span><span><strong>Tel:</strong> TODO</span><span><strong>Email:</strong> seonghoon.park AT yonsei.ac.kr</span></div>
-            <div class="pi-links"><a href="mailto:seonghoon.park@yonsei.ac.kr" class="pi-link">Email</a><a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a></div>
+    <section class="home-sec updates-sec">
+      <div class="wrap">
+        <div class="sec-eye">Latest Updates</div>
+        <h2 class="sec-h2">Recent News</h2>
+        <div class="news-list">
+          {% for item in site.data.news limit: 5 %}
+          <div class="news-row">
+            <time class="news-date">{{ item.date }}</time>
+            <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'award' %}pa{% when 'position' %}pb{% else %}pg{% endcase %}">{{ item.label }}</span></div>
+            <div class="news-text">{{ item.title }}</div>
           </div>
-        </div>
-        {% for group in site.data.members.groups %}
-        <div class="grp">
-          <h2 class="grp-title">{{ group.title }}{% if group.number %}<span class="grp-n">{{ group.number }}</span>{% endif %}</h2>
-          <div class="mem-grid">
-            {% for member in group.members %}
-            <article class="mem-card{% unless member.photo %} member-placeholder{% endunless %}">
-              <div class="photo-slot mem-photo-slot">{% if member.photo %}<img src="{{ site.baseurl }}/{{ member.photo }}" alt="{{ member.name }}">{% else %}<span>Add photo</span>{% endif %}</div>
-              <div class="mem-info">
-                <h3 class="mem-name">{% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
-                <div class="mem-role">{{ member.role }}</div>
-                {% if member.focus %}<div class="mem-focus">{{ member.focus }}</div>{% endif %}
-                {% if member.email %}<a class="mem-email" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
-              </div>
-            </article>
-            {% endfor %}
-          </div>
-        </div>
-        {% endfor %}
-      </div></div>
-    </section>
-
-    <section class="spa-page" data-page="publications" id="publications-page" hidden>
-      <div class="page-hd"><div class="wrap"><h1>Publications</h1><p class="page-sub">Research output from MAIS Lab</p></div></div>
-      <div class="pub-body"><div class="wrap">
-        <div class="filters" data-filter-group="publications"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="conference">Conference</button><button class="fbtn" data-filter="journal">Journal</button></div>
-        {% for group in site.data.publications.full %}
-        <section class="pub-year-grp">
-          <h2 class="pub-year-lbl">{{ group.year }}</h2>
-          <div class="pub-list">
-          {% for paper in group.papers %}
-            <article class="pub-item" data-category="{% if paper.types %}{{ paper.types | join: ' ' }}{% elsif paper.type %}{{ paper.type }}{% else %}conference{% endif %}">
-              <div class="pub-thumb-slot">
-                {% if paper.thumbnail %}
-                <img src="{{ site.baseurl }}/{{ paper.thumbnail }}" alt="Thumbnail for {{ paper.title }}" loading="lazy">
-                {% else %}
-                <img src="{{ site.baseurl }}/mais-logo.png" alt="" class="pub-default-logo" loading="lazy">
-                {% endif %}
-              </div>
-              <div class="pub-copy">
-                <h3 class="pub-title">{{ paper.title }}</h3>
-                <div class="pub-authors">{{ paper.authors }}</div>
-                <div class="pub-venue">
-                  {% if paper.venues %}
-                  {% for venue in paper.venues %}
-                  <div class="pub-venue-row"><span class="pub-abbr pub-abbr-{{ venue.type }}">{{ venue.abbr }}</span><span class="pub-venue-text">{{ venue.name }}</span></div>
-                  {% endfor %}
-                  {% else %}
-                  <div class="pub-venue-row"><span class="pub-abbr pub-abbr-{{ paper.type }}">{{ paper.abbr }}</span><span class="pub-venue-text">{{ paper.venue }}</span></div>
-                  {% endif %}
-                </div>
-                {% if paper.tags %}<div class="pub-tags">{% for tag in paper.tags %}<span class="pub-tag">{{ tag }}</span>{% endfor %}</div>{% endif %}
-                <div class="pub-links">
-                  {% if paper.pdf and paper.pdf != '' %}<a href="{{ paper.pdf }}" target="_blank" rel="noopener" class="pub-lnk">Paper</a>{% endif %}
-                  {% if paper.video %}<a href="{{ paper.video }}" target="_blank" rel="noopener" class="pub-lnk">Video</a>{% endif %}
-                  {% if paper.demo %}<a href="{{ paper.demo }}" target="_blank" rel="noopener" class="pub-lnk">Demo</a>{% endif %}
-                  {% if paper.teaser %}<a href="{{ paper.teaser }}" target="_blank" rel="noopener" class="pub-lnk">Teaser</a>{% endif %}
-                </div>
-              </div>
-            </article>
-          {% endfor %}
-          </div>
-        </section>
-        {% endfor %}
-      </div></div>
-    </section>
-
-    <section class="spa-page" data-page="news" id="news-page" hidden>
-      <div class="page-hd"><div class="wrap"><h1>News</h1><p class="page-sub">Updates from MAIS Lab</p></div></div>
-      <div class="news-page-body"><div class="wrap">
-        <div class="filters" data-filter-group="news"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="paper">Publications</button><button class="fbtn" data-filter="award">Awards</button><button class="fbtn" data-filter="service">Service</button><button class="fbtn" data-filter="position">Positions</button></div>
-        <div class="news-full-list">
-          {% for item in site.data.news %}
-          <article class="news-full-item" data-category="{{ item.category }}">
-            <time class="nf-date">{{ item.date }}</time>
-            <div class="nf-cat"><span class="pill {% case item.category %}{% when 'paper' %}pm{% when 'award' %}pa{% when 'position' %}pb{% else %}pg{% endcase %}">{{ item.label }}</span></div>
-            <div class="nf-content">{{ item.title }}</div>
-          </article>
           {% endfor %}
         </div>
-      </div></div>
+        <div class="view-all-row"><a href="{{ site.baseurl }}/news/" class="btn btn-og">View All News</a></div>
+      </div>
+    </section>
+
+    <section class="home-sec highlight-sec">
+      <div class="wrap">
+        <div class="sec-eye">About the Lab</div>
+        <h2 class="sec-h2">Research Highlights</h2>
+        <div class="highlight-grid">
+          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-royal"><span>01</span><strong>On-device AI</strong></a>
+          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-mint"><span>02</span><strong>Mobile<br>Immersive Computing</strong></a>
+          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-blue"><span>03</span><strong>Energy-aware<br>Mobile Systems</strong></a>
+          <a href="{{ site.baseurl }}/research/" class="highlight-card tone-lime"><span>04</span><strong>Cross-device<br>Computing</strong></a>
+        </div>
+      </div>
     </section>
   </main>
 
