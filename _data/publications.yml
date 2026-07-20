@@ -74,6 +74,7 @@ full:
         abbr: "MobiCom"
         type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765252"
+        thumbnail: "assets/img/publications/2025-mobicom-eos.png"
         video: "https://youtu.be/U9J5Cax3eL0"
 
       - title: "Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting"
@@ -90,6 +91,7 @@ full:
         venue: "ACM Transactions on Embedded Computing Systems, Vol. 24, No. 6"
         abbr: "TECS"
         type: journal
+        thumbnail: "assets/img/publications/2025-tecs-dash.png"
         pdf: "https://dl.acm.org/doi/10.1145/3761806"
 
       - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
@@ -133,6 +135,7 @@ full:
         abbr: "MobiSys"
         type: conference
         pdf: "https://dl.acm.org/doi/10.1145/3581791.3596851"
+        thumbnail: "assets/img/publications/2023-mobisys-omnilive.png"
         teaser: "https://youtu.be/GfY0s3xcvb4"
 
       - title: "Crow API: Cross-device I/O Sharing in Web Applications"
