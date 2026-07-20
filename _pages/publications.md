@@ -1,12 +1,11 @@
 ---
 title: Publications
-subtitle: Research output from MAIS Lab
+subtitle: Research output from MAIS Lab. <br> (* indicates co-first authors)
 layout: default
 permalink: /publications/
 ---
 
 <div class="pub-body">
-  * indicates co-first authors
   <div class="filters" data-filter-group="publications"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="conference">Conference</button><button class="fbtn" data-filter="journal">Journal</button></div>
   {% for group in site.data.publications.full %}
   <section class="pub-year-grp">

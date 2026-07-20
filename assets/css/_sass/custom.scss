@@ -61,9 +61,9 @@ a { color: inherit; }
 .hero-slide-contain img { object-fit: contain; opacity: .83; }
 .hero-cap { position: absolute; inset: auto 0 0; z-index: 2; padding: 2.5rem .9rem 1.45rem; color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.65)); font-size: .78rem; font-weight: 500; text-align: center; }
 .slide-progress { display: flex; align-items: center; justify-content: center; gap: 6px; }
-.slide-progress-segment { width: 18px; height: 4px; padding: 0; overflow: hidden; background: rgba(255,255,255,.35); border: 0; border-radius: 999px; cursor: pointer; transition: width .25s ease, background .2s ease; }
+.slide-progress-segment { width: 6px; height: 6px; padding: 0; overflow: hidden; background: rgba(255,255,255,.35); border: 0; border-radius: 999px; cursor: pointer; transition: width .25s ease, background .2s ease; }
 .slide-progress-segment span { display: block; width: 100%; height: 100%; }
-.slide-progress-segment.active { width: 38px; background: #fff; }
+.slide-progress-segment.active { width: 18px; background: #fff; }
 .hero-progress { position: absolute; right: 0; bottom: .7rem; left: 0; z-index: 4; }
 
 /* Shared typography and controls */
@@ -174,7 +174,7 @@ a.research-cite:hover { text-decoration: underline; }
 .fbtn:hover { color: var(--color1); border-color: var(--color1); }
 .fbtn.active { color: #fff; background: var(--color1); border-color: var(--color1); }
 .pub-year-grp { margin-bottom: 2.5rem; }
-.pub-year-lbl { margin: 0 0 1rem; padding-bottom: .5rem; color: var(--grey); border-bottom: 2px solid var(--line); font: 400 1.5rem/1.2 "PT Serif", serif; }
+.pub-year-lbl { margin: 0 0 1rem; color: var(--grey); font: 400 1.5rem/1.2 "PT Serif", serif; }
 .pub-item { display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; align-items: start; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
 .pub-item:first-child { border-top: 1px solid var(--line); }
 .pub-thumb-slot { position: relative; width: 200px; aspect-ratio: 16/9; overflow: hidden; background: #102447; border: 1px solid var(--line); border-radius: 5px; }
