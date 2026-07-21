@@ -9,21 +9,3 @@ groups:
         focus: Mobile immersive computing
         email: gunjoong.kim AT yonsei.ac.kr
         photo: assets/img/members/gunjoong.png
-
-      - name: Gunjoong Lee
-        role: Ph.D. Student
-        focus: On-device AI
-        email: gunjoong.lee AT yonsei.ac.kr
-        photo: assets/img/members/gunjoong.png
-
-      - name: Gunjoong Park
-        role: Ph.D. Student
-        focus: Energy-aware mobile systems
-        email: gunjoong.park AT yonsei.ac.kr
-        photo: assets/img/members/gunjoong.png
-
-      - name: Gunjoong Choi
-        role: Ph.D. Student
-        focus: Cross-device computing
-        email: gunjoong.choi AT yonsei.ac.kr
-        photo: assets/img/members/gunjoong.png

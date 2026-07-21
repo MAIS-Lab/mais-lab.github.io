@@ -7,10 +7,15 @@ hero_slides:
     caption: Yonsei University, Seoul, South Korea
     fit: cover
     
-  - image: assets/img/mais-logo.png
-    alt: MAIS Lab logo
-    caption: Mobile AI and Systems Lab at Yonsei University
-    fit: contain
+  - image: assets/img/yonsei.jpg
+    alt: Yonsei University campus
+    caption: Yonsei University, Seoul, South Korea
+    fit: cover
+    
+  # - image: assets/img/mais-logo.png
+  #   alt: MAIS Lab logo
+  #   caption: Mobile AI and Systems Lab at Yonsei University
+  #   fit: contain
 
 
 # Research highlight carousel. image and link may use local paths or full URLs.
