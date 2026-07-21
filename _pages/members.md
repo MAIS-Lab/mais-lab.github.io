@@ -13,11 +13,18 @@ permalink: /members/
       <div class="pi-role">Assistant Professor</div>
       <div class="pi-dept">Department of Computer Science and Engineering, Yonsei University</div>
       <div class="pi-meta">
-        <span><strong>Office:</strong> TBA</span><br>
+        <span><strong>Office:</strong> TBA</span>
+      </div>
+      <div class="pi-meta">
         <span><strong>Tel:</strong> TBA</span>
+      </div>
+        <div class="pi-meta">
         <span><strong>Email:</strong> seonghoon.park AT yonsei.ac.kr</span>
       </div>
-      <div class="pi-links"><a href="mailto:seonghoon.park@yonsei.ac.kr" class="pi-link">Email</a><a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a></div>
+      <div class="pi-links">
+        <a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a>
+        <a href="https://scholar.google.com/citations?user=NzNB_vkAAAAJ&hl=en" target="_blank" rel="noopener" class="pi-link">Google Scholar</a>
+      </div>
     </div>
   </div>
   {% for group in site.data.members.groups %}
