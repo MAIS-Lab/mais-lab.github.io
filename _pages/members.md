@@ -27,6 +27,16 @@ permalink: /members/
       </div>
     </div>
   </div>
+
+  <section class="home-sec join-sec">
+    <div class="wrap">
+      <div class="join-strip">
+        <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing. If you are interested in joining our group, please feel free to contact us.</div>
+        <a href="mailto:seonghoon.park@yonsei.ac.kr" class="btn btn-g">Contact</a>
+      </div>
+    </div>
+  </section>
+
   {% for group in site.data.members.groups %}
   <div class="grp">
     <h2 class="grp-title">{{ group.title }}{% if group.number %}<span class="grp-n">{{ group.number }}</span>{% endif %}</h2>
