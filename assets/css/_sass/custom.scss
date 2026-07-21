@@ -146,10 +146,10 @@ a.research-cite:hover { text-decoration: underline; }
 .photo-slot img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; }
 .pi-block { display: grid; grid-template-columns: 180px 1fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--line); }
 .pi-photo-slot { width: 180px; aspect-ratio: 4/5; }
-.pi-name { margin: 2rem 0 1rem; color: var(--ink); font: 400 1.55rem/1.2 "PT Serif", serif; }
-.pi-role { margin-bottom: .2rem; color: var(--color1); font-size: .78rem; font-weight: 600; }
-.pi-dept { margin-bottom: .75rem; color: var(--ink-3); font-size: .78rem; }
-.pi-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;}
+.pi-name { margin: 1.5rem 0 0.5rem; color: var(--ink); font: 400 1.55rem/1.2 "PT Serif", serif; }
+.pi-role { margin-bottom: .25rem; color: var(--color1); font-size: 1rem; }
+.pi-dept { margin-bottom: .25rem; color: var(--ink-3); font-size: .78rem; }
+.pi-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-bottom: .25rem;}
 .pi-meta span { color: var(--ink-3); font-size: .8rem; }
 .pi-meta strong { color: var(--ink-2); }
 .pi-bio { max-width: 680px; margin-bottom: 1rem; color: var(--ink-2); font-size: .86rem; line-height: 1.8; }
