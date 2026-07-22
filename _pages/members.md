@@ -28,7 +28,7 @@ permalink: /members/
     </div>
   </div>
 
-  <section class="home-sec join-sec">
+  <section class="join-sec">
     <div class="wrap">
       <div class="join-strip">
         <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing. If you are interested in joining our group, please feel free to contact us.</div>
