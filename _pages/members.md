@@ -13,10 +13,10 @@ permalink: /members/
       <div class="pi-role">Assistant Professor</div>
       <div class="pi-dept">Department of Computer Science and Engineering, Yonsei University</div>
       <div class="pi-meta">
-        <span><strong>Office:</strong> TBA</span>
+        <span><strong>Office:</strong> Room 131D, Engineering Research Park, 50 Yonsei-ro, Seodaemun-gu, Seoul, South Korea</span>
       </div>
       <div class="pi-meta">
-        <span><strong>Tel:</strong> TBA</span>
+        <span><strong>Tel:</strong> 02-2123-2725</span>
       </div>
         <div class="pi-meta">
         <span><strong>Email:</strong> seonghoon.park AT yonsei.ac.kr</span>
