@@ -3,12 +3,17 @@
 - date: "2026.09"
   category: news
   label: News
-  title: Seonghoon has joined Yonsei University as an Assistant Professor in the Department of Computer Science and Engineering!
+  title: Junyoung has joined our group. Welcome!
+
+- date: "2026.09"
+  category: news
+  label: News
+  title: Prof. Park has joined Yonsei University as an Assistant Professor in the Department of Computer Science and Engineering!
 
 - date: "2026.07"
   category: service
   label: Service
-  title: 'Seonghoon will serve on the TPC for ACM MobiCom 2027.'
+  title: Prof. Park will serve on the TPC for ACM MobiCom 2027.
 
 - date: "2026.07"
   category: paper
@@ -18,12 +23,12 @@
 - date: "2026.04"
   category: service
   label: Service
-  title: Seonghoon will serve on the TPC for ACM ImmerCom Workshop 2026, which will be held in conjunction with ACM MobiCom 2026.
+  title: Prof. Park will serve on the TPC for ACM ImmerCom Workshop 2026, which will be held in conjunction with ACM MobiCom 2026.
 
 - date: "2026.04"
   category: service
   label: Service
-  title: Seonghoon will serve on the TPC for IEEE INFOCOM 2027.
+  title: Prof. Park will serve on the TPC for IEEE INFOCOM 2027.
 
 - date: "2026.02"
   category: paper
@@ -43,7 +48,7 @@
 - date: "2025.10"
   category: service
   label: Service
-  title: Seonghoon will serve on the TPC for ACM MobiSys 2026.
+  title: Prof. Park will serve on the TPC for ACM MobiSys 2026.
 
 - date: "2025.08"
   category: paper
