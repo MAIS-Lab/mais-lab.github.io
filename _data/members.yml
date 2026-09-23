@@ -9,7 +9,6 @@ groups:
         focus: Mobile immersive computing
         email: gunjoong.kim AT yonsei.ac.kr
         photo: assets/img/members/gunjoong.png
-    members:
       - name: Junyoung Sohn
         role: M.S. Student
         focus: On-device AI
