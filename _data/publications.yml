@@ -13,20 +13,28 @@
 #
 # Leave pdf as "" if not available.
 
-selected:
-  - title: "Selected Paper Title Example"
-    authors: "Author A, Author B, Jiwon Kim"
-    venue: "In Conference Name (2025)"
-    abbr: "MobiCom"
-    pdf: ""
+# selected:
+#   - title: "Selected Paper Title Example"
+#     authors: "Author A, Author B, Jiwon Kim"
+#     venue: "In Conference Name (2025)"
+#     abbr: "MobiCom"
+#     pdf: ""
 
-  - title: "Another Selected Paper"
-    authors: "Author A, Jiwon Kim"
-    venue: "In Conference Name (2024)"
-    abbr: "EMSOFT"
-    pdf: ""
+#   - title: "Another Selected Paper"
+#     authors: "Author A, Jiwon Kim"
+#     venue: "In Conference Name (2024)"
+#     abbr: "EMSOFT"
+#     pdf: ""
 
 full:
+  - year: 2027
+    papers:
+      - title: "Marionette: Mobile-to-Mobile Live 3D Telepresence via Animatable Gaussian Avatars"
+        authors: "Gunjoong Kim*, Hyejin Park*, Seonghoon Park, Jeho Lee, and Hojung Cha"
+        venue: "The 2027 ACM/IEEE International Conference on Embedded Artifical Intelligence and Sensing Systems"
+        abbr: "SenSys"
+        type: conference
+
   - year: 2026
     papers:
       - title: "DynaStitch: Dynamic ViT Inference via Neural Stitching for Resource-Constrained Edge Devices"

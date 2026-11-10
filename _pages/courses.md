@@ -14,7 +14,7 @@ permalink: /courses/
           <li>TA: Gunjoong Kim</li>
         </ul>
       </li>
-      <li>Special Topics in On-Device AI Systems</li>
+      <li>Special Topics in On-Device AI Systems (Graduate)</li>
     </ul>
   </section>
 </div>
