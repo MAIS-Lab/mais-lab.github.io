@@ -1,5 +1,15 @@
 # Add new entries at the top.
 # Supported categories: paper, award, service, news.
+- date: "2026.11"
+  category: paper
+  label: Paper
+  title: '"Marionette" has been accepted to ACM/IEEE SenSys 2027.'
+
+- date: "2026.10"
+  category: service
+  label: Service
+  title: Prof. Park will serve on the TPC for IEEE/IFIP WiOpt.
+
 - date: "2026.09"
   category: news
   label: News
@@ -38,7 +48,7 @@
 - date: "2026.01"
   category: paper
   label: Highlight
-  title: '"3DGS on Your Phone" has been featured as a Research Highlight in ACM GetMobile.'
+  title: '"3DGS on Your Phone" has been featured as a Research Highlight in ACM GetMobile.
 
 - date: "2026.01"
   category: paper
