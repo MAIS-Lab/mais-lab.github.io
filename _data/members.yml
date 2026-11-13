@@ -10,6 +10,7 @@ groups:
         email: gunjoong.kim AT yonsei.ac.kr
         website: https://gunjoong-kim.github.io/
         photo: assets/img/members/gunjoong.png
+        website: gunjoong-kim.github.io
       - name: Junyoung Sohn
         role: M.S. Student
         focus: On-device AI
