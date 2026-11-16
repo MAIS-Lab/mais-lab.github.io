@@ -27,10 +27,10 @@ header_variant: minimal
           <div class="pub-venue">
             {% if paper.venues %}
             {% for venue in paper.venues %}
-            <div class="pub-venue-row"><span class="pub-venue-text">{{ venue.name }}</span></div>
+            <div class="pub-venue-row"><span class="pub-venue-text">{% if venue.type == 'conference' and venue.proceedings %}In Proceedings of {{ venue.proceedings }} {{ group.year }}{% else %}{{ venue.name }}{% endif %}</span></div>
             {% endfor %}
             {% else %}
-            <div class="pub-venue-row"><span class="pub-venue-text">{{ paper.venue }}</span></div>
+            <div class="pub-venue-row"><span class="pub-venue-text">{% if paper.type == 'conference' and paper.proceedings %}In Proceedings of {{ paper.proceedings }} {{ group.year }}{% else %}{{ paper.venue }}{% endif %}</span></div>
             {% endif %}
           </div>
           {% if paper.tags %}<div class="pub-notes">{% for tag in paper.tags %}<span class="pub-note">{{ tag }}</span>{% endfor %}</div>{% endif %}

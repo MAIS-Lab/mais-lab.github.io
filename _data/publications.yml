@@ -6,7 +6,7 @@
 #
 # --- full ---
 # All publications listed by year. Add new year blocks as needed.
-# A regular paper uses: type, venue, abbr.
+# A regular paper uses: type, venue, abbr. Conference papers also use proceedings.
 # A dual publication uses: types and venues (see the EMSOFT examples).
 # Optional: thumbnail, pdf, video, demo, teaser, tags
 # thumbnail paths are relative to the site root, e.g. assets/img/publications/paper.jpg
@@ -34,6 +34,7 @@ full:
         venue: "The 2027 ACM/IEEE International Conference on Embedded Artifical Intelligence and Sensing Systems"
         abbr: "SenSys"
         type: conference
+        proceedings: "ACM/IEEE SenSys"
 
   - year: 2026
     papers:
@@ -44,6 +45,7 @@ full:
           - type: conference
             abbr: "EMSOFT"
             name: "The 26th IEEE/ACM International Conference on Embedded Software (to appear)"
+            proceedings: "IEEE/ACM EMSOFT"
           - type: journal
             abbr: "TECS"
             name: "ACM Transactions on Embedded Computing Systems (to appear)"
@@ -53,6 +55,7 @@ full:
         venue: "The 21st European Conference on Computer Systems"
         abbr: "EuroSys"
         type: conference
+        proceedings: "ACM EuroSys"
         pdf: "https://dl.acm.org/doi/10.1145/3767295.3803619"
         thumbnail: "assets/img/publications/2026-eurosys-vinpu.png"
 
@@ -81,6 +84,7 @@ full:
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
         type: conference
+        proceedings: "ACM MobiCom"
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765252"
         thumbnail: "assets/img/publications/2025-mobicom-eos.png"
         video: "https://youtu.be/U9J5Cax3eL0"
@@ -90,6 +94,7 @@ full:
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
         type: conference
+        proceedings: "ACM MobiCom"
         pdf: "https://dl.acm.org/doi/10.1145/3680207.3765267"
         thumbnail: "assets/img/publications/2025-mobicom-vega.png"
         video: "https://youtu.be/rLd3ajRILws"
@@ -109,6 +114,7 @@ full:
           - type: conference
             abbr: "EMSOFT"
             name: "The 25th International Conference on Embedded Software"
+            proceedings: "IEEE/ACM EMSOFT"
           - type: journal
             abbr: "TECS"
             name: "ACM Transactions on Embedded Computing Systems, Vol. 24, No. 5s"
@@ -120,6 +126,7 @@ full:
         venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
         type: conference
+        proceedings: "ACM MobiSys"
         pdf: "https://dl.acm.org/doi/10.1145/3711875.3729161"
         thumbnail: "assets/img/publications/2025-mobisys-aria.png"
         video: "https://youtu.be/kxos6AXShIU"
@@ -132,6 +139,7 @@ full:
         venue: "IEEE INFOCOM 2024 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         type: conference
+        proceedings: "IEEE INFOCOM"
         pdf: "https://ieeexplore.ieee.org/document/10621433"
         thumbnail: "assets/img/publications/2024-infocom-vulture.png"
         demo: "https://youtu.be/PY3IzOVTtBU"
@@ -143,6 +151,7 @@ full:
         venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
         type: conference
+        proceedings: "ACM MobiSys"
         pdf: "https://dl.acm.org/doi/10.1145/3581791.3596851"
         thumbnail: "assets/img/publications/2023-mobisys-omnilive.png"
         teaser: "https://youtu.be/GfY0s3xcvb4"
@@ -152,6 +161,7 @@ full:
         venue: "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         type: conference
+        proceedings: "IEEE INFOCOM"
         thumbnail: "assets/img/publications/2023-infocom-crowapi.png"
         pdf: "https://ieeexplore.ieee.org/document/10228950/"
 
@@ -171,6 +181,7 @@ full:
         venue: "IEEE INFOCOM 2021 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
         type: conference
+        proceedings: "IEEE INFOCOM"
         pdf: "https://ieeexplore.ieee.org/document/9488671"
 
       - title: "GAZEL: Runtime Gaze Tracking for Smartphones"
@@ -178,6 +189,7 @@ full:
         venue: "2021 IEEE International Conference on Pervasive Computing and Communications"
         abbr: "PerCom"
         type: conference
+        proceedings: "IEEE PerCom"
         pdf: "https://ieeexplore.ieee.org/document/9439113"
 
   - year: 2019
@@ -187,6 +199,7 @@ full:
         venue: "The 25th Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
         type: conference
+        proceedings: "ACM MobiCom"
         pdf: "https://dl.acm.org/doi/10.1145/3300061.3345449"
         video: "https://youtu.be/Kln7XbRSBX8"
 
@@ -195,6 +208,7 @@ full:
         venue: "The 17th Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
         type: conference
+        proceedings: "ACM MobiSys"
         pdf: "https://dl.acm.org/doi/10.1145/3307334.3326075"
         video: "https://youtu.be/zUNttnaj5eY"
 
