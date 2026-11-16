@@ -14,6 +14,7 @@ layout: null
           <h1 class="home-intro-title">Mobile AI and Systems Lab</h1>
           <p class="home-intro-university">Yonsei University</p>
           <p class="home-intro-desc">We aim to push the boundaries of what mobile and edge devices can deliver in everyday use, enabling advanced mobile experiences such as AI and AR/VR/XR.</p>
+          <p class="home-intro-recruit">We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing.</p>
           <a href="{{ site.baseurl }}/research/" class="home-action-btn home-research-link">Explore our research</a>
         </div>
         {% assign hero_image = site.data.home.hero_slides | first %}
@@ -25,32 +26,6 @@ layout: null
       </div>
     </section>
 
-    <section class="home-join">
-      <div class="wrap">
-        <div class="join-strip">
-          <div>We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing.</div>
-          <a href="mailto:mais.yonsei@gmail.com" class="home-action-btn">Contact</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="home-sec updates-sec">
-      <div class="wrap">
-        <div class="home-section-head">
-          <h2>Recent News</h2>
-          <a href="{{ site.baseurl }}/news/" class="home-action-btn">All news</a>
-        </div>
-        <div class="news-list">
-          {% for item in site.data.news limit: 5 %}
-          <article class="news-row">
-            <time class="news-date">{{ item.date }}</time>
-            <div class="news-text">{{ item.title }}</div>
-          </article>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-
     <section class="home-sec highlight-sec">
       <div class="wrap">
         <div class="home-section-head">
@@ -59,25 +34,33 @@ layout: null
             <a href="{{ site.baseurl }}/publications/" class="home-action-btn">All publications</a>
           </div>
         </div>
-        <div class="publication-carousel" data-publication-carousel>
-          <div class="publication-viewport" data-publication-viewport>
-            <div class="publication-track">
-              {% for highlight in site.data.home.research_highlights %}
-              {% assign highlight_link = highlight.link | default: '/publications/' %}
-              {% assign highlight_image = highlight.image %}
-              <article class="highlight-item" data-publication-item>
-                <a href="{% if highlight_link contains '://' %}{{ highlight_link }}{% else %}{{ site.baseurl }}{{ highlight_link }}{% endif %}" class="highlight-link"{% if highlight_link contains '://' %} target="_blank" rel="noopener"{% endif %}>
-                  <span class="highlight-image highlight-{{ highlight.fit | default: 'cover' }}"><img src="{% if highlight_image contains '://' %}{{ highlight_image }}{% else %}{{ site.baseurl }}/{{ highlight_image }}{% endif %}" alt="{{ highlight.alt | default: highlight.title }}" loading="lazy"></span>
-                  <strong>{{ highlight.title }}</strong>
-                </a>
-              </article>
-              {% endfor %}
-            </div>
-          </div>
-          <div class="publication-controls" aria-label="Publication carousel controls">
-            <button type="button" class="publication-control publication-control-prev" data-publication-prev aria-label="Previous publications"><span aria-hidden="true">‹</span></button>
-            <button type="button" class="publication-control publication-control-next" data-publication-next aria-label="Next publications"><span aria-hidden="true">›</span></button>
-          </div>
+        <div class="publication-grid">
+          {% for highlight in site.data.home.research_highlights limit: 8 %}
+          {% assign highlight_link = highlight.link | default: '/publications/' %}
+          {% assign highlight_image = highlight.image %}
+          <article class="highlight-item">
+            <a href="{% if highlight_link contains '://' %}{{ highlight_link }}{% else %}{{ site.baseurl }}{{ highlight_link }}{% endif %}" class="highlight-link"{% if highlight_link contains '://' %} target="_blank" rel="noopener"{% endif %}>
+              <span class="highlight-image highlight-{{ highlight.fit | default: 'cover' }}"><img src="{% if highlight_image contains '://' %}{{ highlight_image }}{% else %}{{ site.baseurl }}/{{ highlight_image }}{% endif %}" alt="{{ highlight.alt | default: highlight.title }}" loading="lazy"></span>
+              <strong>{{ highlight.title }}</strong>
+            </a>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="home-sec updates-sec">
+      <div class="wrap">
+        <div class="home-section-head">
+          <h2>News</h2>
+        </div>
+        <div class="news-list">
+          {% for item in site.data.news %}
+          <article class="news-row">
+            <time class="news-date">{{ item.date }}</time>
+            <div class="news-text">{{ item.title }}</div>
+          </article>
+          {% endfor %}
         </div>
       </div>
     </section>

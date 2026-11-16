@@ -8,7 +8,8 @@ hero_slides:
     fit: cover
 
 
-# Research highlight carousel. image and link may use local paths or full URLs.
+# Selected publications, newest first. The first eight appear on the home page.
+# image and link may use local paths or full URLs.
 research_highlights:
   - title: viNPU (EuroSys '26)
     image: assets/img/publications/2026-eurosys-vinpu.png
