@@ -7,8 +7,8 @@ permalink: /research/
 
 <div class="research-prose-list">
   <section class="research-prose-section">
-    <h2 class="research-prose-title">On-device and physical AI</h2>
-    <p class="research-prose">Running deep neural networks on resource-constrained mobile devices and physical AI platforms presents significant challenges in latency, accuracy, and hardware utilization. We develop system techniques across the model, runtime, and application stacks, including dynamic reconfiguration of vision transformers through neural stitching [<span class="research-cite">EMSOFT '26</span>], optimized vision transformer inference on mobile NPUs [<a class="research-cite" href="https://dl.acm.org/doi/10.1145/3767295.3803619" target="_blank" rel="noopener">EuroSys '26</a>], and coordinated use of heterogeneous mobile processors for real-time vision foundation model inference in augmented reality [<a class="research-cite" href="https://dl.acm.org/doi/10.1145/3711875.3729161" target="_blank" rel="noopener">MobiSys '25</a>].</p>
+    <h2 class="research-prose-title">On-device and embodied AI</h2>
+    <p class="research-prose">Running deep neural networks on resource-constrained mobile devices and embodied AI platforms presents significant challenges in latency, accuracy, and hardware utilization. We develop system techniques across the model, runtime, and application stacks, including dynamic reconfiguration of vision transformers through neural stitching [<span class="research-cite">EMSOFT '26</span>], optimized vision transformer inference on mobile NPUs [<a class="research-cite" href="https://dl.acm.org/doi/10.1145/3767295.3803619" target="_blank" rel="noopener">EuroSys '26</a>], and coordinated use of heterogeneous mobile processors for real-time vision foundation model inference in augmented reality [<a class="research-cite" href="https://dl.acm.org/doi/10.1145/3711875.3729161" target="_blank" rel="noopener">MobiSys '25</a>].</p>
   </section>
 
   <section class="research-prose-section">

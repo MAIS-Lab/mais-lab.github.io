@@ -1,6 +1,11 @@
 # Add new entries at the top.
 # Supported categories: paper, award, service, news.
 - date: "2026.11"
+  category: service
+  label: Service
+  title: Prof. Park will serve on the TPC for ACM MobiSys 2027.
+
+- date: "2026.11"
   category: paper
   label: Paper
   title: '"Marionette" has been accepted to ACM/IEEE SenSys 2027.'
