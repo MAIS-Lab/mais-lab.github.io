@@ -17,6 +17,41 @@
     });
   }
 
+  document.querySelectorAll('[data-publication-carousel]').forEach(function (carousel) {
+    var viewport = carousel.querySelector('[data-publication-viewport]');
+    var items = Array.prototype.slice.call(carousel.querySelectorAll('[data-publication-item]'));
+    var section = carousel.closest('.home-sec');
+    var previous = section ? section.querySelector('[data-publication-prev]') : null;
+    var next = section ? section.querySelector('[data-publication-next]') : null;
+
+    if (!viewport || !items.length || !previous || !next) return;
+
+    function step() {
+      var track = viewport.firstElementChild;
+      var gap = track ? parseFloat(window.getComputedStyle(track).columnGap || window.getComputedStyle(track).gap) || 0 : 0;
+      return items[0].getBoundingClientRect().width + gap;
+    }
+
+    function updateControls() {
+      var maxScroll = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
+      previous.disabled = viewport.scrollLeft <= 1;
+      next.disabled = viewport.scrollLeft >= maxScroll - 1;
+    }
+
+    function move(direction) {
+      viewport.scrollBy({
+        left: direction * step(),
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    }
+
+    previous.addEventListener('click', function () { move(-1); });
+    next.addEventListener('click', function () { move(1); });
+    viewport.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+    updateControls();
+  });
+
   document.querySelectorAll('[data-filter-group]').forEach(function (group) {
     group.addEventListener('click', function (event) {
       var button = event.target.closest('.fbtn');

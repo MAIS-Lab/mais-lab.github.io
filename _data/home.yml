@@ -23,41 +23,41 @@ research_highlights:
   - title: viNPU (EuroSys '26)
     image: assets/img/publications/2026-eurosys-vinpu.png
     alt: viNPU (EuroSys '26)
-    link: /research/
+    link: /publications/
     fit: contain
 
   - title: Vega (MobiCom '25)
     image: assets/img/publications/2025-mobicom-vega.png
     alt: Vega (MobiCom '25)
-    link: /research/
+    link: /publications/
     fit: contain
   
   - title: EOS (MobiCom '25)
     image: assets/img/publications/2025-mobicom-eos.png
     alt: EOS (MobiCom '25)
-    link: /research/
+    link: /publications/
     fit: contain
 
   - title: ARIA (MobiSys '25)
     image: assets/img/publications/2025-mobisys-aria.png
     alt: ARIA (MobiSys '25)
-    link: /research/
+    link: /publications/
     fit: contain
 
   - title: Vulture (INFOCOM '24)
     image: assets/img/publications/2024-infocom-vulture.png
     alt: Vulture (INFOCOM '24)
-    link: /research/
+    link: /publications/
     fit: contain
 
   - title: OmniLive (MobiSys '23)
     image: assets/img/publications/2023-mobisys-omnilive.png
     alt: OmniLive (MobiSys '23)
-    link: /research/
+    link: /publications/
     fit: contain
 
   - title: Crow API (INFOCOM '23)
     image: assets/img/publications/2023-infocom-crowapi.png
     alt: Crow API (INFOCOM '23)
-    link: /research/
+    link: /publications/
     fit: contain
