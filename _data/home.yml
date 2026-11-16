@@ -1,4 +1,4 @@
-# Main-page hero slideshow. Items appear in this order.
+# Main-page hero image. Replace this entry when a lab group photo is available.
 # image accepts a path relative to the site root or a full https:// URL.
 # fit accepts "cover" for photos or "contain" for logos/graphics.
 hero_slides:
@@ -6,16 +6,6 @@ hero_slides:
     alt: Yonsei University campus
     caption: Yonsei University, Seoul, South Korea
     fit: cover
-    
-  - image: assets/img/yonsei.jpg
-    alt: Yonsei University campus
-    caption: Yonsei University, Seoul, South Korea
-    fit: cover
-    
-  # - image: assets/img/mais-logo.png
-  #   alt: MAIS Lab logo
-  #   caption: Mobile AI and Systems Lab at Yonsei University
-  #   fit: contain
 
 
 # Research highlight carousel. image and link may use local paths or full URLs.

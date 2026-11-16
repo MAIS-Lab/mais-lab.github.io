@@ -10,18 +10,26 @@ layout: null
   <main id="page-content">
     <section class="home-intro">
       <div class="wrap">
-        <h1 class="home-intro-title">Mobile AI and Systems Lab</h1>
-        <p class="home-intro-university">Yonsei University</p>
-        <p class="home-intro-desc">We aim to push the boundaries of what mobile and edge devices can deliver in everyday use, enabling advanced mobile experiences such as AI and AR/VR/XR.</p>
-        <a href="{{ site.baseurl }}/research/" class="home-research-link"><span>Explore our research</span><span class="home-research-icon" aria-hidden="true">→</span></a>
+        <div class="home-intro-copy">
+          <h1 class="home-intro-title">Mobile AI and Systems Lab</h1>
+          <p class="home-intro-university">Yonsei University</p>
+          <p class="home-intro-desc">We aim to push the boundaries of what mobile and edge devices can deliver in everyday use, enabling advanced mobile experiences such as AI and AR/VR/XR.</p>
+          <a href="{{ site.baseurl }}/research/" class="home-action-btn home-research-link">Explore our research</a>
+        </div>
+        {% assign hero_image = site.data.home.hero_slides | first %}
+        {% if hero_image %}
+        <figure class="home-intro-visual">
+          <img src="{% if hero_image.image contains '://' %}{{ hero_image.image }}{% else %}{{ site.baseurl }}/{{ hero_image.image }}{% endif %}" alt="{{ hero_image.alt }}">
+        </figure>
+        {% endif %}
       </div>
     </section>
 
     <section class="home-join">
       <div class="wrap">
         <div class="join-strip">
-          <div><strong>Join us.</strong> We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing.</div>
-          <a href="mailto:mais.yonsei@gmail.com" class="text-link">Contact →</a>
+          <div>We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing.</div>
+          <a href="mailto:mais.yonsei@gmail.com" class="home-action-btn">Contact</a>
         </div>
       </div>
     </section>
@@ -30,7 +38,7 @@ layout: null
       <div class="wrap">
         <div class="home-section-head">
           <h2>Recent News</h2>
-          <a href="{{ site.baseurl }}/news/" class="text-link">All news →</a>
+          <a href="{{ site.baseurl }}/news/" class="home-action-btn">All news</a>
         </div>
         <div class="news-list">
           {% for item in site.data.news limit: 5 %}
@@ -48,11 +56,7 @@ layout: null
         <div class="home-section-head">
           <h2>Selected Publications</h2>
           <div class="home-section-actions">
-            <a href="{{ site.baseurl }}/publications/" class="text-link">All publications →</a>
-            <div class="publication-controls" aria-label="Publication carousel controls">
-              <button type="button" class="publication-control" data-publication-prev aria-label="Previous publications">←</button>
-              <button type="button" class="publication-control" data-publication-next aria-label="Next publications">→</button>
-            </div>
+            <a href="{{ site.baseurl }}/publications/" class="home-action-btn">All publications</a>
           </div>
         </div>
         <div class="publication-carousel" data-publication-carousel>
@@ -69,6 +73,10 @@ layout: null
               </article>
               {% endfor %}
             </div>
+          </div>
+          <div class="publication-controls" aria-label="Publication carousel controls">
+            <button type="button" class="publication-control publication-control-prev" data-publication-prev aria-label="Previous publications"><span aria-hidden="true">‹</span></button>
+            <button type="button" class="publication-control publication-control-next" data-publication-next aria-label="Next publications"><span aria-hidden="true">›</span></button>
           </div>
         </div>
       </div>

@@ -20,9 +20,8 @@
   document.querySelectorAll('[data-publication-carousel]').forEach(function (carousel) {
     var viewport = carousel.querySelector('[data-publication-viewport]');
     var items = Array.prototype.slice.call(carousel.querySelectorAll('[data-publication-item]'));
-    var section = carousel.closest('.home-sec');
-    var previous = section ? section.querySelector('[data-publication-prev]') : null;
-    var next = section ? section.querySelector('[data-publication-next]') : null;
+    var previous = carousel.querySelector('[data-publication-prev]');
+    var next = carousel.querySelector('[data-publication-next]');
 
     if (!viewport || !items.length || !previous || !next) return;
 
