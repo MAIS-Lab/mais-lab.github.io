@@ -1,5 +1,5 @@
 {% unless page.url == "/" %}
-<header class="page-hd">
+<header class="page-hd{% if page.header_variant == 'minimal' %} page-hd-minimal{% endif %}">
   <div class="wrap">
     <p class="page-eye">MAIS Lab @ Yonsei</p>
     <h1>{{ page.title }}</h1>

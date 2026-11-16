@@ -8,92 +8,64 @@ layout: null
   {% include navigation.html %}
 
   <main id="page-content">
-    <div class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <h1 class="hero-title">Mobile AI and<br>Systems Lab</h1>
-          <p class="hero-abbr">MAIS Lab @ Yonsei</p>
-          <p class="hero-desc">We aim to push the boundaries of what mobile and edge devices can deliver in everyday use, enabling advanced mobile experiences such as AI and AR/VR/XR.</p>
-          <div class="hero-kws">
-            <span class="hero-kw">On-device and embodied AI</span>
-            <span class="hero-kw">Mobile immersive computing (AR/VR/XR)</span>
-            <span class="hero-kw">Energy and thermal management</span>
-            <span class="hero-kw">Cross-device computing</span>
-          </div>
-        </div>
-        <div class="hero-slideshow" data-hero-slideshow data-interval="3000" aria-label="Lab gallery">
-          {% for slide in site.data.home.hero_slides %}
-          {% assign slide_image = slide.image %}
-          <div class="hero-slide{% if forloop.first %} active{% endif %}" data-slide aria-hidden="{% unless forloop.first %}true{% else %}false{% endunless %}">
-            <div class="hero-slide-img hero-slide-{{ slide.fit | default: 'cover' }}">
-              <img src="{% if slide_image contains '://' %}{{ slide_image }}{% else %}{{ site.baseurl }}/{{ slide_image }}{% endif %}" alt="{{ slide.alt | default: '' }}"{% unless forloop.first %} loading="lazy"{% endunless %}>
-            </div>
-            {% if slide.caption %}<div class="hero-cap">{{ slide.caption }}</div>{% endif %}
-          </div>
-          {% endfor %}
-          <div class="slide-progress hero-progress" data-slide-progress aria-label="Choose gallery slide">
-            {% for slide in site.data.home.hero_slides %}
-            <button type="button" class="slide-progress-segment{% if forloop.first %} active{% endif %}" data-slide-to="{{ forloop.index0 }}" aria-label="Show gallery slide {{ forloop.index }}"><span></span></button>
-            {% endfor %}
-          </div>
-        </div>
+    <section class="home-intro">
+      <div class="wrap">
+        <p class="home-intro-label">MAIS Lab · Yonsei University</p>
+        <h1 class="home-intro-title">Mobile AI and Systems Lab</h1>
+        <p class="home-intro-desc">We aim to push the boundaries of what mobile and edge devices can deliver in everyday use, enabling advanced mobile experiences such as AI and AR/VR/XR.</p>
+        <ul class="home-topics" aria-label="Research areas">
+          <li>On-device and embodied AI</li>
+          <li>Mobile immersive computing (AR/VR/XR)</li>
+          <li>Energy and thermal management</li>
+          <li>Cross-device computing</li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <section class="home-sec join-sec">
+    <section class="home-join">
       <div class="wrap">
         <div class="join-strip">
-          <div><strong>JOIN US!</strong>&nbsp;&nbsp; We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing. If you are interested in joining our group, please feel free to contact us.</div>
-          <a href="mailto:mais.yonsei@gmail.com" class="btn btn-g">Contact</a>
+          <div><strong>Join us.</strong> We are seeking Ph.D. and M.S. students who are highly motivated to pursue research in mobile systems and mobile computing.</div>
+          <a href="mailto:mais.yonsei@gmail.com" class="text-link">Contact →</a>
         </div>
       </div>
     </section>
 
     <section class="home-sec updates-sec">
       <div class="wrap">
-        <div class="sec-eye">Latest Updates</div>
-        <h2 class="sec-h2">Recent News</h2>
+        <div class="home-section-head">
+          <h2>News</h2>
+          <a href="{{ site.baseurl }}/news/" class="text-link">All news →</a>
+        </div>
         <div class="news-list">
           {% for item in site.data.news limit: 5 %}
-          <div class="news-row">
+          <article class="news-row">
             <time class="news-date">{{ item.date }}</time>
-            <div class="news-cat"><span class="pill {% case item.category %}{% when 'paper' %}pc1{% when 'award' %}pc2{% when 'news' %}pc3{% else %}pc3{% endcase %}">{{ item.label }}</span></div>
+            <span class="news-label">{{ item.label }}</span>
             <div class="news-text">{{ item.title }}</div>
-          </div>
+          </article>
           {% endfor %}
         </div>
-        <div class="view-all-row"><a href="{{ site.baseurl }}/news/" class="btn btn-og">View All News</a></div>
       </div>
     </section>
 
     <section class="home-sec highlight-sec">
       <div class="wrap">
-        <div class="sec-eye">About the Lab</div>
-        <h2 class="sec-h2">Research Highlights</h2>
-        <div class="highlight-carousel{% if site.data.home.research_highlights.size > 4 %} has-arrows{% endif %}" data-highlight-carousel>
-          {% if site.data.home.research_highlights.size > 4 %}
-          <button type="button" class="carousel-arrow carousel-prev" data-carousel-prev aria-label="Previous research highlights">&#8249;</button>
-          {% endif %}
-          <div class="highlight-viewport" data-carousel-viewport>
-            <div class="highlight-track" data-carousel-track>
-              {% for highlight in site.data.home.research_highlights %}
-              {% assign highlight_link = highlight.link | default: '/research/' %}
-              {% assign highlight_image = highlight.image %}
-              <article class="highlight-carousel-item" data-carousel-item>
-                <a href="{% if highlight_link contains '://' %}{{ highlight_link }}{% else %}{{ site.baseurl }}{{ highlight_link }}{% endif %}" class="highlight-card highlight-{{ highlight.fit | default: 'cover' }}"{% if highlight_link contains '://' %} target="_blank" rel="noopener"{% endif %}>
-                  <img src="{% if highlight_image contains '://' %}{{ highlight_image }}{% else %}{{ site.baseurl }}/{{ highlight_image }}{% endif %}" alt="{{ highlight.alt | default: highlight.title }}" loading="lazy">
-                  <span class="highlight-shade"></span>
-                  <!-- <span class="highlight-number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span> -->
-                  <strong>{{ highlight.title }}</strong>
-                </a>
-              </article>
-              {% endfor %}
-            </div>
-          </div>
-          {% if site.data.home.research_highlights.size > 4 %}
-          <button type="button" class="carousel-arrow carousel-next" data-carousel-next aria-label="Next research highlights">&#8250;</button>
-          {% endif %}
-          <div class="slide-progress carousel-progress" data-carousel-progress aria-label="Choose research highlight page"></div>
+        <div class="home-section-head">
+          <h2>Selected Research</h2>
+          <a href="{{ site.baseurl }}/research/" class="text-link">Research areas →</a>
+        </div>
+        <div class="highlight-grid">
+          {% for highlight in site.data.home.research_highlights limit: 6 %}
+          {% assign highlight_link = highlight.link | default: '/research/' %}
+          {% assign highlight_image = highlight.image %}
+          <article class="highlight-item">
+            <a href="{% if highlight_link contains '://' %}{{ highlight_link }}{% else %}{{ site.baseurl }}{{ highlight_link }}{% endif %}" class="highlight-link"{% if highlight_link contains '://' %} target="_blank" rel="noopener"{% endif %}>
+              <span class="highlight-image highlight-{{ highlight.fit | default: 'cover' }}"><img src="{% if highlight_image contains '://' %}{{ highlight_image }}{% else %}{{ site.baseurl }}/{{ highlight_image }}{% endif %}" alt="{{ highlight.alt | default: highlight.title }}" loading="lazy"></span>
+              <strong>{{ highlight.title }}</strong>
+            </a>
+          </article>
+          {% endfor %}
         </div>
       </div>
     </section>
