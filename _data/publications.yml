@@ -38,6 +38,7 @@ full:
         abbr: "SenSys"
         type: conference
         proceedings: "ACM/IEEE SenSys"
+        thumbnail: "assets/img/publications/2027-sensys-marionette.png"
 
   - year: 2026
     papers:

@@ -11,6 +11,12 @@ hero_slides:
 # Selected publications, newest first. The first eight appear on the home page.
 # image and link may use local paths or full URLs.
 research_highlights:
+  - title: Marionette (SenSys '27)
+    image: assets/img/publications/2027-sensys-marionette.png
+    alt: Marionette (SenSys '27)
+    link: /publications/
+    fit: contain
+
   - title: viNPU (EuroSys '26)
     image: assets/img/publications/2026-eurosys-vinpu.png
     alt: viNPU (EuroSys '26)
