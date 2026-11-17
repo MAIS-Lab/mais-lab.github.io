@@ -3,7 +3,7 @@
     {% for group in site.data.publications.full %}
       {% for paper in group.papers %}
         {% if paper.slug == target_slug %}
-          {% include publication-item.html paper=paper year=group.year %}
+          {% include publication-item.html paper=paper year=group.year show_keywords=true %}
         {% endif %}
       {% endfor %}
     {% endfor %}
