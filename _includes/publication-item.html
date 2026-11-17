@@ -1,0 +1,31 @@
+{% assign publication = include.paper %}
+{% assign publication_year = include.year %}
+<article class="pub-item">
+  <div class="pub-thumb-slot">
+    {% if publication.thumbnail %}
+    <img src="{{ site.baseurl }}/{{ publication.thumbnail }}" alt="Thumbnail for {{ publication.title }}" loading="lazy">
+    {% else %}
+    <img src="{{ site.baseurl }}/assets/img/mais-logo.png" alt="" class="pub-default-logo" loading="lazy">
+    {% endif %}
+  </div>
+  <div class="pub-copy">
+    <h3 class="pub-title">{{ publication.title }}</h3>
+    <div class="pub-authors">{{ publication.authors }}</div>
+    <div class="pub-venue">
+      {% if publication.venues %}
+      {% for venue in publication.venues %}
+      <div class="pub-venue-row"><span class="pub-venue-text">{% if venue.type == 'conference' and venue.proceedings %}In Proceedings of {{ venue.proceedings }} {{ publication_year }}{% else %}{{ venue.name }}{% endif %}</span></div>
+      {% endfor %}
+      {% else %}
+      <div class="pub-venue-row"><span class="pub-venue-text">{% if publication.type == 'conference' and publication.proceedings %}In Proceedings of {{ publication.proceedings }} {{ publication_year }}{% else %}{{ publication.venue }}{% endif %}</span></div>
+      {% endif %}
+    </div>
+    {% if publication.tags %}<div class="pub-notes">{% for tag in publication.tags %}<span class="pub-note">{{ tag }}</span>{% endfor %}</div>{% endif %}
+    <div class="pub-links">
+      {% if publication.pdf and publication.pdf != '' %}<a href="{{ publication.pdf }}" target="_blank" rel="noopener" class="pub-lnk">[Paper]</a>{% endif %}
+      {% if publication.video %}<a href="{{ publication.video }}" target="_blank" rel="noopener" class="pub-lnk">[Video]</a>{% endif %}
+      {% if publication.demo %}<a href="{{ publication.demo }}" target="_blank" rel="noopener" class="pub-lnk">[Demo]</a>{% endif %}
+      {% if publication.teaser %}<a href="{{ publication.teaser }}" target="_blank" rel="noopener" class="pub-lnk">[Teaser]</a>{% endif %}
+    </div>
+  </div>
+</article>

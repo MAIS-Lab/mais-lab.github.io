@@ -1,0 +1,11 @@
+<div class="pub-list research-pub-list">
+  {% for target_slug in include.slugs %}
+    {% for group in site.data.publications.full %}
+      {% for paper in group.papers %}
+        {% if paper.slug == target_slug %}
+          {% include publication-item.html paper=paper year=group.year %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</div>

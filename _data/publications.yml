@@ -30,6 +30,7 @@ full:
   - year: 2027
     papers:
       - title: "Marionette: Mobile-to-Mobile Live 3D Telepresence via Animatable Gaussian Avatars"
+        slug: marionette
         authors: "Gunjoong Kim*, Hyejin Park*, Seonghoon Park, Jeho Lee, and Hojung Cha"
         venue: "The 2027 ACM/IEEE International Conference on Embedded Artifical Intelligence and Sensing Systems"
         abbr: "SenSys"
@@ -51,6 +52,7 @@ full:
             name: "ACM Transactions on Embedded Computing Systems (to appear)"
 
       - title: "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs"
+        slug: vinpu
         authors: "Jeho Lee, Gunjoong Kim, Chanyoung Jung, Jaehee Kim, Seonghoon Park, and Hojung Cha"
         venue: "The 21st European Conference on Computer Systems"
         abbr: "EuroSys"
@@ -80,6 +82,7 @@ full:
   - year: 2025
     papers:
       - title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
+        slug: eos
         authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
@@ -90,6 +93,7 @@ full:
         video: "https://youtu.be/U9J5Cax3eL0"
 
       - title: "Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting"
+        slug: vega
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
@@ -108,6 +112,7 @@ full:
         pdf: "https://dl.acm.org/doi/10.1145/3761806"
 
       - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
+        slug: ember
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
         types: [conference, journal]
         venues:
@@ -122,6 +127,7 @@ full:
         pdf: "https://dl.acm.org/doi/10.1145/3757918"
 
       - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
+        slug: aria
         authors: "Chanyoung Jung*, Jeho Lee*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
         venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
@@ -135,6 +141,7 @@ full:
   - year: 2024
     papers:
       - title: "Vulture: Cross-Device Web Experience with Fine-Grained Graphical User Interface Distribution"
+        slug: vulture
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
         venue: "IEEE INFOCOM 2024 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
@@ -147,6 +154,7 @@ full:
   - year: 2023
     papers:
       - title: "OmniLive: Super-Resolution Enhanced 360° Video Live Streaming for Mobile Devices"
+        slug: omnilive
         authors: "Seonghoon Park*, Yeonwoo Cho*, Hyungchol Jun, Jeho Lee, and Hojung Cha"
         venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
@@ -157,6 +165,7 @@ full:
         teaser: "https://youtu.be/GfY0s3xcvb4"
 
       - title: "Crow API: Cross-device I/O Sharing in Web Applications"
+        slug: crow-api
         authors: "Seonghoon Park, Jeho Lee, and Hojung Cha"
         venue: "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"

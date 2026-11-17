@@ -14,7 +14,7 @@ header_variant: minimal
       <div class="pi-role">Assistant Professor</div>
       <div class="pi-dept">Department of Computer Science and Engineering, Yonsei University</div>
       <div class="pi-meta">
-        <span><strong>Office:</strong> Room 131D, Engineering Research Park</span>
+        <span><strong>Office:</strong> Room 131D, Engineering Research Park, 50 Yonsei-ro, Seodaemun-gu, Seoul 03722, South Korea</span>
       </div>
       <div class="pi-meta">
         <span><strong>Tel:</strong> 02-2123-2725</span>
@@ -23,14 +23,43 @@ header_variant: minimal
         <span><strong>Email:</strong> seonghoon.park AT yonsei.ac.kr</span>
       </div>
       <div class="pi-links">
-        <a href="https://seonghoon.page" target="_blank" rel="noopener" class="pi-link">Website</a>
-        <a href="https://scholar.google.com/citations?user=NzNB_vkAAAAJ&hl=en" target="_blank" rel="noopener" class="pi-link">Google Scholar</a>
+        <a href="https://seonghoon.page" target="_blank" rel="noopener" class="pub-lnk">[Website]</a>
+        <a href="https://scholar.google.com/citations?user=NzNB_vkAAAAJ&hl=en" target="_blank" rel="noopener" class="pub-lnk">[Google Scholar]</a>
+      </div>
+
+      <div class="pi-history">
+        <section class="pi-history-section">
+          <h3 class="pi-history-title">Professional Experience</h3>
+          <ul class="pi-history-list">
+            <li>
+              <span class="pi-history-date">Sep. 2026–Present</span>
+              <span><strong>Assistant Professor</strong><br>Department of Computer Science and Engineering, Yonsei University</span>
+            </li>
+            <li>
+              <span class="pi-history-date">Oct. 2025–Aug. 2026</span>
+              <span><strong>Postdoctoral Associate</strong><br>Department of Computer Science, Virginia Tech</span>
+            </li>
+          </ul>
+        </section>
+        <section class="pi-history-section">
+          <h3 class="pi-history-title">Education</h3>
+          <ul class="pi-history-list">
+            <li>
+              <span class="pi-history-date">Aug. 2025</span>
+              <span><strong>Ph.D. in Computer Science and Engineering</strong><br>Yonsei University</span>
+            </li>
+            <li>
+              <span class="pi-history-date">Feb. 2018</span>
+              <span><strong>B.S. in Computer Science and Engineering</strong><br>Yonsei University</span>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
   </div>
 
   {% for group in site.data.members.groups %}
-  <div class="grp">
+  <div class="grp grp-{{ group.title | slugify }}">
     <h2 class="grp-title">{{ group.title }}{% if group.number %}<span class="grp-n">{{ group.number }}</span>{% endif %}</h2>
     <div class="mem-grid">
       {% for member in group.members %}
@@ -40,6 +69,20 @@ header_variant: minimal
           <h3 class="mem-name">{% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
           <div class="mem-role">{{ member.role }}</div>
           {% if member.focus %}<div class="mem-focus">{{ member.focus }}</div>{% endif %}
+          {% if member.education %}
+          <ul class="mem-education">
+            {% for education in member.education %}
+            <li>
+              {% if education.period %}
+              <span><strong>{{ education.degree }}</strong></span>
+              <span class="mem-education-period">{{ education.institution }} · {{ education.period }}</span>
+              {% else %}
+              <span><strong>{{ education.degree }}{% if education.year %} {{ education.year }}{% endif %}</strong>{% if education.institution %} · {{ education.institution }}{% endif %}</span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
           {% if member.email %}<a class="mem-email" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
         </div>
       </article>
