@@ -20,12 +20,14 @@
       <div class="pub-venue-row"><span class="pub-venue-text">{% if publication.type == 'conference' and publication.proceedings %}In Proceedings of {{ publication.proceedings }} {{ publication_year }}{% else %}{{ publication.venue }}{% endif %}</span></div>
       {% endif %}
     </div>
-    {% if publication.tags %}<div class="pub-notes">{% for tag in publication.tags %}<span class="pub-note">{{ tag }}</span>{% endfor %}</div>{% endif %}
-    <div class="pub-links">
-      {% if publication.pdf and publication.pdf != '' %}<a href="{{ publication.pdf }}" target="_blank" rel="noopener" class="pub-lnk">[Paper]</a>{% endif %}
-      {% if publication.video %}<a href="{{ publication.video }}" target="_blank" rel="noopener" class="pub-lnk">[Video]</a>{% endif %}
-      {% if publication.demo %}<a href="{{ publication.demo }}" target="_blank" rel="noopener" class="pub-lnk">[Demo]</a>{% endif %}
-      {% if publication.teaser %}<a href="{{ publication.teaser }}" target="_blank" rel="noopener" class="pub-lnk">[Teaser]</a>{% endif %}
+    <div class="pub-actions pub-actions-inline">
+      {% if publication.tags %}<div class="pub-notes">{% for tag in publication.tags %}<span class="pub-note">{{ tag }}{% if tag == 'Invited Research Highlight' %} 💡{% endif %}</span>{% endfor %}</div>{% endif %}
+      <div class="pub-links">
+        {% if publication.pdf and publication.pdf != '' %}<a href="{{ publication.pdf }}" target="_blank" rel="noopener" class="pub-lnk">[Paper]</a>{% endif %}
+        {% if publication.video %}<a href="{{ publication.video }}" target="_blank" rel="noopener" class="pub-lnk">[Video]</a>{% endif %}
+        {% if publication.demo %}<a href="{{ publication.demo }}" target="_blank" rel="noopener" class="pub-lnk">[Demo]</a>{% endif %}
+        {% if publication.teaser %}<a href="{{ publication.teaser }}" target="_blank" rel="noopener" class="pub-lnk">[Teaser]</a>{% endif %}
+      </div>
     </div>
     {% if include.show_keywords %}
       {% if publication.areas or publication.hardware %}

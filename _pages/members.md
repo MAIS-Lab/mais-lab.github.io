@@ -68,7 +68,16 @@ header_variant: minimal
         <div class="mem-info">
           <h3 class="mem-name">{% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
           <div class="mem-role">{{ member.role }}</div>
-          {% if member.focus %}<div class="mem-focus">{{ member.focus }}</div>{% endif %}
+          {% if member.focus %}
+          <div class="mem-focus" aria-label="Research interest: {{ member.focus }}">
+            <svg class="mem-focus-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 18h6"></path>
+              <path d="M10 22h4"></path>
+              <path d="M8.5 14.5a6 6 0 1 1 7 0C14.6 15.3 14 16.4 14 18h-4c0-1.6-.6-2.7-1.5-3.5Z"></path>
+            </svg>
+            <span>{{ member.focus }}</span>
+          </div>
+          {% endif %}
           {% if member.education %}
           <ul class="mem-education">
             {% for education in member.education %}
