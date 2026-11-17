@@ -66,7 +66,18 @@ header_variant: minimal
       <article class="mem-card{% unless member.photo %} member-placeholder{% endunless %}">
         <div class="photo-slot mem-photo-slot">{% if member.photo %}<img src="{{ site.baseurl }}/{{ member.photo }}" alt="{{ member.name }}">{% else %}<span>Add photo</span>{% endif %}</div>
         <div class="mem-info">
-          <h3 class="mem-name">{% if member.website %}<a href="{{ member.website }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
+          <h3 class="mem-name">
+            <span>{{ member.name }}</span>
+            {% if member.website %}
+            <a class="mem-website-link" href="{{ member.website }}" target="_blank" rel="noopener" aria-label="Visit {{ member.name }}'s website" title="Personal website">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m3 11 9-8 9 8"></path>
+                <path d="M5 10v10h14V10"></path>
+                <path d="M9 20v-6h6v6"></path>
+              </svg>
+            </a>
+            {% endif %}
+          </h3>
           <div class="mem-role">{{ member.role }}</div>
           {% if member.focus %}
           <div class="mem-focus" aria-label="Research interest: {{ member.focus }}">

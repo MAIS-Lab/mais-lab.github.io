@@ -100,7 +100,7 @@ a { color: inherit; }
 .highlight-link { display: block; color: var(--ink); text-decoration: none; }
 .highlight-image { width: 100%; aspect-ratio: 16/10; display: block; overflow: hidden; background: #fff; border: 1px solid var(--line); }
 .highlight-image img { width: 100%; height: 100%; display: block; object-fit: cover; transition: opacity .15s ease; }
-.highlight-contain img { padding: .4rem; object-fit: contain; }
+.highlight-contain img { padding: .25rem .4rem; object-fit: contain; }
 .highlight-link strong { display: block; margin-top: .65rem; font-size: .78rem; font-weight: 600; }
 .highlight-link:hover { color: var(--color1); text-decoration: none; }
 .highlight-link:hover img { opacity: .82; }
@@ -159,9 +159,10 @@ a.research-cite:hover { text-decoration: underline; }
 .mem-card { min-width: 0; padding: 1rem; display: grid; grid-template-columns: 136px minmax(0, 1fr); gap: 1.25rem; align-items: start; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; }
 .mem-photo-slot { width: 136px; aspect-ratio: 4/5; margin: 0; border-radius: 6px; }
 .mem-info { min-width: 0; padding: .1rem 0 0; }
-.mem-name { margin: 0 0 .15rem; color: var(--ink); font: 400 1.1rem/1.2 "PT Serif", serif; }
-.mem-name a { text-decoration: none; }
-.mem-name a:hover { color: var(--color1); text-decoration: underline; }
+.mem-name { margin: 0 0 .15rem; display: flex; align-items: center; gap: .4rem; color: var(--ink); font: 400 1.1rem/1.2 "PT Serif", serif; }
+.mem-website-link { width: 16px; height: 16px; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; color: var(--color1); text-decoration: none; opacity: .82; transition: opacity .15s; }
+.mem-website-link svg { width: 14px; height: 14px; stroke-width: 1.7; }
+.mem-website-link:hover { color: var(--color1); text-decoration: none; opacity: 1; }
 .mem-info .mem-role { margin: 0 0 .2rem; color: var(--ink-3); font-size: .82rem; font-style: normal; font-weight: 400; }
 .mem-focus { display: flex; align-items: flex-start; gap: .35rem; color: var(--ink-2); font-size: .82rem; }
 .mem-focus-icon { width: 14px; height: 14px; margin-top: .12rem; flex: 0 0 auto; color: var(--color1); stroke-width: 1.7; }
@@ -178,9 +179,9 @@ a.research-cite:hover { text-decoration: underline; }
 .pub-body { max-width: var(--content-measure); padding: 0; }
 .pub-year-grp { margin-bottom: 3rem; }
 .pub-year-lbl { margin: 0 0 .25rem; padding-bottom: .75rem; color: var(--ink); border-bottom: 1px solid var(--line); font-size: 1.15rem; font-weight: 700; line-height: 1.2; }
-.pub-item { display: grid; grid-template-columns: 180px 1fr; gap: 1.75rem; align-items: center; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
-.pub-thumb-slot { position: relative; width: 180px; aspect-ratio: 16/9; overflow: hidden; background: #fff; border: 1px solid var(--line); }
-.pub-thumb-slot img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: contain; }
+.pub-item { display: grid; grid-template-columns: 200px 1fr; gap: 1.75rem; align-items: center; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.pub-thumb-slot { position: relative; width: 200px; aspect-ratio: 16/10; overflow: hidden; background: #fff; border: 1px solid var(--line); }
+.pub-thumb-slot img { position: absolute; inset: 0; width: 100%; height: 100%; padding: .25rem .4rem; display: block; object-fit: contain; }
 .pub-thumb-slot .pub-default-logo { padding: .65rem; object-fit: contain; }
 .pub-copy { min-width: 0; }
 .pub-title { max-width: 690px; margin: 0 0 .3rem; color: var(--ink); font-size: .93rem; font-weight: 650; line-height: 1.45; }
@@ -215,8 +216,8 @@ a.research-cite:hover { text-decoration: underline; }
   .mem-grid { gap: 1rem; }
   .mem-card { grid-template-columns: 112px minmax(0, 1fr); gap: 1rem; padding: .8rem; }
   .mem-photo-slot { width: 112px; }
-  .pub-item { grid-template-columns: 140px 1fr; gap: 1rem; }
-  .pub-thumb-slot { width: 140px; }
+  .pub-item { grid-template-columns: 160px 1fr; gap: 1rem; }
+  .pub-thumb-slot { width: 160px; }
 }
 
 @media (max-width: 640px) {
@@ -260,8 +261,8 @@ a.research-cite:hover { text-decoration: underline; }
   .mem-card { grid-template-columns: 120px minmax(0, 1fr); gap: 1rem; padding: .85rem; }
   .mem-photo-slot { width: 120px; }
   .mem-name { font-size: 1rem; }
-  .pub-item { grid-template-columns: 100px 1fr; gap: .75rem; padding: 1.1rem 0; }
-  .pub-thumb-slot { width: 100px; }
+  .pub-item { grid-template-columns: 112px 1fr; gap: .75rem; padding: 1.1rem 0; }
+  .pub-thumb-slot { width: 112px; }
   .pub-title { font-size: .87rem; }
   .site-ft { padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); }
   .ft-inner { grid-template-columns: 1fr; gap: 1.25rem; margin-bottom: 1.25rem; padding: 0 1rem; }
