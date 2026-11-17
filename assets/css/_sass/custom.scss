@@ -146,7 +146,7 @@ a.research-cite:hover { text-decoration: underline; }
 .pi-history-section + .pi-history-section { margin-top: 1.5rem; }
 .pi-history-title { margin: 0 0 .7rem; color: var(--ink); font-size: .86rem; font-weight: 650; line-height: 1.3; }
 .pi-history-list { margin: 0; padding: 0; list-style: none; }
-.pi-history-list li { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: .85rem; padding: .45rem 0; color: var(--ink-2); font-size: .8rem; line-height: 1.5; border-top: 1px solid var(--line); }
+.pi-history-list li { display: grid; grid-template-columns: 136px minmax(0, 1fr); gap: .85rem; padding: .45rem 0; color: var(--ink-2); font-size: .8rem; line-height: 1.5; border-top: 1px solid var(--line); }
 .pi-history-list li:last-child { border-bottom: 1px solid var(--line); }
 .pi-history-list strong { color: var(--ink); font-weight: 600; }
 .pi-history-date { color: var(--ink-3); white-space: nowrap; }
