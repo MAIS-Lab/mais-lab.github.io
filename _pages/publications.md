@@ -12,7 +12,7 @@ header_variant: minimal
     <h2 class="pub-year-lbl">{{ group.year }}</h2>
     <div class="pub-list">
     {% for paper in group.papers %}
-      {% include publication-item.html paper=paper year=group.year %}
+      {% include publication-item.html paper=paper year=group.year show_keywords=true %}
     {% endfor %}
     </div>
   </section>

@@ -33,11 +33,11 @@ header_variant: minimal
           <ul class="pi-history-list">
             <li>
               <span class="pi-history-date">Sep. 2026–Present</span>
-              <span><strong>Assistant Professor</strong><br>Department of Computer Science and Engineering, Yonsei University</span>
+              <span><strong>Assistant Professor</strong>, Department of Computer Science and Engineering, Yonsei University</span>
             </li>
             <li>
               <span class="pi-history-date">Oct. 2025–Aug. 2026</span>
-              <span><strong>Postdoctoral Associate</strong><br>Department of Computer Science, Virginia Tech</span>
+              <span><strong>Postdoctoral Associate</strong>, Department of Computer Science, Virginia Tech</span>
             </li>
           </ul>
         </section>
@@ -46,11 +46,11 @@ header_variant: minimal
           <ul class="pi-history-list">
             <li>
               <span class="pi-history-date">Aug. 2025</span>
-              <span><strong>Ph.D. in Computer Science and Engineering</strong><br>Yonsei University</span>
+              <span><strong>Ph.D. in Computer Science and Engineering</strong>, Yonsei University</span>
             </li>
             <li>
               <span class="pi-history-date">Feb. 2018</span>
-              <span><strong>B.S. in Computer Science and Engineering</strong><br>Yonsei University</span>
+              <span><strong>B.S. in Computer Science and Engineering</strong>, Yonsei University</span>
             </li>
           </ul>
         </section>
@@ -73,12 +73,8 @@ header_variant: minimal
           <ul class="mem-education">
             {% for education in member.education %}
             <li>
-              {% if education.period %}
-              <span><strong>{{ education.degree }}</strong></span>
-              <span class="mem-education-period">{{ education.institution }} · {{ education.period }}</span>
-              {% else %}
-              <span><strong>{{ education.degree }}{% if education.year %} {{ education.year }}{% endif %}</strong>{% if education.institution %} · {{ education.institution }}{% endif %}</span>
-              {% endif %}
+              <span class="mem-education-degree"><strong>{{ education.degree }}</strong></span>
+              <span class="mem-education-meta">{{ education.date }}, {{ education.institution }}</span>
             </li>
             {% endfor %}
           </ul>

@@ -31,6 +31,8 @@ full:
     papers:
       - title: "Marionette: Mobile-to-Mobile Live 3D Telepresence via Animatable Gaussian Avatars"
         slug: marionette
+        areas: ["Mobile immersive computing"]
+        hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Gunjoong Kim*, Hyejin Park*, Seonghoon Park, Jeho Lee, and Hojung Cha"
         venue: "The 2027 ACM/IEEE International Conference on Embedded Artifical Intelligence and Sensing Systems"
         abbr: "SenSys"
@@ -40,6 +42,7 @@ full:
   - year: 2026
     papers:
       - title: "DynaStitch: Dynamic ViT Inference via Neural Stitching for Resource-Constrained Edge Devices"
+        areas: ["On-device AI"]
         authors: "Jiwon Kim, Luca Mottola, Jeho Lee, Seonghoon Park, Hojung Cha, and Thiemo Voigt"
         types: [conference, journal]
         venues:
@@ -53,6 +56,8 @@ full:
 
       - title: "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs"
         slug: vinpu
+        areas: ["On-device AI"]
+        hardware: ["Mobile NPU"]
         authors: "Jeho Lee, Gunjoong Kim, Chanyoung Jung, Jaehee Kim, Seonghoon Park, and Hojung Cha"
         venue: "The 21st European Conference on Computer Systems"
         abbr: "EuroSys"
@@ -62,6 +67,8 @@ full:
         thumbnail: "assets/img/publications/2026-eurosys-vinpu.png"
 
       - title: "3DGS on Your Phone: Towards Fully Immersive Mobile Volumetric Video Streaming"
+        areas: ["Mobile immersive computing"]
+        hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "GetMobile: Mobile Computing and Communications, Vol. 30, No. 1"
         abbr: "GetMobile"
@@ -71,6 +78,8 @@ full:
         tags: ["Invited Research Highlight"]
 
       - title: "VFM in Your Hands: Optimizing Real-Time Scene Understanding for Mobile Augmented Reality"
+        areas: ["On-device AI"]
+        hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Jeho Lee*, Chanyoung Jung*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
         venue: "GetMobile: Mobile Computing and Communications, Vol. 29, No. 4"
         abbr: "GetMobile"
@@ -83,6 +92,8 @@ full:
     papers:
       - title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
         slug: eos
+        areas: ["Mobile immersive computing", "Energy management"]
+        hardware: ["Mobile GPU"]
         authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
@@ -94,6 +105,8 @@ full:
 
       - title: "Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting"
         slug: vega
+        areas: ["Mobile immersive computing"]
+        hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
@@ -104,6 +117,8 @@ full:
         video: "https://youtu.be/rLd3ajRILws"
 
       - title: "Duration-Aware Sound Event Detection on Ultra-Low-Power Sensor Devices"
+        areas: ["On-device AI", "Energy management"]
+        hardware: ["Ultra-low-power MCU"]
         authors: "Seonghoon Park, Junick Ahn, Daeyong Kim, and Hojung Cha"
         venue: "ACM Transactions on Embedded Computing Systems, Vol. 24, No. 6"
         abbr: "TECS"
@@ -113,6 +128,8 @@ full:
 
       - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
         slug: ember
+        areas: ["Energy management"]
+        hardware: ["Mobile CPU"]
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
         types: [conference, journal]
         venues:
@@ -128,6 +145,8 @@ full:
 
       - title: "ARIA: Optimizing Vision Foundation Model Inference on Heterogeneous Mobile Processors for Augmented Reality"
         slug: aria
+        areas: ["On-device AI"]
+        hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Chanyoung Jung*, Jeho Lee*, Gunjoong Kim, Jiwon Kim, Seonghoon Park, and Hojung Cha"
         venue: "The 23rd Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
@@ -142,6 +161,7 @@ full:
     papers:
       - title: "Vulture: Cross-Device Web Experience with Fine-Grained Graphical User Interface Distribution"
         slug: vulture
+        areas: ["Cross-device computing"]
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
         venue: "IEEE INFOCOM 2024 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
@@ -155,6 +175,8 @@ full:
     papers:
       - title: "OmniLive: Super-Resolution Enhanced 360° Video Live Streaming for Mobile Devices"
         slug: omnilive
+        areas: ["Mobile immersive computing"]
+        hardware: ["Mobile GPU"]
         authors: "Seonghoon Park*, Yeonwoo Cho*, Hyungchol Jun, Jeho Lee, and Hojung Cha"
         venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"
@@ -166,6 +188,7 @@ full:
 
       - title: "Crow API: Cross-device I/O Sharing in Web Applications"
         slug: crow-api
+        areas: ["Cross-device computing"]
         authors: "Seonghoon Park, Jeho Lee, and Hojung Cha"
         venue: "IEEE INFOCOM 2023 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
@@ -177,6 +200,8 @@ full:
   - year: 2022
     papers:
       - title: "Optimizing Energy Consumption of Mobile Games"
+        areas: ["Energy management"]
+        hardware: ["Mobile CPU"]
         authors: "Yonghun Choi, Seonghoon Park, Seunghyeok Jeon, Rhan Ha, and Hojung Cha"
         venue: "IEEE Transactions on Mobile Computing, Vol. 21, No. 10"
         abbr: "TMC"
@@ -186,6 +211,7 @@ full:
   - year: 2021
     papers:
       - title: "WebMythBusters: An In-depth Study of Mobile Web Experience"
+        areas: ["Cross-device computing"]
         authors: "Seonghoon Park, Yonghun Choi, and Hojung Cha"
         venue: "IEEE INFOCOM 2021 - IEEE Conference on Computer Communications"
         abbr: "INFOCOM"
@@ -194,6 +220,8 @@ full:
         pdf: "https://ieeexplore.ieee.org/document/9488671"
 
       - title: "GAZEL: Runtime Gaze Tracking for Smartphones"
+        areas: ["On-device AI"]
+        hardware: ["Mobile CPU"]
         authors: "Joonbeom Park, Seonghoon Park, and Hojung Cha"
         venue: "2021 IEEE International Conference on Pervasive Computing and Communications"
         abbr: "PerCom"
@@ -204,6 +232,8 @@ full:
   - year: 2019
     papers:
       - title: "Optimizing Energy Efficiency of Browsers in Energy-Aware Scheduling-Enabled Mobile Devices"
+        areas: ["Energy management"]
+        hardware: ["Mobile CPU"]
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
         venue: "The 25th Annual International Conference on Mobile Computing and Networking"
         abbr: "MobiCom"
@@ -213,6 +243,8 @@ full:
         video: "https://youtu.be/Kln7XbRSBX8"
 
       - title: "Graphics-Aware Power Governing for Mobile Devices"
+        areas: ["Energy management"]
+        hardware: ["Mobile CPU/GPU"]
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
         venue: "The 17th Annual International Conference on Mobile Systems, Applications and Services"
         abbr: "MobiSys"

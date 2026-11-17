@@ -11,11 +11,11 @@ groups:
         website: https://gunjoong-kim.github.io/
         photo: assets/img/members/gunjoong.png
         education:
-          - degree: M.S.
-            year: 2026
+          - degree: M.S. in Computer Science and Engineering
+            date: Feb. 2026
             institution: Yonsei University
-          - degree: B.S.
-            year: 2024
+          - degree: B.S. in Computer Science
+            date: Feb. 2024
             institution: University of Seoul
       - name: Junyoung Sohn
         role: M.S. Student
@@ -24,5 +24,5 @@ groups:
         photo: assets/img/members/junyoung.jpg
         education:
           - degree: B.A. in Computer Science and Chinese
+            date: Jan. 2021
             institution: Lehigh University
-            period: Aug. 2015–Jan. 2021

@@ -27,5 +27,13 @@
       {% if publication.demo %}<a href="{{ publication.demo }}" target="_blank" rel="noopener" class="pub-lnk">[Demo]</a>{% endif %}
       {% if publication.teaser %}<a href="{{ publication.teaser }}" target="_blank" rel="noopener" class="pub-lnk">[Teaser]</a>{% endif %}
     </div>
+    {% if include.show_keywords %}
+      {% if publication.areas or publication.hardware %}
+    <div class="pub-keywords" aria-label="Research areas and target hardware">
+        {% for area in publication.areas %}<span class="pub-keyword pub-keyword-area">{{ area }}</span>{% endfor %}
+        {% for hardware in publication.hardware %}<span class="pub-keyword pub-keyword-hardware">{{ hardware }}</span>{% endfor %}
+    </div>
+      {% endif %}
+    {% endif %}
   </div>
 </article>
