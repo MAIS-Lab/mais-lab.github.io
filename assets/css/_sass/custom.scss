@@ -146,7 +146,7 @@ a.research-cite:hover { text-decoration: underline; }
 .pi-history-section + .pi-history-section { margin-top: 1.5rem; }
 .pi-history-title { margin: 0 0 .7rem; color: var(--ink); font-size: .86rem; font-weight: 650; line-height: 1.3; }
 .pi-history-list { margin: 0; padding: 0; list-style: none; }
-.pi-history-list li { display: grid; grid-template-columns: 136px minmax(0, 1fr); gap: .85rem; padding: .45rem 0; color: var(--ink-2); font-size: .8rem; line-height: 1.5; border-top: 1px solid var(--line); }
+.pi-history-list li { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: .85rem; padding: .45rem 0; color: var(--ink-2); font-size: .8rem; line-height: 1.5; border-top: 1px solid var(--line); }
 .pi-history-list li:last-child { border-bottom: 1px solid var(--line); }
 .pi-history-list strong { color: var(--ink); font-weight: 600; }
 .pi-history-date { color: var(--ink-3); white-space: nowrap; }
@@ -161,7 +161,7 @@ a.research-cite:hover { text-decoration: underline; }
 .mem-name { margin: 0 0 .15rem; color: var(--ink); font: 400 1.1rem/1.2 "PT Serif", serif; }
 .mem-name a { text-decoration: none; }
 .mem-name a:hover { color: var(--color1); text-decoration: underline; }
-.mem-info .mem-role { margin: 0 0 .2rem; color: var(--ink-3); font-size: .82rem; font-style: italic; font-weight: 400; }
+.mem-info .mem-role { margin: 0 0 .2rem; color: var(--ink-3); font-size: .82rem; font-style: normal; font-weight: 400; }
 .mem-focus { display: flex; align-items: flex-start; gap: .35rem; color: var(--ink-2); font-size: .82rem; }
 .mem-focus-icon { width: 14px; height: 14px; margin-top: .12rem; flex: 0 0 auto; color: var(--color1); stroke-width: 1.7; }
 .mem-email { display: flex; align-items: flex-start; gap: .35rem; margin-top: .2rem; color: var(--ink-3); font-size: .8rem; word-break: break-word; }

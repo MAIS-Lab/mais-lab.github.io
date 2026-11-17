@@ -5,24 +5,24 @@ groups:
     # number: "01"
     members:
       - name: Gunjoong Kim
-        role: Ph.D. Student
+        role: Ph.D. Student (2026.09–Present)
         focus: Mobile immersive computing (3DGS/4DGS)
         email: gunjoong.kim AT yonsei.ac.kr
         website: https://gunjoong-kim.github.io/
         photo: assets/img/members/gunjoong.png
         education:
           - degree: M.S. in Computer Science and Engineering
-            date: Feb. 2026
+            date: "2026.02"
             institution: Yonsei University
           - degree: B.S. in Computer Science
-            date: Feb. 2024
+            date: "2024.02"
             institution: University of Seoul
       - name: Junyoung Sohn
-        role: M.S. Student
+        role: M.S. Student (2026.09–Present)
         focus: On-device AI (LLM/VLM)
         email: junyoung.sohn AT yonsei.ac.kr
         photo: assets/img/members/junyoung.jpg
         education:
           - degree: B.A. in Computer Science and Chinese
-            date: Jan. 2021
+            date: "2021.01"
             institution: Lehigh University

@@ -32,11 +32,11 @@ header_variant: minimal
           <h3 class="pi-history-title">Professional Experience</h3>
           <ul class="pi-history-list">
             <li>
-              <span class="pi-history-date">Sep. 2026–Present</span>
+              <span class="pi-history-date">2026.09–Present</span>
               <span><strong>Assistant Professor</strong>, Department of Computer Science and Engineering, Yonsei University</span>
             </li>
             <li>
-              <span class="pi-history-date">Oct. 2025–Aug. 2026</span>
+              <span class="pi-history-date">2025.10–2026.08</span>
               <span><strong>Postdoctoral Associate</strong>, Department of Computer Science, Virginia Tech</span>
             </li>
           </ul>
@@ -45,11 +45,11 @@ header_variant: minimal
           <h3 class="pi-history-title">Education</h3>
           <ul class="pi-history-list">
             <li>
-              <span class="pi-history-date">Aug. 2025</span>
+              <span class="pi-history-date">2025.08</span>
               <span><strong>Ph.D. in Computer Science and Engineering</strong>, Yonsei University</span>
             </li>
             <li>
-              <span class="pi-history-date">Feb. 2018</span>
+              <span class="pi-history-date">2018.02</span>
               <span><strong>B.S. in Computer Science and Engineering</strong>, Yonsei University</span>
             </li>
           </ul>
