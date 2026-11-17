@@ -164,12 +164,13 @@ a.research-cite:hover { text-decoration: underline; }
 .mem-info .mem-role { margin: 0 0 .2rem; color: var(--ink-3); font-size: .82rem; font-style: italic; font-weight: 400; }
 .mem-focus { display: flex; align-items: flex-start; gap: .35rem; color: var(--ink-2); font-size: .82rem; }
 .mem-focus-icon { width: 14px; height: 14px; margin-top: .12rem; flex: 0 0 auto; color: var(--color1); stroke-width: 1.7; }
+.mem-email { display: flex; align-items: flex-start; gap: .35rem; margin-top: .2rem; color: var(--ink-3); font-size: .8rem; word-break: break-word; }
+.mem-email-icon { width: 14px; height: 14px; margin-top: .1rem; flex: 0 0 auto; color: var(--color1); stroke-width: 1.7; }
 .mem-education { margin: .7rem 0 0; padding: .65rem 0 0; color: var(--ink-2); border-top: 1px solid var(--line); font-size: .8rem; line-height: 1.45; list-style: none; }
 .mem-education li + li { margin-top: .65rem; }
 .mem-education strong { color: var(--ink); font-weight: 600; }
 .mem-education-degree, .mem-education-meta { display: block; }
 .mem-education-meta { color: var(--ink-3); }
-.mem-email { display: block; margin-top: .55rem; color: var(--ink-3); font-size: .8rem; word-break: break-word; }
 .member-placeholder .photo-slot { display: grid; place-items: center; color: var(--grey); font: 400 .68rem/1 "Google Sans Flex", sans-serif; }
 
 /* Publications */

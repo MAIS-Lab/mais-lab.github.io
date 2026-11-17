@@ -78,6 +78,15 @@ header_variant: minimal
             <span>{{ member.focus }}</span>
           </div>
           {% endif %}
+          {% if member.email %}
+          <div class="mem-email" aria-label="Email: {{ member.email }}">
+            <svg class="mem-email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path d="m3 7 9 6 9-6"></path>
+            </svg>
+            <span>{{ member.email }}</span>
+          </div>
+          {% endif %}
           {% if member.education %}
           <ul class="mem-education">
             {% for education in member.education %}
@@ -88,7 +97,6 @@ header_variant: minimal
             {% endfor %}
           </ul>
           {% endif %}
-          {% if member.email %}<a class="mem-email" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
         </div>
       </article>
       {% endfor %}

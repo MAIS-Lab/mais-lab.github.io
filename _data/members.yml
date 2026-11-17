@@ -6,7 +6,7 @@ groups:
     members:
       - name: Gunjoong Kim
         role: Ph.D. Student
-        focus: Mobile immersive computing
+        focus: Mobile immersive computing (3DGS/4DGS)
         email: gunjoong.kim AT yonsei.ac.kr
         website: https://gunjoong-kim.github.io/
         photo: assets/img/members/gunjoong.png
@@ -19,7 +19,7 @@ groups:
             institution: University of Seoul
       - name: Junyoung Sohn
         role: M.S. Student
-        focus: On-device AI
+        focus: On-device AI (LLM/VLM)
         email: junyoung.sohn AT yonsei.ac.kr
         photo: assets/img/members/junyoung.jpg
         education:
