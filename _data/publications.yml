@@ -31,7 +31,7 @@ full:
     papers:
       - title: "Marionette: Mobile-to-Mobile Live 3D Telepresence via Animatable Gaussian Avatars"
         slug: marionette
-        areas: ["Mobile immersive computing"]
+        areas: ["Mobile immersive computing", "On-device 3DGS"]
         hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Gunjoong Kim*, Hyejin Park*, Seonghoon Park, Jeho Lee, and Hojung Cha"
         venue: "The 2027 ACM/IEEE International Conference on Embedded Artifical Intelligence and Sensing Systems"
@@ -43,6 +43,7 @@ full:
     papers:
       - title: "DynaStitch: Dynamic ViT Inference via Neural Stitching for Resource-Constrained Edge Devices"
         areas: ["On-device AI"]
+        hardware: ["Mobile CPU", "Mobile GPU"]
         authors: "Jiwon Kim, Luca Mottola, Jeho Lee, Seonghoon Park, Hojung Cha, and Thiemo Voigt"
         types: [conference, journal]
         venues:
@@ -67,7 +68,7 @@ full:
         thumbnail: "assets/img/publications/2026-eurosys-vinpu.png"
 
       - title: "3DGS on Your Phone: Towards Fully Immersive Mobile Volumetric Video Streaming"
-        areas: ["Mobile immersive computing"]
+        areas: ["Mobile immersive computing", "On-device 3DGS"]
         hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "GetMobile: Mobile Computing and Communications, Vol. 30, No. 1"
@@ -92,7 +93,7 @@ full:
     papers:
       - title: "EOS: Energy-Optimized Super-Resolution on Mobile Devices for Live 360-Degree Videos"
         slug: eos
-        areas: ["Mobile immersive computing", "Energy management"]
+        areas: ["Mobile immersive computing", "On-device AI", "Energy management"]
         hardware: ["Mobile GPU"]
         authors: "Seonghoon Park, Minchan Kim, Hyejin Park, Jeho Lee, Jiwon Kim, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
@@ -105,7 +106,7 @@ full:
 
       - title: "Vega: Fully Immersive Mobile Volumetric Video Streaming with 3D Gaussian Splatting"
         slug: vega
-        areas: ["Mobile immersive computing"]
+        areas: ["Mobile immersive computing", "On-device 3DGS"]
         hardware: ["Mobile CPU/GPU/NPU"]
         authors: "Gunjoong Kim*, Seonghoon Park*, Jeho Lee, Chanyoung Jung, Hyungchol Jun, and Hojung Cha"
         venue: "The 31st Annual International Conference on Mobile Computing and Networking"
@@ -128,7 +129,7 @@ full:
 
       - title: "Ember: Task Wakeup Sequence–Based Energy Optimization for Mobile Web Browsing"
         slug: ember
-        areas: ["Energy management"]
+        areas: ["Energy management", "ML for systems"]
         hardware: ["Mobile CPU"]
         authors: "Seonghoon Park, Jiwon Kim, Jeho Lee, and Hojung Cha"
         types: [conference, journal]
@@ -175,7 +176,7 @@ full:
     papers:
       - title: "OmniLive: Super-Resolution Enhanced 360° Video Live Streaming for Mobile Devices"
         slug: omnilive
-        areas: ["Mobile immersive computing"]
+        areas: ["Mobile immersive computing", "On-device AI"]
         hardware: ["Mobile GPU"]
         authors: "Seonghoon Park*, Yeonwoo Cho*, Hyungchol Jun, Jeho Lee, and Hojung Cha"
         venue: "The 21st Annual International Conference on Mobile Systems, Applications and Services"
@@ -232,7 +233,7 @@ full:
   - year: 2019
     papers:
       - title: "Optimizing Energy Efficiency of Browsers in Energy-Aware Scheduling-Enabled Mobile Devices"
-        areas: ["Energy management"]
+        areas: ["Energy management", "ML for systems"]
         hardware: ["Mobile CPU"]
         authors: "Yonghun Choi, Seonghoon Park, and Hojung Cha"
         venue: "The 25th Annual International Conference on Mobile Computing and Networking"
