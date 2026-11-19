@@ -26,3 +26,14 @@ groups:
           - degree: B.A. in Computer Science and Chinese
             date: "2021.01"
             institution: Lehigh University
+
+  - title: Undergraduate Interns
+    members:
+      - name: Yubin Seo
+        role: Undergraduate Intern (2026.09–Present)
+        focus: On-device AI (LLM/VLM)
+        email: 11e26db@gmail.com
+        photo: assets/img/members/yubin.jpg
+        education:
+          - degree: B.S. Student in Electrical and Electronics Engineering
+            institution: Chung-Ang University

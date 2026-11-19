@@ -103,7 +103,7 @@ header_variant: minimal
             {% for education in member.education %}
             <li>
               <span class="mem-education-degree"><strong>{{ education.degree }}</strong></span>
-              <span class="mem-education-meta">{{ education.date }}, {{ education.institution }}</span>
+              <span class="mem-education-meta">{% if education.date %}{{ education.date }}, {% endif %}{{ education.institution }}</span>
             </li>
             {% endfor %}
           </ul>
